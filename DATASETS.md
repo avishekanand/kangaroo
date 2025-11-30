@@ -32,6 +32,24 @@ This document describes the datasets integrated into the Math Practice App and t
   - `id`: (String) Unique identifier.
   - `modality`: (String) "Text-only" or "Multimodal".
 
+### BRIGHT (LeetCode)
+- **Source**: `xlangai/BRIGHT` (config: `examples`, split: `leetcode`)
+- **Description**: Algorithmic and coding challenges.
+- **Features**: Retrieval-based dataset.
+- **Schema**:
+  - `query`: Problem text.
+  - `reasoning`: Solution hint/explanation.
+  - `gold_answer`: Usually "N/A".
+
+### BRIGHT (Economics)
+- **Source**: `xlangai/BRIGHT` (config: `examples`, split: `economics`)
+- **Description**: Complex economic reasoning problems.
+- **Features**: Retrieval-based dataset.
+- **Schema**:
+  - `query`: Problem text.
+  - `reasoning`: Solution hint/explanation.
+  - `gold_answer`: Usually "N/A".
+
 ## 4. Kangaroo 2025 (3-4)
 - **Source**: [MathArena/kangaroo_2025_3-4_outputs](https://huggingface.co/datasets/MathArena/kangaroo_2025_3-4_outputs)
 - **Description**: Math Kangaroo 2025 questions for grades 3-4.
@@ -57,3 +75,11 @@ All datasets are mapped to the following unified schema in the `questions` table
 - `topic`: (String) Subject/Topic.
 - `difficulty`: (String) Difficulty level.
 - `meta_data`: (JSON) Original raw record.
+
+
+## More potential sources
+
+https://www.mathe-kaenguru.de/chronik/aufgaben/index.html
+
+https://www.hkmkc.org/download
+

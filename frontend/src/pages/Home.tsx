@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Trophy } from 'lucide-react';
+import { Trophy, ArrowRight } from 'lucide-react';
 
 export const Home: React.FC = () => {
     return (
@@ -27,30 +27,63 @@ export const Home: React.FC = () => {
                 </Link>
 
                 {/* OlympiadBench */}
-                <Link to="/olympiad?source=OlympiadBench" className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center text-center group bg-gradient-to-br from-emerald-50 to-teal-50 border-2 border-emerald-100 hover:border-emerald-300">
-                    <div className="bg-emerald-100 p-4 rounded-full mb-4 group-hover:bg-emerald-200 transition">
-                        <Trophy size={40} className="text-emerald-600" />
+                <Link to="/olympiad?source=OlympiadBench" className="group bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-emerald-100 hover:border-emerald-200 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+                    <div className="relative z-10">
+                        <div className="bg-emerald-100 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 transition-transform">
+                            <span className="text-2xl">🏆</span>
+                        </div>
+                        <h2 className="text-xl font-bold mb-2 text-emerald-900">OlympiadBench</h2>
+                        <p className="text-gray-600 mb-6">Advanced competition benchmarks.</p>
+                        <div className="flex items-center text-emerald-600 font-semibold group-hover:gap-2 transition-all">
+                            Start Challenge <ArrowRight size={20} className="ml-2" />
+                        </div>
                     </div>
-                    <h2 className="text-xl font-bold mb-2 text-emerald-900">OlympiadBench</h2>
-                    <p className="text-emerald-700 text-sm">Advanced competition benchmarks.</p>
                 </Link>
 
-                {/* Kangaroo 3-4 */}
-                <Link to="/olympiad?source=Kangaroo%202025%20(3-4)" className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center text-center group bg-gradient-to-br from-orange-50 to-yellow-50 border-2 border-orange-100 hover:border-orange-300">
-                    <div className="bg-orange-100 p-4 rounded-full mb-4 group-hover:bg-orange-200 transition">
-                        <Trophy size={40} className="text-orange-600" />
+                {/* BRIGHT (LeetCode) */}
+                <Link to="/olympiad?source=BRIGHT%20(LeetCode)" className="group bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-cyan-100 hover:border-cyan-200 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+                    <div className="relative z-10">
+                        <div className="bg-cyan-100 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 transition-transform">
+                            <span className="text-2xl">💻</span>
+                        </div>
+                        <h2 className="text-xl font-bold mb-2 text-cyan-900">BRIGHT (LeetCode)</h2>
+                        <p className="text-gray-600 mb-6">Algorithmic and coding challenges.</p>
+                        <div className="flex items-center text-cyan-600 font-semibold group-hover:gap-2 transition-all">
+                            Start Challenge <ArrowRight size={20} className="ml-2" />
+                        </div>
                     </div>
-                    <h2 className="text-xl font-bold mb-2 text-orange-900">Kangaroo (3-4)</h2>
-                    <p className="text-orange-700 text-sm">Grades 3-4 Math Kangaroo questions.</p>
+                </Link>
+
+                {/* BRIGHT (Economics) */}
+                <Link to="/olympiad?source=BRIGHT%20(Economics)" className="group bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-blue-100 hover:border-blue-200 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+                    <div className="relative z-10">
+                        <div className="bg-blue-100 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 transition-transform">
+                            <span className="text-2xl">📈</span>
+                        </div>
+                        <h2 className="text-xl font-bold mb-2 text-blue-900">BRIGHT (Economics)</h2>
+                        <p className="text-gray-600 mb-6">Complex economic reasoning problems.</p>
+                        <div className="flex items-center text-blue-600 font-semibold group-hover:gap-2 transition-all">
+                            Start Challenge <ArrowRight size={20} className="ml-2" />
+                        </div>
+                    </div>
                 </Link>
 
                 {/* Kangaroo 5-6 */}
-                <Link to="/olympiad?source=Kangaroo%202025%20(5-6)" className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center text-center group bg-gradient-to-br from-red-50 to-orange-50 border-2 border-red-100 hover:border-red-300">
-                    <div className="bg-red-100 p-4 rounded-full mb-4 group-hover:bg-red-200 transition">
-                        <Trophy size={40} className="text-red-600" />
+                <Link to="/olympiad?source=Kangaroo%202025%20(5-6)" className="group bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-red-100 hover:border-red-200 relative overflow-hidden md:col-span-2">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-red-50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+                    <div className="relative z-10">
+                        <div className="bg-red-100 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 transition-transform">
+                            <span className="text-2xl">🦘</span>
+                        </div>
+                        <h2 className="text-xl font-bold mb-2 text-red-900">Kangaroo (5-6)</h2>
+                        <p className="text-gray-600 mb-6">Step up your game with math problems for grades 5-6.</p>
+                        <div className="flex items-center text-red-600 font-semibold group-hover:gap-2 transition-all">
+                            Start Challenge <ArrowRight size={20} className="ml-2" />
+                        </div>
                     </div>
-                    <h2 className="text-xl font-bold mb-2 text-red-900">Kangaroo (5-6)</h2>
-                    <p className="text-red-700 text-sm">Grades 5-6 Math Kangaroo questions.</p>
                 </Link>
             </div>
         </div>

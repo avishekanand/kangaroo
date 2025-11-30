@@ -8,7 +8,8 @@ A comprehensive platform for practicing advanced mathematics problems from vario
   - **OlymMATH**: Olympiad mathematics problems.
   - **NuminaMath-CoT**: Chain-of-Thought reasoning challenges.
   - **OlympiadBench**: Advanced competition benchmarks.
-  - **Kangaroo 2025**: Grades 3-4 and 5-6 problems with image support.
+  - **Kangaroo 2025**: Grades 5-6 problems with image support.
+  - **BRIGHT**: Challenging problems from LeetCode and Economics (Retrieval-based).
 - **Interactive Quiz UI**:
   - **LaTeX Rendering**: Beautifully rendered math equations in questions, options, and solutions.
   - **Step-by-Step Solutions**: Detailed explanations displayed in a rich, readable format.

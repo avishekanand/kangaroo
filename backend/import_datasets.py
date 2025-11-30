@@ -285,10 +285,61 @@ def import_kangaroo(dataset_name, difficulty_label, limit=20):
     finally:
         db.close()
 
+def import_bright(split, source_name, limit=20):
+    print(f"--- Importing {source_name} ---")
+    db = SessionLocal()
+    try:
+        # Use 'examples' config and specified split
+        dataset = load_dataset("xlangai/BRIGHT", "examples", split=split, streaming=True)
+        
+        count = 0
+        for item in dataset:
+            if count >= limit:
+                break
+            
+            # BRIGHT structure:
+            # query: Contains the problem text and options
+            # gold_answer: Usually N/A in this dataset
+            problem = item.get('query')
+            solution = item.get('reasoning')
+            answer = item.get('gold_answer') or "N/A"
+            
+            # Extract options if possible, or just leave them in the problem text
+            # The problem text often contains "(A) ... (B) ..."
+            # We'll leave them in the problem for now and provide generic options
+            options = ["A", "B", "C", "D", "E"]
+            
+            q = models.Question(
+                source=source_name,
+                external_id=item.get('id'),
+                problem=problem,
+                solution=solution,
+                answer=answer,
+                topic="General" if split == "economics" else "Coding/Math",
+                difficulty="Hard",
+                options=options,
+                correct_option_label="?", # Answer not provided in dataset
+                meta_data=item
+            )
+            db.add(q)
+            count += 1
+            
+        db.commit()
+        print(f"Imported {count} questions from {source_name}.")
+    except Exception as e:
+        print(f"Error importing {source_name}: {e}")
+        db.rollback()
+    finally:
+        db.close()
+
 if __name__ == "__main__":
     clear_data() # Clear all for fresh start
     import_olymmath()
     import_numinamath()
     import_olympiadbench()
-    import_kangaroo("MathArena/kangaroo_2025_3-4_outputs", "Kangaroo 2025 (3-4)")
+    # import_kangaroo("MathArena/kangaroo_2025_3-4_outputs", "Kangaroo 2025 (3-4)") # Removed from UI
     import_kangaroo("MathArena/kangaroo_2025_5-6_outputs", "Kangaroo 2025 (5-6)")
+    
+    # Import BRIGHT splits
+    import_bright("leetcode", "BRIGHT (LeetCode)")
+    import_bright("economics", "BRIGHT (Economics)")

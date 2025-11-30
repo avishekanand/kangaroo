@@ -27,7 +27,8 @@ export const OlympiadLanding: React.FC = () => {
         if (source === 'OlymMATH') return 'OlymMATH Challenge';
         if (source === 'NuminaMath-CoT') return 'NuminaMath Challenge';
         if (source === 'OlympiadBench') return 'OlympiadBench Challenge';
-        if (source === 'Kangaroo 2025 (3-4)') return 'Kangaroo (3-4) Challenge';
+        if (source === 'BRIGHT (LeetCode)') return 'BRIGHT LeetCode Challenge';
+        if (source === 'BRIGHT (Economics)') return 'BRIGHT Economics Challenge';
         if (source === 'Kangaroo 2025 (5-6)') return 'Kangaroo (5-6) Challenge';
         return 'Olympiad Challenge';
     };
@@ -36,7 +37,8 @@ export const OlympiadLanding: React.FC = () => {
         if (source === 'OlymMATH') return 'Test your skills with high-quality problems from the OlymMATH dataset.';
         if (source === 'NuminaMath-CoT') return 'Practice Chain-of-Thought reasoning with complex math problems.';
         if (source === 'OlympiadBench') return 'Tackle advanced competition-level mathematics benchmarks.';
-        if (source === 'Kangaroo 2025 (3-4)') return 'Fun and challenging math problems for grades 3-4.';
+        if (source === 'BRIGHT (LeetCode)') return 'Algorithmic and coding challenges (Note: Answers not available).';
+        if (source === 'BRIGHT (Economics)') return 'Complex economic reasoning problems (Note: Answers not available).';
         if (source === 'Kangaroo 2025 (5-6)') return 'Step up your game with math problems for grades 5-6.';
         return 'Test your skills with high-quality problems from various datasets.';
     };
