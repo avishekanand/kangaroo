@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+sqlalchemy
+python-multipart
+pymupdf
+Pillow
+pdf2image
+aiofiles
+# torch
+# transformers
+# timm
+# einops
+# pillow
+# qwen-vl-utils
+# accelerate
+datasets
