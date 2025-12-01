@@ -115,10 +115,10 @@ export const Quiz: React.FC = () => {
             </div>
 
             {/* Main Card */}
-            <div className="w-full max-w-5xl bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row min-h-[600px]">
+            <div className={`w-full max-w-5xl bg-white rounded-3xl shadow-2xl overflow-hidden flex ${currentQuestion.source.includes('Kangaroo') ? 'flex-col' : 'flex-col md:flex-row'} min-h-[600px]`}>
 
                 {/* Question Area (Left/Top) */}
-                <div className="flex-1 bg-gray-50 p-8 md:p-12 flex flex-col justify-center border-b md:border-b-0 md:border-r border-gray-200 relative">
+                <div className={`flex-1 bg-gray-50 p-8 md:p-12 flex flex-col justify-center border-b ${currentQuestion.source.includes('Kangaroo') ? 'border-gray-200' : 'md:border-b-0 md:border-r border-gray-200'} relative`}>
                     <div className="absolute top-6 left-8 flex gap-3">
                         <span className="text-xs font-bold tracking-wider text-indigo-500 uppercase bg-indigo-50 px-2 py-1 rounded">
                             {currentQuestion.source}
@@ -159,10 +159,10 @@ export const Quiz: React.FC = () => {
                 </div>
 
                 {/* Options Area (Right/Bottom) */}
-                <div className="w-full md:w-[400px] bg-white p-8 flex flex-col">
+                <div className={`${currentQuestion.source.includes('Kangaroo') ? 'w-full border-t border-gray-200' : 'w-full md:w-[400px]'} bg-white p-8 flex flex-col`}>
                     <h3 className="text-gray-500 font-medium mb-6 text-sm uppercase tracking-wider">Select Answer</h3>
 
-                    <div className="flex-1 space-y-3">
+                    <div className={`${currentQuestion.source.includes('Kangaroo') ? 'grid grid-cols-5 gap-4' : 'flex-1 space-y-3'}`}>
                         {currentQuestion.options?.map((opt, idx) => {
                             const label = ['A', 'B', 'C', 'D', 'E'][idx];
                             const isSelected = selectedOption === label;
@@ -184,7 +184,7 @@ export const Quiz: React.FC = () => {
                                                 : isSubmitted
                                                     ? 'bg-white border-gray-100 text-gray-400 opacity-50'
                                                     : 'bg-white border-gray-200 hover:border-indigo-300 hover:bg-indigo-50/50'
-                                        }`}
+                                        } ${currentQuestion.source.includes('Kangaroo') ? 'flex-col justify-center text-center gap-2' : ''}`}
                                 >
                                     <span className={`w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full text-sm font-bold transition ${isSelected && isSubmitted
                                         ? isCorrect
@@ -198,7 +198,7 @@ export const Quiz: React.FC = () => {
                                         }`}>
                                         {label}
                                     </span>
-                                    <div className="font-medium text-lg flex-1">
+                                    <div className={`font-medium text-lg flex-1 ${currentQuestion.source.includes('Kangaroo') ? 'w-full' : ''}`}>
                                         <ReactMarkdown
                                             remarkPlugins={[remarkMath]}
                                             rehypePlugins={[rehypeKatex]}
@@ -211,7 +211,7 @@ export const Quiz: React.FC = () => {
                                     </div>
 
                                     {isSubmitted && isSelected && (
-                                        <div className="absolute right-4">
+                                        <div className={`${currentQuestion.source.includes('Kangaroo') ? 'absolute top-2 right-2' : 'absolute right-4'}`}>
                                             {isCorrect ? (
                                                 <CheckCircle className="text-green-500" size={24} />
                                             ) : (

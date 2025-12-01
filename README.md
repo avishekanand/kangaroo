@@ -10,6 +10,12 @@ A comprehensive platform for practicing advanced mathematics problems from vario
   - **OlympiadBench**: Advanced competition benchmarks.
   - **Kangaroo 2025**: Grades 5-6 problems with image support.
   - **BRIGHT**: Challenging problems from LeetCode and Economics (Retrieval-based).
+- **Dataset Selection**:
+  - **Categorized Navigation**: Browse datasets by category (Kangaroo, BRIGHT, Olympiad).
+  - **Diverse Sources**: Access problems from Math Kangaroo, Art of Problem Solving (BRIGHT), and various Olympiad benchmarks.
+- **Adaptive Layout**:
+  - **Standard View**: Side-by-side layout for text-heavy problems.
+  - **Landscape View**: Optimized top-bottom layout with horizontal options for image-based Kangaroo problems.
 - **Interactive Quiz UI**:
   - **LaTeX Rendering**: Beautifully rendered math equations in questions, options, and solutions.
   - **Step-by-Step Solutions**: Detailed explanations displayed in a rich, readable format.
