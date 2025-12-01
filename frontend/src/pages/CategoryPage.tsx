@@ -115,7 +115,7 @@ export const CategoryPage: React.FC = () => {
                     {category.datasets.map((dataset, idx) => (
                         <Link
                             key={idx}
-                            to={`/olympiad?source=${encodeURIComponent(dataset.source)}`}
+                            to={`/practice?source=${encodeURIComponent(dataset.source)}`}
                             className={`group bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-${dataset.color}-100 hover:border-${dataset.color}-200 relative overflow-hidden`}
                         >
                             <div className={`absolute top-0 right-0 w-32 h-32 bg-${dataset.color}-50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110`}></div>

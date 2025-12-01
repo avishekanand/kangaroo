@@ -25,7 +25,14 @@ export interface Question {
 
 // Removed unused PDF functions
 
-export const createSession = async (config: { limit: number; difficulty_min?: number; difficulty_max?: number }) => {
+export const createSession = async (config: {
+    limit: number;
+    difficulty_min?: number;
+    difficulty_max?: number;
+    user_id?: number;
+    mode?: 'practice' | 'challenge';
+    source?: string;
+}) => {
     const response = await api.post<Question[]>('/sessions', config);
     return response.data;
 };

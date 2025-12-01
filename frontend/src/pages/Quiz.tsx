@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Question } from '../api';
-import { CheckCircle, XCircle, ArrowRight, RefreshCw, Home, HelpCircle, Trophy } from 'lucide-react';
+import { CheckCircle, XCircle, ArrowRight, RefreshCw, Home, HelpCircle, Trophy, Clock } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import remarkGfm from 'remark-gfm';
 import rehypeKatex from 'rehype-katex';
 
+import { useUser } from '../context/UserContext';
+
 export const Quiz: React.FC = () => {
     const navigate = useNavigate();
+    const { user } = useUser();
     const [questions, setQuestions] = useState<Question[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [selectedOption, setSelectedOption] = useState<string | null>(null);
@@ -16,14 +19,48 @@ export const Quiz: React.FC = () => {
     const [score, setScore] = useState(0);
     const [showSummary, setShowSummary] = useState(false);
 
+    // Timer State
+    const [timeLeft, setTimeLeft] = useState<number | null>(null);
+
     useEffect(() => {
-        const stored = localStorage.getItem('currentSession');
-        if (stored) {
-            setQuestions(JSON.parse(stored));
+        const storedSession = localStorage.getItem('currentSession');
+        const storedConfig = localStorage.getItem('quizConfig');
+
+        if (storedSession) {
+            setQuestions(JSON.parse(storedSession));
         } else {
             navigate('/');
         }
+
+        if (storedConfig) {
+            const config = JSON.parse(storedConfig);
+            if (config.timeLimit) {
+                setTimeLeft(config.timeLimit);
+            }
+        }
     }, [navigate]);
+
+    // Timer Logic
+    useEffect(() => {
+        if (timeLeft === null || showSummary) return;
+
+        if (timeLeft <= 0) {
+            setShowSummary(true);
+            return;
+        }
+
+        const timer = setInterval(() => {
+            setTimeLeft(prev => (prev !== null ? prev - 1 : null));
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, [timeLeft, showSummary]);
+
+    const formatTime = (seconds: number) => {
+        const mins = Math.floor(seconds / 60);
+        const secs = seconds % 60;
+        return `${mins}:${secs.toString().padStart(2, '0')}`;
+    };
 
     if (questions.length === 0) return (
         <div className="min-h-screen bg-indigo-900 flex items-center justify-center text-white">
@@ -36,11 +73,30 @@ export const Quiz: React.FC = () => {
 
     const currentQuestion = questions[currentIndex];
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
         if (!selectedOption) return;
         setIsSubmitted(true);
-        if (selectedOption === currentQuestion.correct_option_label) {
+        const isCorrect = selectedOption === currentQuestion.correct_option_label;
+        if (isCorrect) {
             setScore(s => s + 1);
+        }
+
+        // Record attempt
+        if (user) {
+            try {
+                await fetch('http://localhost:8000/attempts', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        user_id: user.id,
+                        question_id: currentQuestion.id,
+                        selected_option: selectedOption,
+                        is_correct: isCorrect
+                    })
+                });
+            } catch (error) {
+                console.error('Failed to record attempt:', error);
+            }
         }
     };
 
@@ -61,7 +117,9 @@ export const Quiz: React.FC = () => {
                     <div className="bg-yellow-500/20 p-6 rounded-full inline-block mb-6 border border-yellow-500/30">
                         <Trophy size={64} className="text-yellow-400" />
                     </div>
-                    <h2 className="text-4xl font-bold text-white mb-2">Challenge Complete!</h2>
+                    <h2 className="text-4xl font-bold text-white mb-2">
+                        {timeLeft === 0 ? "Time's Up!" : "Challenge Complete!"}
+                    </h2>
                     <p className="text-indigo-200 text-lg mb-8">Here is how you performed</p>
 
                     <div className="bg-black/20 rounded-2xl p-8 mb-8">
@@ -106,9 +164,18 @@ export const Quiz: React.FC = () => {
                 <button onClick={() => navigate('/')} className="hover:text-white transition flex items-center gap-2">
                     <Home size={20} /> <span className="hidden md:inline">Exit</span>
                 </button>
-                <div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">
-                    Question {currentIndex + 1} of {questions.length}
+
+                <div className="flex items-center gap-4">
+                    <div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">
+                        Question {currentIndex + 1} of {questions.length}
+                    </div>
+                    {timeLeft !== null && (
+                        <div className={`bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm font-bold border border-white/10 flex items-center gap-2 ${timeLeft < 60 ? 'text-red-400 animate-pulse' : 'text-white'}`}>
+                            <Clock size={16} /> {formatTime(timeLeft)}
+                        </div>
+                    )}
                 </div>
+
                 <div className="flex items-center gap-2">
                     <HelpCircle size={20} className="hover:text-white cursor-pointer transition" />
                 </div>

@@ -51,19 +51,46 @@ def create_session(
         # Simple filter - in real app might need more complex topic matching
         # For now, let's assume exact match or just ignore if empty
         pass 
+    
+    if session_config.source:
+        query = query.filter(models.Question.source == session_config.source)
         
     if session_config.difficulty_min:
         query = query.filter(models.Question.difficulty >= session_config.difficulty_min)
     if session_config.difficulty_max:
         query = query.filter(models.Question.difficulty <= session_config.difficulty_max)
+
+    # Get all matching questions
+    all_questions = query.all()
+
+    # Filter by user attempts if user_id is provided
+    if session_config.user_id:
+        attempted_ids = db.query(models.Attempt.question_id).filter(models.Attempt.user_id == session_config.user_id).all()
+        attempted_ids = {id[0] for id in attempted_ids}
         
-    questions = query.all()
-    
-    # Random sample
-    if len(questions) > session_config.limit:
-        questions = random.sample(questions, session_config.limit)
+        unattempted_questions = [q for q in all_questions if q.id not in attempted_ids]
+        
+        if len(unattempted_questions) >= session_config.limit:
+            questions = random.sample(unattempted_questions, session_config.limit)
+        else:
+            # Not enough unattempted, take all unattempted and fill with attempted
+            needed = session_config.limit - len(unattempted_questions)
+            attempted_questions = [q for q in all_questions if q.id in attempted_ids]
+            
+            # If we still don't have enough total (unattempted + attempted), just take everything
+            if len(attempted_questions) < needed:
+                 questions = unattempted_questions + attempted_questions
+            else:
+                 questions = unattempted_questions + random.sample(attempted_questions, needed)
+            
+            random.shuffle(questions)
     else:
-        random.shuffle(questions)
+        # No user, just random sample
+        if len(all_questions) > session_config.limit:
+            questions = random.sample(all_questions, session_config.limit)
+        else:
+            questions = all_questions
+            random.shuffle(questions)
         
     return questions
 

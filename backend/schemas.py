@@ -11,7 +11,7 @@ class QuestionBase(BaseModel):
     solution: Optional[str] = None
     answer: Optional[str] = None
     topic: Optional[str] = None
-    difficulty: Optional[str] = None
+    difficulty: Optional[int] = None
     options: Optional[List[str]] = None
     correct_option_label: Optional[str] = None
     is_active: bool = True
@@ -36,4 +36,37 @@ class SessionCreate(BaseModel):
     difficulty_min: Optional[int] = None
     difficulty_max: Optional[int] = None
     topics: Optional[List[str]] = None
+    user_id: Optional[int] = None
+    mode: Optional[str] = "practice" # "practice" or "challenge"
+    source: Optional[str] = None
+
+class UserBase(BaseModel):
+    username: str
+
+class UserCreate(UserBase):
+    pass
+
+class User(UserBase):
+    id: int
+    created_at: datetime
+
+    class Config:
+        orm_mode = True
+
+class AttemptBase(BaseModel):
+    question_id: int
+    selected_option: str
+    is_correct: bool
+
+class AttemptCreate(AttemptBase):
+    user_id: int
+
+class Attempt(AttemptBase):
+    id: int
+    user_id: int
+    timestamp: datetime
+    question: Optional[Question] = None
+
+    class Config:
+        orm_mode = True
 

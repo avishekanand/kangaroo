@@ -17,7 +17,7 @@ class Question(Base):
     answer = Column(String, nullable=True) # Final answer
     
     topic = Column(String, nullable=True)
-    difficulty = Column(String, nullable=True) # Changed to String
+    difficulty = Column(Integer, nullable=True) # Changed to Integer
     
     options = Column(JSON, nullable=True) # For MCQs
     correct_option_label = Column(String, nullable=True) # For MCQs
@@ -28,3 +28,25 @@ class Question(Base):
     created_at = Column(DateTime, default=datetime.utcnow)
 
     # pdf relationship removed
+
+class User(Base):
+    __tablename__ = "users"
+
+    id = Column(Integer, primary_key=True, index=True)
+    username = Column(String, unique=True, index=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+    attempts = relationship("Attempt", back_populates="user")
+
+class Attempt(Base):
+    __tablename__ = "attempts"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"))
+    question_id = Column(Integer, ForeignKey("questions.id"))
+    selected_option = Column(String)
+    is_correct = Column(Boolean)
+    timestamp = Column(DateTime, default=datetime.utcnow)
+
+    user = relationship("User", back_populates="attempts")
+    question = relationship("Question")
