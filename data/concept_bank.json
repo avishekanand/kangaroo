@@ -1,0 +1,1048 @@
+{
+  "Arithmetic Sequences": [
+    {
+      "question": "Given a simple arithmetic sequence: 2, 5, 8, 11. Find the common difference and the first term.",
+      "answer": "Common difference = 3; First term = 2",
+      "parent_id": 0,
+      "parent_concept": "Arithmetic Sequences"
+    },
+    {
+      "question": "A sequence has a first term of 3 and a common difference of -1. Find the 5th term.",
+      "answer": "5th term = 1",
+      "parent_id": 0,
+      "parent_concept": "Arithmetic Sequences"
+    },
+    {
+      "question": "Solve for *x* in the equation 3*x* + 7 = 22.",
+      "answer": "x = 5",
+      "parent_id": 0,
+      "parent_concept": "Arithmetic Sequences"
+    },
+    {
+      "question": "Given the arithmetic sequence: 1, 4, 7, 10, ... find the *n*th term.",
+      "answer": "The *n*th term is 3*n* - 2",
+      "parent_id": 0,
+      "parent_concept": "Arithmetic Sequences"
+    },
+    {
+      "question": "Solve for *y* in the equation *y* + 6 = 12.",
+      "answer": "y = 6",
+      "parent_id": 0,
+      "parent_concept": "Arithmetic Sequences"
+    }
+  ],
+  "Algebra": [
+    {
+      "question": "Given a simple arithmetic sequence: 2, 5, 8, 11. Find the common difference and the first term.",
+      "answer": "Common difference = 3; First term = 2",
+      "parent_id": 0,
+      "parent_concept": "Algebra"
+    },
+    {
+      "question": "A sequence has a first term of 3 and a common difference of -1. Find the 5th term.",
+      "answer": "5th term = 1",
+      "parent_id": 0,
+      "parent_concept": "Algebra"
+    },
+    {
+      "question": "Solve for *x* in the equation 3*x* + 7 = 22.",
+      "answer": "x = 5",
+      "parent_id": 0,
+      "parent_concept": "Algebra"
+    },
+    {
+      "question": "Given the arithmetic sequence: 1, 4, 7, 10, ... find the *n*th term.",
+      "answer": "The *n*th term is 3*n* - 2",
+      "parent_id": 0,
+      "parent_concept": "Algebra"
+    },
+    {
+      "question": "Solve for *y* in the equation *y* + 6 = 12.",
+      "answer": "y = 6",
+      "parent_id": 0,
+      "parent_concept": "Algebra"
+    },
+    {
+      "question": "Given a function $f(x) = 2x + 1$, find $f^{-1}(7)$.",
+      "answer": "Let $y = 2x + 1$.  To find the inverse, solve for $x$: $x = \frac{y-1}{2}$. So $f^{-1}(y) = \frac{y-1}{2}$. Then $f^{-1}(7) = \frac{7-1}{2} = \frac{6}{2} = 3.",
+      "parent_id": 1,
+      "parent_concept": "Algebra"
+    },
+    {
+      "question": "What is the definition of an inverse function?",
+      "answer": "An inverse function, $g^{-1}(x)$, reverses the operation of a function $g(x)$. If $g(x) = y$, then $g^{-1}(y) = x$.",
+      "parent_id": 1,
+      "parent_concept": "Algebra"
+    },
+    {
+      "question": "Given $h(x) = x + 5$, find $h^{-1}(x)$.",
+      "answer": "Let $y = x + 5$. Solving for $x$: $x = y - 5$. Therefore, $h^{-1}(x) = x - 5.",
+      "parent_id": 1,
+      "parent_concept": "Algebra"
+    },
+    {
+      "question": "If $g(x) = 5x - 3$, find $g(2)$.",
+      "answer": "g(2) = 5(2) - 3 = 10 - 3 = 7.",
+      "parent_id": 1,
+      "parent_concept": "Algebra"
+    },
+    {
+      "question": "Solve for $x$ in the equation $y = 5x - 3$",
+      "answer": "To find the inverse, we set $x = 5y - 3$.  Solving for $y$: $y = \frac{x+3}{5}$.",
+      "parent_id": 1,
+      "parent_concept": "Algebra"
+    }
+  ],
+  "Functions": [
+    {
+      "question": "Given a function $f(x) = 2x + 1$, find $f^{-1}(7)$.",
+      "answer": "Let $y = 2x + 1$.  To find the inverse, solve for $x$: $x = \frac{y-1}{2}$. So $f^{-1}(y) = \frac{y-1}{2}$. Then $f^{-1}(7) = \frac{7-1}{2} = \frac{6}{2} = 3.",
+      "parent_id": 1,
+      "parent_concept": "Functions"
+    },
+    {
+      "question": "What is the definition of an inverse function?",
+      "answer": "An inverse function, $g^{-1}(x)$, reverses the operation of a function $g(x)$. If $g(x) = y$, then $g^{-1}(y) = x$.",
+      "parent_id": 1,
+      "parent_concept": "Functions"
+    },
+    {
+      "question": "Given $h(x) = x + 5$, find $h^{-1}(x)$.",
+      "answer": "Let $y = x + 5$. Solving for $x$: $x = y - 5$. Therefore, $h^{-1}(x) = x - 5.",
+      "parent_id": 1,
+      "parent_concept": "Functions"
+    },
+    {
+      "question": "If $g(x) = 5x - 3$, find $g(2)$.",
+      "answer": "g(2) = 5(2) - 3 = 10 - 3 = 7.",
+      "parent_id": 1,
+      "parent_concept": "Functions"
+    },
+    {
+      "question": "Solve for $x$ in the equation $y = 5x - 3$",
+      "answer": "To find the inverse, we set $x = 5y - 3$.  Solving for $y$: $y = \frac{x+3}{5}$.",
+      "parent_id": 1,
+      "parent_concept": "Functions"
+    }
+  ],
+  "Inverse Functions": [
+    {
+      "question": "Given a function $f(x) = 2x + 1$, find $f^{-1}(7)$.",
+      "answer": "Let $y = 2x + 1$.  To find the inverse, solve for $x$: $x = \frac{y-1}{2}$. So $f^{-1}(y) = \frac{y-1}{2}$. Then $f^{-1}(7) = \frac{7-1}{2} = \frac{6}{2} = 3.",
+      "parent_id": 1,
+      "parent_concept": "Inverse Functions"
+    },
+    {
+      "question": "What is the definition of an inverse function?",
+      "answer": "An inverse function, $g^{-1}(x)$, reverses the operation of a function $g(x)$. If $g(x) = y$, then $g^{-1}(y) = x$.",
+      "parent_id": 1,
+      "parent_concept": "Inverse Functions"
+    },
+    {
+      "question": "Given $h(x) = x + 5$, find $h^{-1}(x)$.",
+      "answer": "Let $y = x + 5$. Solving for $x$: $x = y - 5$. Therefore, $h^{-1}(x) = x - 5.",
+      "parent_id": 1,
+      "parent_concept": "Inverse Functions"
+    },
+    {
+      "question": "If $g(x) = 5x - 3$, find $g(2)$.",
+      "answer": "g(2) = 5(2) - 3 = 10 - 3 = 7.",
+      "parent_id": 1,
+      "parent_concept": "Inverse Functions"
+    },
+    {
+      "question": "Solve for $x$ in the equation $y = 5x - 3$",
+      "answer": "To find the inverse, we set $x = 5y - 3$.  Solving for $y$: $y = \frac{x+3}{5}$.",
+      "parent_id": 1,
+      "parent_concept": "Inverse Functions"
+    }
+  ],
+  "Area of a Rectangle": [
+    {
+      "question": "A rectangle has length $l$ and width $w$. The area of the rectangle is given by the formula $A = l \times w$.  What does this formula represent?",
+      "answer": "The area is the product of the length and width of the rectangle.",
+      "parent_id": 2,
+      "parent_concept": "Area of a Rectangle"
+    },
+    {
+      "question": "Calculate the area of a rectangle with length 5 meters and width 3 meters. What is the area?",
+      "answer": "15 square meters",
+      "parent_id": 2,
+      "parent_concept": "Area of a Rectangle"
+    },
+    {
+      "question": "Solve the equation $2x + 5 = 11$ for $x$. Explain the steps involved.",
+      "answer": "Subtract 5 from both sides: $2x = 6$. Divide both sides by 2: $x = 3$.",
+      "parent_id": 2,
+      "parent_concept": "Area of a Rectangle"
+    },
+    {
+      "question": "If $x = 4$, what is the value of $3x - 1$? ",
+      "answer": "11",
+      "parent_id": 2,
+      "parent_concept": "Area of a Rectangle"
+    },
+    {
+      "question": "A rectangle has dimensions $x+2$ and $x-1$.  If the area of this rectangle is 15 square meters, find the value of $x$.",
+      "answer": "x = 5",
+      "parent_id": 2,
+      "parent_concept": "Area of a Rectangle"
+    }
+  ],
+  "Algebra - Solving Linear Equations": [
+    {
+      "question": "A rectangle has length $l$ and width $w$. The area of the rectangle is given by the formula $A = l \times w$.  What does this formula represent?",
+      "answer": "The area is the product of the length and width of the rectangle.",
+      "parent_id": 2,
+      "parent_concept": "Algebra - Solving Linear Equations"
+    },
+    {
+      "question": "Calculate the area of a rectangle with length 5 meters and width 3 meters. What is the area?",
+      "answer": "15 square meters",
+      "parent_id": 2,
+      "parent_concept": "Algebra - Solving Linear Equations"
+    },
+    {
+      "question": "Solve the equation $2x + 5 = 11$ for $x$. Explain the steps involved.",
+      "answer": "Subtract 5 from both sides: $2x = 6$. Divide both sides by 2: $x = 3$.",
+      "parent_id": 2,
+      "parent_concept": "Algebra - Solving Linear Equations"
+    },
+    {
+      "question": "If $x = 4$, what is the value of $3x - 1$? ",
+      "answer": "11",
+      "parent_id": 2,
+      "parent_concept": "Algebra - Solving Linear Equations"
+    },
+    {
+      "question": "A rectangle has dimensions $x+2$ and $x-1$.  If the area of this rectangle is 15 square meters, find the value of $x$.",
+      "answer": "x = 5",
+      "parent_id": 2,
+      "parent_concept": "Algebra - Solving Linear Equations"
+    }
+  ],
+  "Logarithms": [
+    {
+      "question": "Evaluate $f(0)$ and $g(0)$ for the given functions $f(x) = \frac{1}{2} \text{log}_2(x+1)$ and $g(x) = \text{log}_2(x-1)$",
+      "answer": "f(0) = log_2(1) = 0 and g(0) = log_2(-1) which is undefined. This problem introduces log function evaluation and understanding of the domain restrictions.",
+      "parent_id": 3,
+      "parent_concept": "Logarithms"
+    },
+    {
+      "question": "Find the domain of $h(x) = \frac{1}{x}$ where $x \neq 0$.",
+      "answer": "The domain of $h(x) = \frac{1}{x}$ is all real numbers except for 0. This focuses on the fundamental understanding of domain restrictions for functions.",
+      "parent_id": 3,
+      "parent_concept": "Logarithms"
+    },
+    {
+      "question": "Given $k(x) = x-1$ and $l(x) = x+2$, determine if $k(x) = l(x)$ for all $x$. Explain your reasoning.",
+      "answer": "No, they are not equal. For $k(x) = l(x)$, we have $x - 1 = x + 2$, which simplifies to $-1 = 2$, a contradiction. This strengthens the ability to analyze function equality and introduce simple algebraic manipulation.",
+      "parent_id": 3,
+      "parent_concept": "Logarithms"
+    },
+    {
+      "question": "Consider the function $p(x) = \frac{x}{x+1}$. Find the range of this function.",
+      "answer": "The range of $p(x)$ is $(0,1)$. This introduces the concept of finding the range of a function based on its domain and relationships between variables.",
+      "parent_id": 3,
+      "parent_concept": "Logarithms"
+    },
+    {
+      "question": "Solve the inequality $2x + 3 > 0$ for $x$.",
+      "answer": null,
+      "parent_id": 3,
+      "parent_concept": "Logarithms"
+    },
+    {
+      "question": null,
+      "answer": "x > -3/2.  This tests a fundamental algebraic skill - solving linear inequalities, a core element for the final problem.",
+      "parent_id": 3,
+      "parent_concept": "Logarithms"
+    }
+  ],
+  "Domain of Functions": [
+    {
+      "question": "Evaluate $f(0)$ and $g(0)$ for the given functions $f(x) = \frac{1}{2} \text{log}_2(x+1)$ and $g(x) = \text{log}_2(x-1)$",
+      "answer": "f(0) = log_2(1) = 0 and g(0) = log_2(-1) which is undefined. This problem introduces log function evaluation and understanding of the domain restrictions.",
+      "parent_id": 3,
+      "parent_concept": "Domain of Functions"
+    },
+    {
+      "question": "Find the domain of $h(x) = \frac{1}{x}$ where $x \neq 0$.",
+      "answer": "The domain of $h(x) = \frac{1}{x}$ is all real numbers except for 0. This focuses on the fundamental understanding of domain restrictions for functions.",
+      "parent_id": 3,
+      "parent_concept": "Domain of Functions"
+    },
+    {
+      "question": "Given $k(x) = x-1$ and $l(x) = x+2$, determine if $k(x) = l(x)$ for all $x$. Explain your reasoning.",
+      "answer": "No, they are not equal. For $k(x) = l(x)$, we have $x - 1 = x + 2$, which simplifies to $-1 = 2$, a contradiction. This strengthens the ability to analyze function equality and introduce simple algebraic manipulation.",
+      "parent_id": 3,
+      "parent_concept": "Domain of Functions"
+    },
+    {
+      "question": "Consider the function $p(x) = \frac{x}{x+1}$. Find the range of this function.",
+      "answer": "The range of $p(x)$ is $(0,1)$. This introduces the concept of finding the range of a function based on its domain and relationships between variables.",
+      "parent_id": 3,
+      "parent_concept": "Domain of Functions"
+    },
+    {
+      "question": "Solve the inequality $2x + 3 > 0$ for $x$.",
+      "answer": null,
+      "parent_id": 3,
+      "parent_concept": "Domain of Functions"
+    },
+    {
+      "question": null,
+      "answer": "x > -3/2.  This tests a fundamental algebraic skill - solving linear inequalities, a core element for the final problem.",
+      "parent_id": 3,
+      "parent_concept": "Domain of Functions"
+    }
+  ],
+  "Function Parity": [
+    {
+      "question": "Evaluate $f(0)$ and $g(0)$ for the given functions $f(x) = \frac{1}{2} \text{log}_2(x+1)$ and $g(x) = \text{log}_2(x-1)$",
+      "answer": "f(0) = log_2(1) = 0 and g(0) = log_2(-1) which is undefined. This problem introduces log function evaluation and understanding of the domain restrictions.",
+      "parent_id": 3,
+      "parent_concept": "Function Parity"
+    },
+    {
+      "question": "Find the domain of $h(x) = \frac{1}{x}$ where $x \neq 0$.",
+      "answer": "The domain of $h(x) = \frac{1}{x}$ is all real numbers except for 0. This focuses on the fundamental understanding of domain restrictions for functions.",
+      "parent_id": 3,
+      "parent_concept": "Function Parity"
+    },
+    {
+      "question": "Given $k(x) = x-1$ and $l(x) = x+2$, determine if $k(x) = l(x)$ for all $x$. Explain your reasoning.",
+      "answer": "No, they are not equal. For $k(x) = l(x)$, we have $x - 1 = x + 2$, which simplifies to $-1 = 2$, a contradiction. This strengthens the ability to analyze function equality and introduce simple algebraic manipulation.",
+      "parent_id": 3,
+      "parent_concept": "Function Parity"
+    },
+    {
+      "question": "Consider the function $p(x) = \frac{x}{x+1}$. Find the range of this function.",
+      "answer": "The range of $p(x)$ is $(0,1)$. This introduces the concept of finding the range of a function based on its domain and relationships between variables.",
+      "parent_id": 3,
+      "parent_concept": "Function Parity"
+    },
+    {
+      "question": "Solve the inequality $2x + 3 > 0$ for $x$.",
+      "answer": null,
+      "parent_id": 3,
+      "parent_concept": "Function Parity"
+    },
+    {
+      "question": null,
+      "answer": "x > -3/2.  This tests a fundamental algebraic skill - solving linear inequalities, a core element for the final problem.",
+      "parent_id": 3,
+      "parent_concept": "Function Parity"
+    }
+  ],
+  "Inequalities": [
+    {
+      "question": "Evaluate $f(0)$ and $g(0)$ for the given functions $f(x) = \frac{1}{2} \text{log}_2(x+1)$ and $g(x) = \text{log}_2(x-1)$",
+      "answer": "f(0) = log_2(1) = 0 and g(0) = log_2(-1) which is undefined. This problem introduces log function evaluation and understanding of the domain restrictions.",
+      "parent_id": 3,
+      "parent_concept": "Inequalities"
+    },
+    {
+      "question": "Find the domain of $h(x) = \frac{1}{x}$ where $x \neq 0$.",
+      "answer": "The domain of $h(x) = \frac{1}{x}$ is all real numbers except for 0. This focuses on the fundamental understanding of domain restrictions for functions.",
+      "parent_id": 3,
+      "parent_concept": "Inequalities"
+    },
+    {
+      "question": "Given $k(x) = x-1$ and $l(x) = x+2$, determine if $k(x) = l(x)$ for all $x$. Explain your reasoning.",
+      "answer": "No, they are not equal. For $k(x) = l(x)$, we have $x - 1 = x + 2$, which simplifies to $-1 = 2$, a contradiction. This strengthens the ability to analyze function equality and introduce simple algebraic manipulation.",
+      "parent_id": 3,
+      "parent_concept": "Inequalities"
+    },
+    {
+      "question": "Consider the function $p(x) = \frac{x}{x+1}$. Find the range of this function.",
+      "answer": "The range of $p(x)$ is $(0,1)$. This introduces the concept of finding the range of a function based on its domain and relationships between variables.",
+      "parent_id": 3,
+      "parent_concept": "Inequalities"
+    },
+    {
+      "question": "Solve the inequality $2x + 3 > 0$ for $x$.",
+      "answer": null,
+      "parent_id": 3,
+      "parent_concept": "Inequalities"
+    },
+    {
+      "question": null,
+      "answer": "x > -3/2.  This tests a fundamental algebraic skill - solving linear inequalities, a core element for the final problem.",
+      "parent_id": 3,
+      "parent_concept": "Inequalities"
+    }
+  ],
+  "Radical Equations": [
+    {
+      "question": "Solve the equation $\\sqrt[3]{x} = 2$ for $x$.",
+      "answer": "x = 8",
+      "parent_id": 4,
+      "parent_concept": "Radical Equations"
+    },
+    {
+      "question": "Expand the expression $(x+y)^3$ fully.",
+      "answer": "x^3 + 3x^2y + 3xy^2 + y^3",
+      "parent_id": 4,
+      "parent_concept": "Radical Equations"
+    },
+    {
+      "question": "Solve the equation $x^3 = 8$ for $x$.",
+      "answer": "x = 2",
+      "parent_id": 4,
+      "parent_concept": "Radical Equations"
+    },
+    {
+      "question": "Simplify the expression $x^3 + 3x^2y + 3xy^2 + y^3$.",
+      "answer": " (x+y)^3",
+      "parent_id": 4,
+      "parent_concept": "Radical Equations"
+    },
+    {
+      "question": "Solve the equation $\\sqrt[3]{x-1} = 1$ for $x$.",
+      "answer": "x = 8",
+      "parent_id": 4,
+      "parent_concept": "Radical Equations"
+    }
+  ],
+  "Cubic Equations": [
+    {
+      "question": "Solve the equation $\\sqrt[3]{x} = 2$ for $x$.",
+      "answer": "x = 8",
+      "parent_id": 4,
+      "parent_concept": "Cubic Equations"
+    },
+    {
+      "question": "Expand the expression $(x+y)^3$ fully.",
+      "answer": "x^3 + 3x^2y + 3xy^2 + y^3",
+      "parent_id": 4,
+      "parent_concept": "Cubic Equations"
+    },
+    {
+      "question": "Solve the equation $x^3 = 8$ for $x$.",
+      "answer": "x = 2",
+      "parent_id": 4,
+      "parent_concept": "Cubic Equations"
+    },
+    {
+      "question": "Simplify the expression $x^3 + 3x^2y + 3xy^2 + y^3$.",
+      "answer": " (x+y)^3",
+      "parent_id": 4,
+      "parent_concept": "Cubic Equations"
+    },
+    {
+      "question": "Solve the equation $\\sqrt[3]{x-1} = 1$ for $x$.",
+      "answer": "x = 8",
+      "parent_id": 4,
+      "parent_concept": "Cubic Equations"
+    }
+  ],
+  "Algebraic Manipulation": [
+    {
+      "question": "Solve the equation $\\sqrt[3]{x} = 2$ for $x$.",
+      "answer": "x = 8",
+      "parent_id": 4,
+      "parent_concept": "Algebraic Manipulation"
+    },
+    {
+      "question": "Expand the expression $(x+y)^3$ fully.",
+      "answer": "x^3 + 3x^2y + 3xy^2 + y^3",
+      "parent_id": 4,
+      "parent_concept": "Algebraic Manipulation"
+    },
+    {
+      "question": "Solve the equation $x^3 = 8$ for $x$.",
+      "answer": "x = 2",
+      "parent_id": 4,
+      "parent_concept": "Algebraic Manipulation"
+    },
+    {
+      "question": "Simplify the expression $x^3 + 3x^2y + 3xy^2 + y^3$.",
+      "answer": " (x+y)^3",
+      "parent_id": 4,
+      "parent_concept": "Algebraic Manipulation"
+    },
+    {
+      "question": "Solve the equation $\\sqrt[3]{x-1} = 1$ for $x$.",
+      "answer": "x = 8",
+      "parent_id": 4,
+      "parent_concept": "Algebraic Manipulation"
+    }
+  ],
+  "Exponents": [
+    {
+      "question": "Solve the equation $\\sqrt[3]{x} = 2$ for $x$.",
+      "answer": "x = 8",
+      "parent_id": 4,
+      "parent_concept": "Exponents"
+    },
+    {
+      "question": "Expand the expression $(x+y)^3$ fully.",
+      "answer": "x^3 + 3x^2y + 3xy^2 + y^3",
+      "parent_id": 4,
+      "parent_concept": "Exponents"
+    },
+    {
+      "question": "Solve the equation $x^3 = 8$ for $x$.",
+      "answer": "x = 2",
+      "parent_id": 4,
+      "parent_concept": "Exponents"
+    },
+    {
+      "question": "Simplify the expression $x^3 + 3x^2y + 3xy^2 + y^3$.",
+      "answer": " (x+y)^3",
+      "parent_id": 4,
+      "parent_concept": "Exponents"
+    },
+    {
+      "question": "Solve the equation $\\sqrt[3]{x-1} = 1$ for $x$.",
+      "answer": "x = 8",
+      "parent_id": 4,
+      "parent_concept": "Exponents"
+    }
+  ],
+  "Trigonometry": [
+    {
+      "question": "Given a triangle $ABC$ with sides $a, b, c$ opposite angles $A, B, C$ respectively, derive the Law of Cosines.",
+      "answer": "a\u00b2 = b\u00b2 + c\u00b2 - 2bc cos(A)",
+      "parent_id": 5,
+      "parent_concept": "Trigonometry"
+    },
+    {
+      "question": "Recall and apply the half-angle formula for cosine: cos(x/2) = sqrt((1 + cos(x))/2).  Solve for C given that cos(C/2) = sqrt(5)/3.",
+      "answer": "C = arccos((2 * sqrt(5))/3) \u2248 0.148 radians (or approximately 8.33 degrees)",
+      "parent_id": 5,
+      "parent_concept": "Trigonometry"
+    },
+    {
+      "question": "Using the Law of Cosines, express cos(A) and cos(B) in terms of $a, b, c$ and $C$.",
+      "answer": "cos(A) = (b\u00b2 + c\u00b2 - a\u00b2)/(2bc) and cos(B) = (a\u00b2 + c\u00b2 - b\u00b2)/(2ac)",
+      "parent_id": 5,
+      "parent_concept": "Trigonometry"
+    },
+    {
+      "question": "Substitute the given value of C into the equation $a \text{cos}(B) + b \text{cos}(A) = 2$. Express $a$ and $b$ in terms of $C$ and then solve for the possible values of $a$ and $b$.",
+      "answer": "This step would involve significant algebraic manipulation and potentially numerical approximations due to the complexity of the expressions and solving for $a$ and $b$ in terms of $C$. The solution isn't easily represented by a single concise answer, but it builds the solving process.",
+      "parent_id": 5,
+      "parent_concept": "Trigonometry"
+    },
+    {
+      "question": "Recall the formula for the area of a triangle: Area = (1/2)ab sin(C).  Express sin(C) in terms of cos(C/2) and simplify to find the maximum area of the triangle given the constraint $a \text{cos}(B) + b \text{cos}(A) = 2$.",
+      "answer": "The area can be maximized by finding the optimal values of $a, b, c$ that satisfy the given conditions. The final answer would be a numerical value based on calculations performed in the previous steps.  The maximum area would likely involve a sophisticated process.",
+      "parent_id": 5,
+      "parent_concept": "Trigonometry"
+    }
+  ],
+  "Law of Cosines": [
+    {
+      "question": "Given a triangle $ABC$ with sides $a, b, c$ opposite angles $A, B, C$ respectively, derive the Law of Cosines.",
+      "answer": "a\u00b2 = b\u00b2 + c\u00b2 - 2bc cos(A)",
+      "parent_id": 5,
+      "parent_concept": "Law of Cosines"
+    },
+    {
+      "question": "Recall and apply the half-angle formula for cosine: cos(x/2) = sqrt((1 + cos(x))/2).  Solve for C given that cos(C/2) = sqrt(5)/3.",
+      "answer": "C = arccos((2 * sqrt(5))/3) \u2248 0.148 radians (or approximately 8.33 degrees)",
+      "parent_id": 5,
+      "parent_concept": "Law of Cosines"
+    },
+    {
+      "question": "Using the Law of Cosines, express cos(A) and cos(B) in terms of $a, b, c$ and $C$.",
+      "answer": "cos(A) = (b\u00b2 + c\u00b2 - a\u00b2)/(2bc) and cos(B) = (a\u00b2 + c\u00b2 - b\u00b2)/(2ac)",
+      "parent_id": 5,
+      "parent_concept": "Law of Cosines"
+    },
+    {
+      "question": "Substitute the given value of C into the equation $a \text{cos}(B) + b \text{cos}(A) = 2$. Express $a$ and $b$ in terms of $C$ and then solve for the possible values of $a$ and $b$.",
+      "answer": "This step would involve significant algebraic manipulation and potentially numerical approximations due to the complexity of the expressions and solving for $a$ and $b$ in terms of $C$. The solution isn't easily represented by a single concise answer, but it builds the solving process.",
+      "parent_id": 5,
+      "parent_concept": "Law of Cosines"
+    },
+    {
+      "question": "Recall the formula for the area of a triangle: Area = (1/2)ab sin(C).  Express sin(C) in terms of cos(C/2) and simplify to find the maximum area of the triangle given the constraint $a \text{cos}(B) + b \text{cos}(A) = 2$.",
+      "answer": "The area can be maximized by finding the optimal values of $a, b, c$ that satisfy the given conditions. The final answer would be a numerical value based on calculations performed in the previous steps.  The maximum area would likely involve a sophisticated process.",
+      "parent_id": 5,
+      "parent_concept": "Law of Cosines"
+    }
+  ],
+  "Area of a Triangle": [
+    {
+      "question": "Given a triangle $ABC$ with sides $a, b, c$ opposite angles $A, B, C$ respectively, derive the Law of Cosines.",
+      "answer": "a\u00b2 = b\u00b2 + c\u00b2 - 2bc cos(A)",
+      "parent_id": 5,
+      "parent_concept": "Area of a Triangle"
+    },
+    {
+      "question": "Recall and apply the half-angle formula for cosine: cos(x/2) = sqrt((1 + cos(x))/2).  Solve for C given that cos(C/2) = sqrt(5)/3.",
+      "answer": "C = arccos((2 * sqrt(5))/3) \u2248 0.148 radians (or approximately 8.33 degrees)",
+      "parent_id": 5,
+      "parent_concept": "Area of a Triangle"
+    },
+    {
+      "question": "Using the Law of Cosines, express cos(A) and cos(B) in terms of $a, b, c$ and $C$.",
+      "answer": "cos(A) = (b\u00b2 + c\u00b2 - a\u00b2)/(2bc) and cos(B) = (a\u00b2 + c\u00b2 - b\u00b2)/(2ac)",
+      "parent_id": 5,
+      "parent_concept": "Area of a Triangle"
+    },
+    {
+      "question": "Substitute the given value of C into the equation $a \text{cos}(B) + b \text{cos}(A) = 2$. Express $a$ and $b$ in terms of $C$ and then solve for the possible values of $a$ and $b$.",
+      "answer": "This step would involve significant algebraic manipulation and potentially numerical approximations due to the complexity of the expressions and solving for $a$ and $b$ in terms of $C$. The solution isn't easily represented by a single concise answer, but it builds the solving process.",
+      "parent_id": 5,
+      "parent_concept": "Area of a Triangle"
+    },
+    {
+      "question": "Recall the formula for the area of a triangle: Area = (1/2)ab sin(C).  Express sin(C) in terms of cos(C/2) and simplify to find the maximum area of the triangle given the constraint $a \text{cos}(B) + b \text{cos}(A) = 2$.",
+      "answer": "The area can be maximized by finding the optimal values of $a, b, c$ that satisfy the given conditions. The final answer would be a numerical value based on calculations performed in the previous steps.  The maximum area would likely involve a sophisticated process.",
+      "parent_id": 5,
+      "parent_concept": "Area of a Triangle"
+    }
+  ],
+  "Half-Angle Identities": [
+    {
+      "question": "Given a triangle $ABC$ with sides $a, b, c$ opposite angles $A, B, C$ respectively, derive the Law of Cosines.",
+      "answer": "a\u00b2 = b\u00b2 + c\u00b2 - 2bc cos(A)",
+      "parent_id": 5,
+      "parent_concept": "Half-Angle Identities"
+    },
+    {
+      "question": "Recall and apply the half-angle formula for cosine: cos(x/2) = sqrt((1 + cos(x))/2).  Solve for C given that cos(C/2) = sqrt(5)/3.",
+      "answer": "C = arccos((2 * sqrt(5))/3) \u2248 0.148 radians (or approximately 8.33 degrees)",
+      "parent_id": 5,
+      "parent_concept": "Half-Angle Identities"
+    },
+    {
+      "question": "Using the Law of Cosines, express cos(A) and cos(B) in terms of $a, b, c$ and $C$.",
+      "answer": "cos(A) = (b\u00b2 + c\u00b2 - a\u00b2)/(2bc) and cos(B) = (a\u00b2 + c\u00b2 - b\u00b2)/(2ac)",
+      "parent_id": 5,
+      "parent_concept": "Half-Angle Identities"
+    },
+    {
+      "question": "Substitute the given value of C into the equation $a \text{cos}(B) + b \text{cos}(A) = 2$. Express $a$ and $b$ in terms of $C$ and then solve for the possible values of $a$ and $b$.",
+      "answer": "This step would involve significant algebraic manipulation and potentially numerical approximations due to the complexity of the expressions and solving for $a$ and $b$ in terms of $C$. The solution isn't easily represented by a single concise answer, but it builds the solving process.",
+      "parent_id": 5,
+      "parent_concept": "Half-Angle Identities"
+    },
+    {
+      "question": "Recall the formula for the area of a triangle: Area = (1/2)ab sin(C).  Express sin(C) in terms of cos(C/2) and simplify to find the maximum area of the triangle given the constraint $a \text{cos}(B) + b \text{cos}(A) = 2$.",
+      "answer": "The area can be maximized by finding the optimal values of $a, b, c$ that satisfy the given conditions. The final answer would be a numerical value based on calculations performed in the previous steps.  The maximum area would likely involve a sophisticated process.",
+      "parent_id": 5,
+      "parent_concept": "Half-Angle Identities"
+    }
+  ],
+  "Solving Equations": [
+    {
+      "question": "Given a triangle $ABC$ with sides $a, b, c$ opposite angles $A, B, C$ respectively, derive the Law of Cosines.",
+      "answer": "a\u00b2 = b\u00b2 + c\u00b2 - 2bc cos(A)",
+      "parent_id": 5,
+      "parent_concept": "Solving Equations"
+    },
+    {
+      "question": "Recall and apply the half-angle formula for cosine: cos(x/2) = sqrt((1 + cos(x))/2).  Solve for C given that cos(C/2) = sqrt(5)/3.",
+      "answer": "C = arccos((2 * sqrt(5))/3) \u2248 0.148 radians (or approximately 8.33 degrees)",
+      "parent_id": 5,
+      "parent_concept": "Solving Equations"
+    },
+    {
+      "question": "Using the Law of Cosines, express cos(A) and cos(B) in terms of $a, b, c$ and $C$.",
+      "answer": "cos(A) = (b\u00b2 + c\u00b2 - a\u00b2)/(2bc) and cos(B) = (a\u00b2 + c\u00b2 - b\u00b2)/(2ac)",
+      "parent_id": 5,
+      "parent_concept": "Solving Equations"
+    },
+    {
+      "question": "Substitute the given value of C into the equation $a \text{cos}(B) + b \text{cos}(A) = 2$. Express $a$ and $b$ in terms of $C$ and then solve for the possible values of $a$ and $b$.",
+      "answer": "This step would involve significant algebraic manipulation and potentially numerical approximations due to the complexity of the expressions and solving for $a$ and $b$ in terms of $C$. The solution isn't easily represented by a single concise answer, but it builds the solving process.",
+      "parent_id": 5,
+      "parent_concept": "Solving Equations"
+    },
+    {
+      "question": "Recall the formula for the area of a triangle: Area = (1/2)ab sin(C).  Express sin(C) in terms of cos(C/2) and simplify to find the maximum area of the triangle given the constraint $a \text{cos}(B) + b \text{cos}(A) = 2$.",
+      "answer": "The area can be maximized by finding the optimal values of $a, b, c$ that satisfy the given conditions. The final answer would be a numerical value based on calculations performed in the previous steps.  The maximum area would likely involve a sophisticated process.",
+      "parent_id": 5,
+      "parent_concept": "Solving Equations"
+    }
+  ],
+  "Average": [
+    {
+      "question": "A page has 280 frames on average. If a page has 300 frames, how many frames are there on that page?",
+      "answer": "300",
+      "parent_id": 6,
+      "parent_concept": "Average"
+    },
+    {
+      "question": "Calculate the average number of frames per page if a page has 305 frames and 7 pages have this number.  What is the total number of frames across these 7 pages?",
+      "answer": "2135",
+      "parent_id": 6,
+      "parent_concept": "Average"
+    },
+    {
+      "question": "If a page has 250 frames, what is the number of frames that needs to be added to complete a page if the average is 280 frames?",
+      "answer": "30",
+      "parent_id": 6,
+      "parent_concept": "Average"
+    },
+    {
+      "question": "A page has 280 frames.  If a page contains 120 frames, how many frames are *missing* from that page?",
+      "answer": "160",
+      "parent_id": 6,
+      "parent_concept": "Average"
+    },
+    {
+      "question": "A comic book has 10 pages, and the average number of frames per page is 280.  If 3 pages have 270 frames, how many frames are on the remaining pages?",
+      "answer": "2400",
+      "parent_id": 6,
+      "parent_concept": "Average"
+    }
+  ],
+  "Weighted Average": [
+    {
+      "question": "A page has 280 frames on average. If a page has 300 frames, how many frames are there on that page?",
+      "answer": "300",
+      "parent_id": 6,
+      "parent_concept": "Weighted Average"
+    },
+    {
+      "question": "Calculate the average number of frames per page if a page has 305 frames and 7 pages have this number.  What is the total number of frames across these 7 pages?",
+      "answer": "2135",
+      "parent_id": 6,
+      "parent_concept": "Weighted Average"
+    },
+    {
+      "question": "If a page has 250 frames, what is the number of frames that needs to be added to complete a page if the average is 280 frames?",
+      "answer": "30",
+      "parent_id": 6,
+      "parent_concept": "Weighted Average"
+    },
+    {
+      "question": "A page has 280 frames.  If a page contains 120 frames, how many frames are *missing* from that page?",
+      "answer": "160",
+      "parent_id": 6,
+      "parent_concept": "Weighted Average"
+    },
+    {
+      "question": "A comic book has 10 pages, and the average number of frames per page is 280.  If 3 pages have 270 frames, how many frames are on the remaining pages?",
+      "answer": "2400",
+      "parent_id": 6,
+      "parent_concept": "Weighted Average"
+    }
+  ],
+  "Algebraic Equation": [
+    {
+      "question": "A page has 280 frames on average. If a page has 300 frames, how many frames are there on that page?",
+      "answer": "300",
+      "parent_id": 6,
+      "parent_concept": "Algebraic Equation"
+    },
+    {
+      "question": "Calculate the average number of frames per page if a page has 305 frames and 7 pages have this number.  What is the total number of frames across these 7 pages?",
+      "answer": "2135",
+      "parent_id": 6,
+      "parent_concept": "Algebraic Equation"
+    },
+    {
+      "question": "If a page has 250 frames, what is the number of frames that needs to be added to complete a page if the average is 280 frames?",
+      "answer": "30",
+      "parent_id": 6,
+      "parent_concept": "Algebraic Equation"
+    },
+    {
+      "question": "A page has 280 frames.  If a page contains 120 frames, how many frames are *missing* from that page?",
+      "answer": "160",
+      "parent_id": 6,
+      "parent_concept": "Algebraic Equation"
+    },
+    {
+      "question": "A comic book has 10 pages, and the average number of frames per page is 280.  If 3 pages have 270 frames, how many frames are on the remaining pages?",
+      "answer": "2400",
+      "parent_id": 6,
+      "parent_concept": "Algebraic Equation"
+    }
+  ],
+  "Arc Length": [
+    {
+      "question": "A circle has a central angle of $360^\text{o}$. If the radius is $r$, what is the length of the arc subtended by a central angle of $90^\text{o}$?",
+      "answer": "$\frac{3\text{\u03c0}}{2}$",
+      "parent_id": 7,
+      "parent_concept": "Arc Length"
+    },
+    {
+      "question": "The arc length $s$ of a circle with radius $r$ and central angle $\theta$ (in degrees) is given by the formula $s = \frac{\theta}{360^\text{o}} \times 2\text{\u03c0}r$.  Calculate the arc length of a circle with radius $r$ and central angle $60^\text{o}$.",
+      "answer": "$\frac{\text{\u03c0}}{3}$",
+      "parent_id": 7,
+      "parent_concept": "Arc Length"
+    },
+    {
+      "question": "What is the area of a circle with radius $r$?",
+      "answer": "\u03c0r\u00b2",
+      "parent_id": 7,
+      "parent_concept": "Arc Length"
+    },
+    {
+      "question": "A circle has a radius of $5$ cm. What is its area?",
+      "answer": "25\u03c0",
+      "parent_id": 7,
+      "parent_concept": "Arc Length"
+    },
+    {
+      "question": "If an arc of $60^{\text{o}}$ on circle $C$ has length $L_C$ and an arc of $40^{\text{o}}$ on circle $D$ has length $L_D$, and $L_C = L_D$, what is the ratio of the radii of circle $C$ and circle $D$?",
+      "answer": "$\frac{3}{2}$",
+      "parent_id": 7,
+      "parent_concept": "Arc Length"
+    }
+  ],
+  "Circle Geometry": [
+    {
+      "question": "A circle has a central angle of $360^\text{o}$. If the radius is $r$, what is the length of the arc subtended by a central angle of $90^\text{o}$?",
+      "answer": "$\frac{3\text{\u03c0}}{2}$",
+      "parent_id": 7,
+      "parent_concept": "Circle Geometry"
+    },
+    {
+      "question": "The arc length $s$ of a circle with radius $r$ and central angle $\theta$ (in degrees) is given by the formula $s = \frac{\theta}{360^\text{o}} \times 2\text{\u03c0}r$.  Calculate the arc length of a circle with radius $r$ and central angle $60^\text{o}$.",
+      "answer": "$\frac{\text{\u03c0}}{3}$",
+      "parent_id": 7,
+      "parent_concept": "Circle Geometry"
+    },
+    {
+      "question": "What is the area of a circle with radius $r$?",
+      "answer": "\u03c0r\u00b2",
+      "parent_id": 7,
+      "parent_concept": "Circle Geometry"
+    },
+    {
+      "question": "A circle has a radius of $5$ cm. What is its area?",
+      "answer": "25\u03c0",
+      "parent_id": 7,
+      "parent_concept": "Circle Geometry"
+    },
+    {
+      "question": "If an arc of $60^{\text{o}}$ on circle $C$ has length $L_C$ and an arc of $40^{\text{o}}$ on circle $D$ has length $L_D$, and $L_C = L_D$, what is the ratio of the radii of circle $C$ and circle $D$?",
+      "answer": "$\frac{3}{2}$",
+      "parent_id": 7,
+      "parent_concept": "Circle Geometry"
+    }
+  ],
+  "Area of a Circle": [
+    {
+      "question": "A circle has a central angle of $360^\text{o}$. If the radius is $r$, what is the length of the arc subtended by a central angle of $90^\text{o}$?",
+      "answer": "$\frac{3\text{\u03c0}}{2}$",
+      "parent_id": 7,
+      "parent_concept": "Area of a Circle"
+    },
+    {
+      "question": "The arc length $s$ of a circle with radius $r$ and central angle $\theta$ (in degrees) is given by the formula $s = \frac{\theta}{360^\text{o}} \times 2\text{\u03c0}r$.  Calculate the arc length of a circle with radius $r$ and central angle $60^\text{o}$.",
+      "answer": "$\frac{\text{\u03c0}}{3}$",
+      "parent_id": 7,
+      "parent_concept": "Area of a Circle"
+    },
+    {
+      "question": "What is the area of a circle with radius $r$?",
+      "answer": "\u03c0r\u00b2",
+      "parent_id": 7,
+      "parent_concept": "Area of a Circle"
+    },
+    {
+      "question": "A circle has a radius of $5$ cm. What is its area?",
+      "answer": "25\u03c0",
+      "parent_id": 7,
+      "parent_concept": "Area of a Circle"
+    },
+    {
+      "question": "If an arc of $60^{\text{o}}$ on circle $C$ has length $L_C$ and an arc of $40^{\text{o}}$ on circle $D$ has length $L_D$, and $L_C = L_D$, what is the ratio of the radii of circle $C$ and circle $D$?",
+      "answer": "$\frac{3}{2}$",
+      "parent_id": 7,
+      "parent_concept": "Area of a Circle"
+    }
+  ],
+  "Proportions": [
+    {
+      "question": "A circle has a central angle of $360^\text{o}$. If the radius is $r$, what is the length of the arc subtended by a central angle of $90^\text{o}$?",
+      "answer": "$\frac{3\text{\u03c0}}{2}$",
+      "parent_id": 7,
+      "parent_concept": "Proportions"
+    },
+    {
+      "question": "The arc length $s$ of a circle with radius $r$ and central angle $\theta$ (in degrees) is given by the formula $s = \frac{\theta}{360^\text{o}} \times 2\text{\u03c0}r$.  Calculate the arc length of a circle with radius $r$ and central angle $60^\text{o}$.",
+      "answer": "$\frac{\text{\u03c0}}{3}$",
+      "parent_id": 7,
+      "parent_concept": "Proportions"
+    },
+    {
+      "question": "What is the area of a circle with radius $r$?",
+      "answer": "\u03c0r\u00b2",
+      "parent_id": 7,
+      "parent_concept": "Proportions"
+    },
+    {
+      "question": "A circle has a radius of $5$ cm. What is its area?",
+      "answer": "25\u03c0",
+      "parent_id": 7,
+      "parent_concept": "Proportions"
+    },
+    {
+      "question": "If an arc of $60^{\text{o}}$ on circle $C$ has length $L_C$ and an arc of $40^{\text{o}}$ on circle $D$ has length $L_D$, and $L_C = L_D$, what is the ratio of the radii of circle $C$ and circle $D$?",
+      "answer": "$\frac{3}{2}$",
+      "parent_id": 7,
+      "parent_concept": "Proportions"
+    }
+  ],
+  "Distance Formula": [
+    {
+      "question": "Calculate the distance between the center of a circle and a point on the circle.  Given a circle with center (h, k) and radius r, derive the formula for the distance between the center and any point (x, y) on the circle.",
+      "answer": "The distance is given by the distance formula:  \u221a((x-h)\u00b2 + (y-k)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Distance Formula"
+    },
+    {
+      "question": "Determine the distance between two points in a plane.  Given two points A(x1, y1) and B(x2, y2), prove and derive the distance formula between them.",
+      "answer": "The distance between A and B is \u221a((x2 - x1)\u00b2 + (y2 - y1)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Distance Formula"
+    },
+    {
+      "question": "Work with vectors in 2D space.  Given two points A(x1, y1) and B(x2, y2), express the vector  AB as a vector, and demonstrate how to calculate its magnitude (length).",
+      "answer": "AB = <x2 - x1, y2 - y1>, and |AB| = \u221a((x2 - x1)\u00b2 + (y2 - y1)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Distance Formula"
+    },
+    {
+      "question": "Solve a linear equation in two variables.  Solve the equation x + y = 1 for x in terms of y (or vice-versa).",
+      "answer": "x = 1 - y or y = 1 - x.",
+      "parent_id": 8,
+      "parent_concept": "Distance Formula"
+    },
+    {
+      "question": "Calculate the distance between two points given their coordinates. Calculate the distance between the point (1, 1) and the line x+y=1 using the point-to-line distance formula.  This will require understanding the formula and applying it correctly.",
+      "answer": "The distance is |(1 - 0) - 1| / \u221a1^2 + 1^2 = 0.",
+      "parent_id": 8,
+      "parent_concept": "Distance Formula"
+    }
+  ],
+  "Geometric Transformations": [
+    {
+      "question": "Calculate the distance between the center of a circle and a point on the circle.  Given a circle with center (h, k) and radius r, derive the formula for the distance between the center and any point (x, y) on the circle.",
+      "answer": "The distance is given by the distance formula:  \u221a((x-h)\u00b2 + (y-k)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Geometric Transformations"
+    },
+    {
+      "question": "Determine the distance between two points in a plane.  Given two points A(x1, y1) and B(x2, y2), prove and derive the distance formula between them.",
+      "answer": "The distance between A and B is \u221a((x2 - x1)\u00b2 + (y2 - y1)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Geometric Transformations"
+    },
+    {
+      "question": "Work with vectors in 2D space.  Given two points A(x1, y1) and B(x2, y2), express the vector  AB as a vector, and demonstrate how to calculate its magnitude (length).",
+      "answer": "AB = <x2 - x1, y2 - y1>, and |AB| = \u221a((x2 - x1)\u00b2 + (y2 - y1)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Geometric Transformations"
+    },
+    {
+      "question": "Solve a linear equation in two variables.  Solve the equation x + y = 1 for x in terms of y (or vice-versa).",
+      "answer": "x = 1 - y or y = 1 - x.",
+      "parent_id": 8,
+      "parent_concept": "Geometric Transformations"
+    },
+    {
+      "question": "Calculate the distance between two points given their coordinates. Calculate the distance between the point (1, 1) and the line x+y=1 using the point-to-line distance formula.  This will require understanding the formula and applying it correctly.",
+      "answer": "The distance is |(1 - 0) - 1| / \u221a1^2 + 1^2 = 0.",
+      "parent_id": 8,
+      "parent_concept": "Geometric Transformations"
+    }
+  ],
+  "Vector Algebra": [
+    {
+      "question": "Calculate the distance between the center of a circle and a point on the circle.  Given a circle with center (h, k) and radius r, derive the formula for the distance between the center and any point (x, y) on the circle.",
+      "answer": "The distance is given by the distance formula:  \u221a((x-h)\u00b2 + (y-k)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Vector Algebra"
+    },
+    {
+      "question": "Determine the distance between two points in a plane.  Given two points A(x1, y1) and B(x2, y2), prove and derive the distance formula between them.",
+      "answer": "The distance between A and B is \u221a((x2 - x1)\u00b2 + (y2 - y1)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Vector Algebra"
+    },
+    {
+      "question": "Work with vectors in 2D space.  Given two points A(x1, y1) and B(x2, y2), express the vector  AB as a vector, and demonstrate how to calculate its magnitude (length).",
+      "answer": "AB = <x2 - x1, y2 - y1>, and |AB| = \u221a((x2 - x1)\u00b2 + (y2 - y1)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Vector Algebra"
+    },
+    {
+      "question": "Solve a linear equation in two variables.  Solve the equation x + y = 1 for x in terms of y (or vice-versa).",
+      "answer": "x = 1 - y or y = 1 - x.",
+      "parent_id": 8,
+      "parent_concept": "Vector Algebra"
+    },
+    {
+      "question": "Calculate the distance between two points given their coordinates. Calculate the distance between the point (1, 1) and the line x+y=1 using the point-to-line distance formula.  This will require understanding the formula and applying it correctly.",
+      "answer": "The distance is |(1 - 0) - 1| / \u221a1^2 + 1^2 = 0.",
+      "parent_id": 8,
+      "parent_concept": "Vector Algebra"
+    }
+  ],
+  "Circle Equations": [
+    {
+      "question": "Calculate the distance between the center of a circle and a point on the circle.  Given a circle with center (h, k) and radius r, derive the formula for the distance between the center and any point (x, y) on the circle.",
+      "answer": "The distance is given by the distance formula:  \u221a((x-h)\u00b2 + (y-k)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Circle Equations"
+    },
+    {
+      "question": "Determine the distance between two points in a plane.  Given two points A(x1, y1) and B(x2, y2), prove and derive the distance formula between them.",
+      "answer": "The distance between A and B is \u221a((x2 - x1)\u00b2 + (y2 - y1)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Circle Equations"
+    },
+    {
+      "question": "Work with vectors in 2D space.  Given two points A(x1, y1) and B(x2, y2), express the vector  AB as a vector, and demonstrate how to calculate its magnitude (length).",
+      "answer": "AB = <x2 - x1, y2 - y1>, and |AB| = \u221a((x2 - x1)\u00b2 + (y2 - y1)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Circle Equations"
+    },
+    {
+      "question": "Solve a linear equation in two variables.  Solve the equation x + y = 1 for x in terms of y (or vice-versa).",
+      "answer": "x = 1 - y or y = 1 - x.",
+      "parent_id": 8,
+      "parent_concept": "Circle Equations"
+    },
+    {
+      "question": "Calculate the distance between two points given their coordinates. Calculate the distance between the point (1, 1) and the line x+y=1 using the point-to-line distance formula.  This will require understanding the formula and applying it correctly.",
+      "answer": "The distance is |(1 - 0) - 1| / \u221a1^2 + 1^2 = 0.",
+      "parent_id": 8,
+      "parent_concept": "Circle Equations"
+    }
+  ],
+  "Linear Equations": [
+    {
+      "question": "Calculate the distance between the center of a circle and a point on the circle.  Given a circle with center (h, k) and radius r, derive the formula for the distance between the center and any point (x, y) on the circle.",
+      "answer": "The distance is given by the distance formula:  \u221a((x-h)\u00b2 + (y-k)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Linear Equations"
+    },
+    {
+      "question": "Determine the distance between two points in a plane.  Given two points A(x1, y1) and B(x2, y2), prove and derive the distance formula between them.",
+      "answer": "The distance between A and B is \u221a((x2 - x1)\u00b2 + (y2 - y1)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Linear Equations"
+    },
+    {
+      "question": "Work with vectors in 2D space.  Given two points A(x1, y1) and B(x2, y2), express the vector  AB as a vector, and demonstrate how to calculate its magnitude (length).",
+      "answer": "AB = <x2 - x1, y2 - y1>, and |AB| = \u221a((x2 - x1)\u00b2 + (y2 - y1)\u00b2).",
+      "parent_id": 8,
+      "parent_concept": "Linear Equations"
+    },
+    {
+      "question": "Solve a linear equation in two variables.  Solve the equation x + y = 1 for x in terms of y (or vice-versa).",
+      "answer": "x = 1 - y or y = 1 - x.",
+      "parent_id": 8,
+      "parent_concept": "Linear Equations"
+    },
+    {
+      "question": "Calculate the distance between two points given their coordinates. Calculate the distance between the point (1, 1) and the line x+y=1 using the point-to-line distance formula.  This will require understanding the formula and applying it correctly.",
+      "answer": "The distance is |(1 - 0) - 1| / \u221a1^2 + 1^2 = 0.",
+      "parent_id": 8,
+      "parent_concept": "Linear Equations"
+    }
+  ]
+}

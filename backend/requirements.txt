@@ -15,3 +15,4 @@ aiofiles
 # accelerate
 datasets
 requests
+tqdm

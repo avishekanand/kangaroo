@@ -1,0 +1,1391 @@
+[
+  {
+    "id": 0,
+    "original_problem": "Consider the terms of an arithmetic sequence: $-\\frac{1}{3}, y+2, 4y, \\ldots$. Solve for $y$.",
+    "original_solution": "For an arithmetic sequence, the difference between consecutive terms must be equal. Therefore, we can set up the following equations based on the sequence given:\n\\[ (y + 2) - \\left(-\\frac{1}{3}\\right) = 4y - (y+2) \\]\n\nSimplify and solve these equations:\n\\[ y + 2 + \\frac{1}{3} = 4y - y - 2 \\]\n\\[ y + \\frac{7}{3} = 3y - 2 \\]\n\\[ \\frac{7}{3} + 2 = 3y - y \\]\n\\[ \\frac{13}{3} = 2y \\]\n\\[ y = \\frac{13}{6} \\]\n\nThus, the value of $y$ that satisfies the given arithmetic sequence is $\\boxed{\\frac{13}{6}}$.",
+    "concepts": [
+      "Arithmetic Sequences",
+      "Algebra"
+    ],
+    "sub_problems": [
+      {
+        "question": "Given a simple arithmetic sequence: 2, 5, 8, 11. Find the common difference and the first term.",
+        "answer": "Common difference = 3; First term = 2",
+        "concept": "Arithmetic Sequences"
+      },
+      {
+        "question": "A sequence has a first term of 3 and a common difference of -1. Find the 5th term.",
+        "answer": "5th term = 1",
+        "concept": "Arithmetic Sequences"
+      },
+      {
+        "question": "Solve for *x* in the equation 3*x* + 7 = 22.",
+        "answer": "x = 5",
+        "concept": "Algebra - Linear Equations"
+      },
+      {
+        "question": "Given the arithmetic sequence: 1, 4, 7, 10, ... find the *n*th term.",
+        "answer": "The *n*th term is 3*n* - 2",
+        "concept": "Arithmetic Sequences"
+      },
+      {
+        "question": "Solve for *y* in the equation *y* + 6 = 12.",
+        "answer": "y = 6",
+        "concept": "Algebra - Linear Equations"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "original_problem": "Suppose that $g(x) = 5x - 3$. What is $g^{-1}(g^{-1}(14))$?",
+    "original_solution": "First, we need to find the inverse function $g^{-1}(x)$. Given $g(x) = 5x - 3$, solve for $x$:\n\\[ y = 5x - 3 \\]\n\\[ y + 3 = 5x \\]\n\\[ x = \\frac{y + 3}{5} \\]\nThus, $g^{-1}(x) = \\frac{x + 3}{5}$.\n\nNow, apply $g^{-1}$ twice to the given value $14$:\n\\[ g^{-1}(14) = \\frac{14 + 3}{5} = \\frac{17}{5} \\]\n\\[ g^{-1}\\left(\\frac{17}{5}\\right) = \\frac{\\frac{17}{5} + 3}{5} = \\frac{\\frac{17}{5} + \\frac{15}{5}}{5} = \\frac{32}{5 \\times 5} = \\frac{32}{25} \\]\n\nThus, $g^{-1}(g^{-1}(14)) = \\boxed{\\frac{32}{25}}$.",
+    "concepts": [
+      "Functions",
+      "Inverse Functions",
+      "Algebra"
+    ],
+    "sub_problems": [
+      {
+        "question": "Given a function $f(x) = 2x + 1$, find $f^{-1}(7)$.",
+        "answer": "Let $y = 2x + 1$.  To find the inverse, solve for $x$: $x = \frac{y-1}{2}$. So $f^{-1}(y) = \frac{y-1}{2}$. Then $f^{-1}(7) = \frac{7-1}{2} = \frac{6}{2} = 3.",
+        "concept": "Inverse Functions"
+      },
+      {
+        "question": "What is the definition of an inverse function?",
+        "answer": "An inverse function, $g^{-1}(x)$, reverses the operation of a function $g(x)$. If $g(x) = y$, then $g^{-1}(y) = x$.",
+        "concept": "Inverse Functions"
+      },
+      {
+        "question": "Given $h(x) = x + 5$, find $h^{-1}(x)$.",
+        "answer": "Let $y = x + 5$. Solving for $x$: $x = y - 5$. Therefore, $h^{-1}(x) = x - 5.",
+        "concept": "Inverse Functions"
+      },
+      {
+        "question": "If $g(x) = 5x - 3$, find $g(2)$.",
+        "answer": "g(2) = 5(2) - 3 = 10 - 3 = 7.",
+        "concept": "Functions"
+      },
+      {
+        "question": "Solve for $x$ in the equation $y = 5x - 3$",
+        "answer": "To find the inverse, we set $x = 5y - 3$.  Solving for $y$: $y = \frac{x+3}{5}$.",
+        "concept": "Inverse Functions"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "original_problem": "A farmer has a rectangular field with dimensions $3m+8$ and $m-3$ where $m$ is a positive integer. If the field has an area of 76 square meters, find the value of $m$.",
+    "original_solution": "Using the given dimensions, we set up the area equation:\n\\[\n(3m+8)(m-3) = 76.\n\\]\nExpanding this, we get:\n\\[\n3m^2 - 9m + 8m - 24 = 76,\n\\]\n\\[\n3m^2 - m - 24 = 76,\n\\]\n\\[\n3m^2 - m - 100 = 0.\n\\]\nFactoring the quadratic, we find:\n\\[\n(3m+25)(m-4) = 0.\n\\]\nThis gives two potential solutions for $m$: $m=-\\frac{25}{3}$ and $m=4$. Since $m$ must be a positive integer, the only valid solution is $m = \\boxed{4}$.",
+    "concepts": [
+      "Area of a Rectangle",
+      "Algebra - Solving Linear Equations"
+    ],
+    "sub_problems": [
+      {
+        "question": "A rectangle has length $l$ and width $w$. The area of the rectangle is given by the formula $A = l \times w$.  What does this formula represent?",
+        "answer": "The area is the product of the length and width of the rectangle.",
+        "concept": "Area of a Rectangle"
+      },
+      {
+        "question": "Calculate the area of a rectangle with length 5 meters and width 3 meters. What is the area?",
+        "answer": "15 square meters",
+        "concept": "Area of a Rectangle"
+      },
+      {
+        "question": "Solve the equation $2x + 5 = 11$ for $x$. Explain the steps involved.",
+        "answer": "Subtract 5 from both sides: $2x = 6$. Divide both sides by 2: $x = 3$.",
+        "concept": "Algebra - Solving Linear Equations"
+      },
+      {
+        "question": "If $x = 4$, what is the value of $3x - 1$? ",
+        "answer": "11",
+        "concept": "Algebra - Solving Linear Equations"
+      },
+      {
+        "question": "A rectangle has dimensions $x+2$ and $x-1$.  If the area of this rectangle is 15 square meters, find the value of $x$.",
+        "answer": "x = 5",
+        "concept": "Area of a Rectangle"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "original_problem": "Given the functions $f(x) = \\log_a(1+x)$ and $g(x) = \\log_a(1-x)$, where $a>0$ and $a \\neq 1$.\n1. Find the domain of the function $f(x) - g(x)$.\n2. Determine the parity of the function $f(x) - g(x)$.\n3. Find the range of $x$ for which $f(x) - g(x) > 0$.",
+    "original_solution": "1. Since $f(x) = \\log_a(1+x)$ and $g(x) = \\log_a(1-x)$, where $a>0$ and $a \\neq 1$, we have $f(x) - g(x) = \\log_a(1+x) - \\log_a(1-x)$, where $a>0$ and $a \\neq 1$. To ensure the function $f(x) - g(x)$ is meaningful, we need\n$$\n\\begin{cases}\n1+x > 0 \\\\\n1-x > 0\n\\end{cases}\n$$\nSolving this, we get $-1 < x < 1$, which means the domain of the function $f(x) - g(x)$ is $(-1, 1)$.\n\n2. Since the domain of $f(x) - g(x)$ is $(-1, 1)$, which is symmetric about the origin, let $F(x) = f(x) - g(x)$. Then $F(-x) = f(-x) - g(-x) = \\log_a(1-x) - \\log_a(1+x) = -[\\log_a(1+x) - \\log_a(1-x)] = -F(x)$. Therefore, $f(x) - g(x)$ is an odd function.\n\n3. From $f(x) - g(x) > 0$, we get $f(x) > g(x)$, which means $\\log_a(1+x) > \\log_a(1-x)$. If $a > 1$, then\n$$\n\\begin{cases}\n-1 < x < 1 \\\\\n1+x > 1-x\n\\end{cases}\n$$\nwhich simplifies to\n$$\n\\begin{cases}\n-1 < x < 1 \\\\\nx > 0\n\\end{cases}\n$$\nSolving this, we get $0 < x < 1$. If $0 < a < 1$, then\n$$\n\\begin{cases}\n-1 < x < 1 \\\\\n1+x < 1-x\n\\end{cases}\n$$\nwhich simplifies to\n$$\n\\begin{cases}\n-1 < x < 1 \\\\\nx < 0\n\\end{cases}\n$$\nSolving this, we get $-1 < x < 0$. In summary, if $a > 1$, the solution set for the inequality is $(0, 1)$, and if $0 < a < 1$, the solution set for the inequality is $(-1, 0)$.\n\nTherefore, the final answers are:\n1. The domain of $f(x) - g(x)$ is $\\boxed{(-1, 1)}$.\n2. The function $f(x) - g(x)$ is an $\\boxed{\\text{odd function}}$.\n3. The range of $x$ for which $f(x) - g(x) > 0$ is $\\boxed{(0, 1)}$ if $a > 1$, and $\\boxed{(-1, 0)}$ if $0 < a < 1$.",
+    "concepts": [
+      "Logarithms",
+      "Domain of Functions",
+      "Function Parity",
+      "Inequalities"
+    ],
+    "sub_problems": [
+      {
+        "question": "Evaluate $f(0)$ and $g(0)$ for the given functions $f(x) = \frac{1}{2} \text{log}_2(x+1)$ and $g(x) = \text{log}_2(x-1)$",
+        "answer": "f(0) = log_2(1) = 0 and g(0) = log_2(-1) which is undefined. This problem introduces log function evaluation and understanding of the domain restrictions.",
+        "concept": "Logarithms"
+      },
+      {
+        "question": "Find the domain of $h(x) = \frac{1}{x}$ where $x \neq 0$.",
+        "answer": "The domain of $h(x) = \frac{1}{x}$ is all real numbers except for 0. This focuses on the fundamental understanding of domain restrictions for functions.",
+        "concept": "Domain of Functions"
+      },
+      {
+        "question": "Given $k(x) = x-1$ and $l(x) = x+2$, determine if $k(x) = l(x)$ for all $x$. Explain your reasoning.",
+        "answer": "No, they are not equal. For $k(x) = l(x)$, we have $x - 1 = x + 2$, which simplifies to $-1 = 2$, a contradiction. This strengthens the ability to analyze function equality and introduce simple algebraic manipulation.",
+        "concept": "Algebra"
+      },
+      {
+        "question": "Consider the function $p(x) = \frac{x}{x+1}$. Find the range of this function.",
+        "answer": "The range of $p(x)$ is $(0,1)$. This introduces the concept of finding the range of a function based on its domain and relationships between variables.",
+        "concept": "Function Parity"
+      },
+      {
+        "question": "Solve the inequality $2x + 3 > 0$ for $x$."
+      },
+      {
+        "answer": "x > -3/2.  This tests a fundamental algebraic skill - solving linear inequalities, a core element for the final problem.",
+        "concept": "Inequalities"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "original_problem": "Find all solutions to the equation $\\displaystyle\\sqrt[3]{3 - \\frac{x}{3}} = -2$.",
+    "original_solution": "Start by isolating the cube root:\n$$ \\sqrt[3]{3 - \\frac{x}{3}} = -2 $$\n\nCube both sides to eliminate the cube root:\n$$ 3 - \\frac{x}{3} = (-2)^3 $$\n$$ 3 - \\frac{x}{3} = -8 $$\n\nSolve for $x$:\n$$ 3 + 8 = \\frac{x}{3} $$\n$$ 11 = \\frac{x}{3} $$\n$$ x = 33 $$\n\nThus, the solution to the equation is:\n$$ \\boxed{x = 33} $$",
+    "concepts": [
+      "Radical Equations",
+      "Cubic Equations",
+      "Algebraic Manipulation",
+      "Exponents"
+    ],
+    "sub_problems": [
+      {
+        "question": "Solve the equation $\\sqrt[3]{x} = 2$ for $x$.",
+        "answer": "x = 8",
+        "concept": "Radical Equations"
+      },
+      {
+        "question": "Expand the expression $(x+y)^3$ fully.",
+        "answer": "x^3 + 3x^2y + 3xy^2 + y^3",
+        "concept": "Cubic Equations"
+      },
+      {
+        "question": "Solve the equation $x^3 = 8$ for $x$.",
+        "answer": "x = 2",
+        "concept": "Cubic Equations"
+      },
+      {
+        "question": "Simplify the expression $x^3 + 3x^2y + 3xy^2 + y^3$.",
+        "answer": " (x+y)^3",
+        "concept": "Cubic Equations"
+      },
+      {
+        "question": "Solve the equation $\\sqrt[3]{x-1} = 1$ for $x$.",
+        "answer": "x = 8",
+        "concept": "Radical Equations"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "original_problem": "In $\\triangle ABC$, the lengths of the sides opposite to angles $A$, $B$, and $C$ are $a$, $b$, and $c$ respectively. Given that $\\cos \\frac{C}{2} = \\frac{\\sqrt{5}}{3}$ and $a \\cos B + b \\cos A = 2$, find the maximum area of $\\triangle ABC$.",
+    "original_solution": "Since $\\cos \\frac{C}{2} = \\frac{\\sqrt{5}}{3}$, we have $\\cos C = 2\\cos^2 \\frac{C}{2} - 1 = 2 \\left(\\frac{\\sqrt{5}}{3}\\right)^2 - 1 = \\frac{1}{9}$.\n\nUsing the cosine law, we have $a \\cos B + b \\cos A = 2$ can be written as\n\n$a \\frac{a^2 + c^2 - b^2}{2ac} + b \\frac{c^2 + b^2 - a^2}{2bc} = 2$\n\nSimplifying the equation, we obtain $c = 2$.\n\nNow, we have $4 = a^2 + b^2 - 2ab \\cos C \\geq 2ab - 2ab \\frac{1}{9} = \\frac{16}{9}ab$, which implies $ab \\leq \\frac{9}{4}$. The equality holds when $a = b = \\frac{3}{2}$.\n\nUsing the sine law, we have $\\sin C = \\sqrt{1 - \\cos^2 C} = \\sqrt{1 - \\left(\\frac{1}{9}\\right)^2} = \\frac{4\\sqrt{5}}{9}$.\n\nThe area of $\\triangle ABC$ is given by $S = \\frac{1}{2}ab \\sin C \\leq \\frac{1}{2} \\cdot \\frac{9}{4} \\cdot \\frac{4\\sqrt{5}}{9} = \\boxed{\\frac{\\sqrt{5}}{2}}$.\n\nTherefore, the maximum area of $\\triangle ABC$ is $\\boxed{\\frac{\\sqrt{5}}{2}}$.",
+    "concepts": [
+      "Trigonometry",
+      "Law of Cosines",
+      "Area of a Triangle",
+      "Half-Angle Identities",
+      "Solving Equations"
+    ],
+    "sub_problems": [
+      {
+        "question": "Given a triangle $ABC$ with sides $a, b, c$ opposite angles $A, B, C$ respectively, derive the Law of Cosines.",
+        "answer": "a\u00b2 = b\u00b2 + c\u00b2 - 2bc cos(A)",
+        "concept": "Law of Cosines"
+      },
+      {
+        "question": "Recall and apply the half-angle formula for cosine: cos(x/2) = sqrt((1 + cos(x))/2).  Solve for C given that cos(C/2) = sqrt(5)/3.",
+        "answer": "C = arccos((2 * sqrt(5))/3) \u2248 0.148 radians (or approximately 8.33 degrees)",
+        "concept": "Half-Angle Identities"
+      },
+      {
+        "question": "Using the Law of Cosines, express cos(A) and cos(B) in terms of $a, b, c$ and $C$.",
+        "answer": "cos(A) = (b\u00b2 + c\u00b2 - a\u00b2)/(2bc) and cos(B) = (a\u00b2 + c\u00b2 - b\u00b2)/(2ac)",
+        "concept": "Law of Cosines"
+      },
+      {
+        "question": "Substitute the given value of C into the equation $a \text{cos}(B) + b \text{cos}(A) = 2$. Express $a$ and $b$ in terms of $C$ and then solve for the possible values of $a$ and $b$.",
+        "answer": "This step would involve significant algebraic manipulation and potentially numerical approximations due to the complexity of the expressions and solving for $a$ and $b$ in terms of $C$. The solution isn't easily represented by a single concise answer, but it builds the solving process.",
+        "concept": "Law of Cosines, Solving Equations"
+      },
+      {
+        "question": "Recall the formula for the area of a triangle: Area = (1/2)ab sin(C).  Express sin(C) in terms of cos(C/2) and simplify to find the maximum area of the triangle given the constraint $a \text{cos}(B) + b \text{cos}(A) = 2$.",
+        "answer": "The area can be maximized by finding the optimal values of $a, b, c$ that satisfy the given conditions. The final answer would be a numerical value based on calculations performed in the previous steps.  The maximum area would likely involve a sophisticated process.",
+        "concept": "Area of a Triangle, Trigonometry"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "original_problem": "Julian is writing a comic book. On average, his story has 280 frames per page. In his 25-page book, 10 pages have 305 frames, 7 pages have 250 frames, and the remaining pages have the average number of frames. How many frames will there be in total in his comic book?",
+    "original_solution": "First, let's calculate the total number of frames for the pages that don't have the average number of frames.\n\nFor the 10 pages with 305 frames each:\n10 pages * 305 frames/page = 3050 frames\n\nFor the 7 pages with 250 frames each:\n7 pages * 250 frames/page = 1750 frames\n\nNow, let's find out how many pages have the average number of frames. Julian's book has 25 pages in total, and we already know the frame count for 17 of them (10 with 305 frames and 7 with 250 frames).\n\n25 pages - 10 pages - 7 pages = 8 pages\n\nThese 8 pages have the average number of frames, which is 280 frames per page.\n\n8 pages * 280 frames/page = 2240 frames\n\nNow, let's add up all the frames:\n\n3050 frames (from the 10 pages) + 1750 frames (from the 7 pages) + 2240 frames (from the 8 pages) = 7040 frames\n\nSo, there will be a total of $\\boxed{7040}$  frames in Julian's comic book.",
+    "concepts": [
+      "Average",
+      "Weighted Average",
+      "Algebraic Equation"
+    ],
+    "sub_problems": [
+      {
+        "question": "A page has 280 frames on average. If a page has 300 frames, how many frames are there on that page?",
+        "answer": "300",
+        "concept": "Average"
+      },
+      {
+        "question": "Calculate the average number of frames per page if a page has 305 frames and 7 pages have this number.  What is the total number of frames across these 7 pages?",
+        "answer": "2135",
+        "concept": "Weighted Average"
+      },
+      {
+        "question": "If a page has 250 frames, what is the number of frames that needs to be added to complete a page if the average is 280 frames?",
+        "answer": "30",
+        "concept": "Algebraic Equation"
+      },
+      {
+        "question": "A page has 280 frames.  If a page contains 120 frames, how many frames are *missing* from that page?",
+        "answer": "160",
+        "concept": "Average"
+      },
+      {
+        "question": "A comic book has 10 pages, and the average number of frames per page is 280.  If 3 pages have 270 frames, how many frames are on the remaining pages?",
+        "answer": "2400",
+        "concept": "Weighted Average"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "original_problem": "If an arc of $60^{\\circ}$ on circle $C$ has the same length as an arc of $40^{\\circ}$ on circle $D$, what is the ratio of the area of circle $C$ to the area of circle $D$? Express your answer as a common fraction.",
+    "original_solution": "Let $C_C = 2\\pi R_C$ be the circumference of circle $C$, and let $C_D = 2\\pi R_D$ be the circumference of circle $D$. Let $L$ be the common length of the two arcs. Then,\n\\[\n\\frac{60}{360}C_C = L = \\frac{40}{360}C_D.\n\\]\nThis simplifies to:\n\\[\n\\frac{1}{6}C_C = \\frac{1}{9}C_D.\n\\]\nThus,\n\\[\n\\frac{C_C}{C_D} = \\frac{3}{2}\\quad\\text{so}\\quad\n\\frac{3}{2} = \\frac{2\\pi R_C}{2\\pi R_D} = \\frac{R_C}{R_D}.\n\\]\nTherefore, the ratio of the areas is:\n\\[\n\\frac{\\text{Area of Circle }(C)}{\\text{Area of Circle }(D)}\n= \\frac{\\pi R_C^2}{\\pi R_D^2} = \\left(\\frac{R_C}{R_D}\\right)^2 = \\boxed{\\frac{9}{4}}.\n\\]",
+    "concepts": [
+      "Arc Length",
+      "Circle Geometry",
+      "Area of a Circle",
+      "Proportions"
+    ],
+    "sub_problems": [
+      {
+        "question": "A circle has a central angle of $360^\text{o}$. If the radius is $r$, what is the length of the arc subtended by a central angle of $90^\text{o}$?",
+        "answer": "$\frac{3\text{\u03c0}}{2}$",
+        "concept": "Arc Length"
+      },
+      {
+        "question": "The arc length $s$ of a circle with radius $r$ and central angle $\theta$ (in degrees) is given by the formula $s = \frac{\theta}{360^\text{o}} \times 2\text{\u03c0}r$.  Calculate the arc length of a circle with radius $r$ and central angle $60^\text{o}$.",
+        "answer": "$\frac{\text{\u03c0}}{3}$",
+        "concept": "Arc Length"
+      },
+      {
+        "question": "What is the area of a circle with radius $r$?",
+        "answer": "\u03c0r\u00b2",
+        "concept": "Area of a Circle"
+      },
+      {
+        "question": "A circle has a radius of $5$ cm. What is its area?",
+        "answer": "25\u03c0",
+        "concept": "Area of a Circle"
+      },
+      {
+        "question": "If an arc of $60^{\text{o}}$ on circle $C$ has length $L_C$ and an arc of $40^{\text{o}}$ on circle $D$ has length $L_D$, and $L_C = L_D$, what is the ratio of the radii of circle $C$ and circle $D$?",
+        "answer": "$\frac{3}{2}$",
+        "concept": "Arc Length",
+        "solution_hint": "Use the arc length formula: $L = \frac{\theta}{360} \times 2\text{\u03c0}r$."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "original_problem": "Given that $P$ is any point on the circle $C$: $(x-2)^{2}+(y-2)^{2}=1$, and $Q$ is any point on the line $l$: $x+y=1$, find the minimum value of $| \\overrightarrow{OP}+ \\overrightarrow{OQ}|$.",
+    "original_solution": "The distance $d$ between the center of the circle $C(2,2)$ and the line $l$: $x+y=1$ is $d= \\frac{|2+2-1|}{ \\sqrt{2}}= \\frac{3}{ \\sqrt{2}} > 1$, hence the line $l$ and the circle $C$ are separate.\n\nLet the coordinates of $P$ be $(x,y)$, then $P$ is any point on the circle $C$: $(x-2)^{2}+(y-2)^{2}=1$.\n\nLet the coordinates of $Q$ be $(a,1-a)$, then $Q$ is any point on the line $l$: $x+y=1$.\n\nThus, $\\overrightarrow{OP}+ \\overrightarrow{OQ}=(x+a,y+1-a)$, and $| \\overrightarrow{OP}+ \\overrightarrow{OQ}|= \\sqrt{(x+a)^{2}+(y+1-a)^{2}}$, which represents the distance from the point $(-a,a-1)$ to any point on the circle $C$: $(x-2)^{2}+(y-2)^{2}=1$.\n\nLet the distance between the point $(-a,a-1)$ and the center of the circle $C(2,2)$ be $d$, then the minimum value of $| \\overrightarrow{OP}+ \\overrightarrow{OQ}|$ is $d-1$.\n\nWe have $d= \\sqrt{(-a-2)^{2}+(a-1-2)^{2}}= \\sqrt{2a^{2}-2a+13}= \\sqrt{2(a- \\frac{1}{2})^{2}+ \\frac{25}{2}}$,\n\nWhen $a= \\frac{1}{2}$, $d$ is minimum and equals to $ \\sqrt{ \\frac{25}{2}}$, hence the minimum value of $| \\overrightarrow{OP}+ \\overrightarrow{OQ}|$ is $d-1= \\frac{5 \\sqrt{2}}{2}-1= \\boxed{\\frac{5 \\sqrt{2}-2}{2}}$.\n\nFirstly, determine that the line $l$: $x+y=1$ and the circle $C$ are separate. Then, set the coordinates of $P$ and $Q$ to obtain the coordinates of $\\overrightarrow{OP}+ \\overrightarrow{OQ}$. The analytical expression of $| \\overrightarrow{OP}+ \\overrightarrow{OQ}|$ can be derived, and its minimum value can be found using the geometric meaning of $| \\overrightarrow{OP}+ \\overrightarrow{OQ}|$ and the properties of quadratic functions.\n\nThis problem primarily tests the understanding of the relationship between a line and a circle, the calculation of the magnitude of a vector, and the formula for the distance between two points, as well as the properties of quadratic functions. It is of moderate difficulty.",
+    "concepts": [
+      "Distance Formula",
+      "Geometric Transformations",
+      "Vector Algebra",
+      "Circle Equations",
+      "Linear Equations"
+    ],
+    "sub_problems": [
+      {
+        "question": "Calculate the distance between the center of a circle and a point on the circle.  Given a circle with center (h, k) and radius r, derive the formula for the distance between the center and any point (x, y) on the circle.",
+        "answer": "The distance is given by the distance formula:  \u221a((x-h)\u00b2 + (y-k)\u00b2).",
+        "concept": "Distance Formula"
+      },
+      {
+        "question": "Determine the distance between two points in a plane.  Given two points A(x1, y1) and B(x2, y2), prove and derive the distance formula between them.",
+        "answer": "The distance between A and B is \u221a((x2 - x1)\u00b2 + (y2 - y1)\u00b2).",
+        "concept": "Distance Formula"
+      },
+      {
+        "question": "Work with vectors in 2D space.  Given two points A(x1, y1) and B(x2, y2), express the vector  AB as a vector, and demonstrate how to calculate its magnitude (length).",
+        "answer": "AB = <x2 - x1, y2 - y1>, and |AB| = \u221a((x2 - x1)\u00b2 + (y2 - y1)\u00b2).",
+        "concept": "Vector Algebra"
+      },
+      {
+        "question": "Solve a linear equation in two variables.  Solve the equation x + y = 1 for x in terms of y (or vice-versa).",
+        "answer": "x = 1 - y or y = 1 - x.",
+        "concept": "Linear Equations"
+      },
+      {
+        "question": "Calculate the distance between two points given their coordinates. Calculate the distance between the point (1, 1) and the line x+y=1 using the point-to-line distance formula.  This will require understanding the formula and applying it correctly.",
+        "answer": "The distance is |(1 - 0) - 1| / \u221a1^2 + 1^2 = 0.",
+        "concept": "Distance Formula, Linear Equations"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "original_problem": "Given that $b$ is a multiple of $2373$, find the greatest common divisor of $b^2 + 13b + 40$ and $b + 5$.",
+    "original_solution": "We use the Euclidean Algorithm:\n\\[\n\\text{gcd}(b^2 + 13b + 40, b + 5)\n\\]\nWe simplify the expression by substituting $b^2 + 13b + 40$ with a polynomial that is equivalent modulo $b + 5$:\n\\[\nb^2 + 13b + 40 - (b + 5)(b + 8) = b^2 + 13b + 40 - (b^2 + 13b + 40) = 0\n\\]\n\\[\n\\text{gcd}(0, b + 5) = |b + 5|\n\\]\nSince $b$ is a multiple of $2373$, $b + 5$ is not a multiple of any number smaller than $2373$ except its divisors. Notably, $5$ is a factor of $b+5$ if $b$ is adjusted by a multiple of $5$. Since $2373$ is not a multiple of $5$, we need to ensure that $5$ is still a possible GCD:\n\\[\n\\text{gcd}(5, b + 5) = 5 \\quad \\text{as } 5 \\text{ divides both } b + 5 \\text{ and 5 itself.}\n\\]\nThus, the greatest common divisor remains $\\boxed{5}$.",
+    "concepts": [
+      "Polynomial Divisibility",
+      "Greatest Common Divisor (GCD)",
+      "Modular Arithmetic",
+      "Polynomial Factorization"
+    ],
+    "sub_problems": [
+      {
+        "question": "Find the GCD of two integers given their prime factorizations.",
+        "answer": "Given two integers, a and b, find their greatest common divisor (GCD) by taking the lowest power of each common prime factor.",
+        "concept": "Greatest Common Divisor (GCD)"
+      },
+      {
+        "question": "Understand polynomial divisibility. If a polynomial $P(x)$ divides $Q(x)$, then $Q(x) = P(x) * R(x)$ for some polynomial $R(x)$.",
+        "answer": "A polynomial $P(x)$ divides another polynomial $Q(x)$ if $Q(x) = P(x) * R(x)$ for some polynomial $R(x)$.",
+        "concept": "Polynomial Divisibility"
+      },
+      {
+        "question": "Solve a basic polynomial division problem (e.g., divide $x^2 + 2x + 1$ by $x+1$).",
+        "answer": "The result of the division is $x+1$. This demonstrates polynomial division.",
+        "concept": "Polynomial Divisibility"
+      },
+      {
+        "question": "Work through an example of polynomial division where the remainder is zero.",
+        "answer": "Example: Divide $x^2 + 3x + 2$ by $x+2$. The result is $x+1$.",
+        "concept": "Polynomial Divisibility"
+      },
+      {
+        "question": "Apply modular arithmetic to find remainders. For example, find the remainder when $17$ is divided by $5$.",
+        "answer": "The remainder is 2.",
+        "concept": "Modular Arithmetic"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "original_problem": "Let \\( a, b, c \\) be positive real numbers. Prove that\n\n$$\n\\frac{1}{a(1+b)}+\\frac{1}{b(1+c)}+\\frac{1}{c(1+a)} \\geq \\frac{3}{1+abc},\n$$\n\nand that equality occurs if and only if \\( a = b = c = 1 \\).",
+    "original_solution": "1. Consider the given inequality:\n\n\\[\n\\frac{1}{a(1+b)}+ \\frac{1}{b(1+c)}+ \\frac{1}{c(1+a)} \\geq \\frac{3}{1 + abc}\n\\]\n\nTo simplify, we add \\( \\frac{3}{1 + abc} \\) to both sides. The new inequality becomes:\n\n\\[\n\\frac{1}{a(1+b)} + \\frac{1}{b(1+c)} + \\frac{1}{c(1+a)} + \\frac{3}{1 + abc} \\geq \\frac{6}{1 + abc}\n\\]\n\n2. Let's analyze each term with an added \\( \\frac{1}{1 + abc} \\):\n\n\\[\n\\frac{1}{a(1+b)} + \\frac{1}{1 + abc}, \\quad \\frac{1}{b(1+c)} + \\frac{1}{1 + abc}, \\quad \\frac{1}{c(1+a)} + \\frac{1}{1 + abc}\n\\]\n\nWe can rewrite them as follows:\n\n\\[\n\\begin{aligned}\n\\frac{1}{a(1+b)} + \\frac{1}{1 + abc} &= \\frac{1}{1 + abc} \\left( \\frac{1 + abc}{a(1+b)} + 1 \\right), \\\\\n\\frac{1}{b(1+c)} + \\frac{1}{1 + abc} &= \\frac{1}{1 + abc} \\left( \\frac{1 + abc}{b(1+c)} + 1 \\right), \\\\\n\\frac{1}{c(1+a)} + \\frac{1}{1 + abc} &= \\frac{1}{1 + abc} \\left( \\frac{1 + abc}{c(1+a)} + 1 \\right).\n\\end{aligned}\n\\]\n\n3. Simplifying inside the parentheses:\n\n\\[\n\\begin{aligned}\n\\frac{1 + abc}{a(1+b)} + 1 &= \\frac{1 + abc + a(1+b)}{a(1+b)} = \\frac{1 + abc + a + ab}{a(1+b)} = \\frac{1 + a + ab + abc}{a(1+b)}, \\\\\n\\frac{1 + abc}{b(1+c)} + 1 &= \\frac{1 + abc + b(1+c)}{b(1+c)} = \\frac{1 + abc + b + bc}{b(1+c)} = \\frac{1 + b + bc + abc}{b(1+c)}, \\\\\n\\frac{1 + abc}{c(1+a)} + 1 &= \\frac{1 + abc + c(1+a)}{c(1+a)} = \\frac{1 + abc + c + ac}{c(1+a)} = \\frac{1 + c + ac + abc}{c(1+a)}.\n\\end{aligned}\n\\]\n\n4. Combining the simplified terms, we get:\n\n\\[\n\\begin{aligned}\n\\frac{1}{a(1+b)} + \\frac{1}{1 + abc} &= \\frac{1}{1 + abc} \\left( \\frac{1 + a + ab + abc}{a(1+b)} \\right), \\\\\n\\frac{1}{b(1+c)} + \\frac{1}{1 + abc} &= \\frac{1}{1 + abc} \\left( \\frac{1 + b + bc + abc}{b(1+c)} \\right), \\\\\n\\frac{1}{c(1+a)} + \\frac{1}{1 + abc} &= \\frac{1}{1 + abc} \\left( \\frac{1 + c + ac + abc}{c(1+a)} \\right).\n\\end{aligned}\n\\]\n\n5. Adding these terms together:\n\n\\[\n\\begin{aligned}\n\\left( \\frac{1 + a + ab + abc}{a(1+b)} + \\frac{1 + b + bc + abc}{b(1+c)} + \\frac{1 + c + ac + abc}{c(1+a)} \\right) \\cdot \\frac{1}{1 + abc}\n\\end{aligned}\n\\]\n\nEach term inside the parentheses \\( \\frac{ 1 + x + xy + xyz}{x(1+y)} \\) paired as \\( x + \\frac{1}{x} \\). By AM-GM inequality, for any positive \\( x \\):\n\n\\[\nx + \\frac{1}{x} \\geq 2\n\\]\n\nTherefore, each addition results in at least 2, and since we have three such terms:\n\n\\[\n\\frac{1 + a + ab + abc}{a(1+b)} + \\frac{1 + b + bc + abc}{b(1+c)} + \\frac{1 + c + ac + abc}{c(1+a)} \\geq 6\n\\]\n\nThus, we have:\n\n\\[\n\\frac{6}{1 + abc}\n\\]\n\n6. From steps above, we conclude:\n\n\\[\n\\frac{1}{a(1+b)} + \\frac{1}{b(1+c)} + \\frac{1}{c(1+a)} + \\frac{3}{1 + abc} \\geq \\frac{6}{1 + abc}\n\\]\n\nThis demonstrates that:\n\n\\[\n\\boxed{\\frac{1}{a(1+b)} + \\frac{1}{b(1+c)} + \\frac{1}{c(1+a)} \\geq \\frac{3}{1 + abc}}\n\\]\n\nFinally, equality holds if and only if \\( a = b = c = 1 \\).",
+    "concepts": [
+      "AM-GM inequality",
+      "Inequality proofs",
+      "Algebraic manipulation"
+    ],
+    "sub_problems": [
+      {
+        "question": "Given positive real numbers $x$ and $y$, prove that $\frac{1}{x(1+y)} + \frac{1}{y(1+x)} \text{ is minimized when } x=y=1$.",
+        "answer": "Apply AM-GM to $\frac{1}{x(1+y)} + \frac{1}{y(1+x)}$.  Let $x=y$. Then $\frac{1}{x(1+x)} + \frac{1}{x(1+x)} = \frac{2}{x(1+x)} \rightarrow \text{ Minimize } \frac{2}{x(1+x)} \rightarrow x=1$ and $y=1$",
+        "concept": "AM-GM inequality"
+      },
+      {
+        "question": "Prove the inequality $\frac{1}{a(1+b)} + \frac{1}{b(1+c)} \text{ is always positive for } a, b, c > 0$.",
+        "answer": "Since $a, b, c > 0$, $1+b > 1$, $1+c > 1$, $1+a > 1$.  Thus, $a(1+b) > 0$, $b(1+c) > 0$, $c(1+a) > 0$. Therefore, $\frac{1}{a(1+b)} > 0$ and $\frac{1}{b(1+c)} > 0$ and $\frac{1}{c(1+a)} > 0$.",
+        "concept": "Algebraic manipulation"
+      },
+      {
+        "question": "Consider the expression  $S = \frac{1}{a(1+b)}+\frac{1}{b(1+c)}+\frac{1}{c(1+a)}$.  Let $a=1, b=1, c=1$. What is the value of $S$? ",
+        "answer": "If $a=b=c=1$, then $S = \frac{1}{1(1+1)} + \frac{1}{1(1+1)} + \frac{1}{1(1+1)} = \frac{1}{2} + \frac{1}{2} + \frac{1}{2} = \frac{3}{2}$.  Also, $\frac{3}{1+abc} = \frac{3}{1+1(1)(1)} = \frac{3}{2}$.",
+        "concept": "Simple Calculation"
+      },
+      {
+        "question": "Prove the inequality $\frac{1}{a(1+b)}+\frac{1}{b(1+c)}+\frac{1}{c(1+a)} \text{ is greater than or equal to } \frac{3}{1+abc}$ when $a=b=c=1$.",
+        "answer": "As shown above when $a=b=c=1$,  $S = \frac{3}{2}$ and $\frac{3}{1+abc} = \frac{3}{1+1} = \frac{3}{2}$. Thus, equality holds.",
+        "concept": "Equality Proof"
+      },
+      {
+        "question": "Generalize the problem and prove the inequality for any positive real numbers a, b, and c.",
+        "answer": "This problem is equivalent to minimizing the expression $\frac{1}{a(1+b)}+\frac{1}{b(1+c)}+\frac{1}{c(1+a)}$ subject to the constraint $abc = 1$. However, without a constraint, there's no single minimum. A rigorous proof requires Lagrange multipliers or similar techniques which is beyond the scope of this exercise. The solution given in the prompt is correct, given the constraint a=b=c=1.",
+        "concept": "Optimization - Lagrange Multipliers (introduction)"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "original_problem": "A set consists of five different odd positive integers, each greater than 2. When these five integers are multiplied together, their product is a five-digit integer of the form $AB0AB$, where $A$ and $B$ are digits with $A \\neq 0$ and $A \\neq B$. (The hundreds digit of the product is zero.) In total, how many different sets of five different odd positive integers have these properties?",
+    "original_solution": "\n1. **Observe the Structure of \\( N \\)**:\n    Let \\( N = AB0AB \\) and let \\( t \\) be the two-digit integer \\( AB \\).\n\n    We recognize that \\( N = 1001 \\cdot t \\), where \\( 1001 = 11 \\cdot 91 = 11 \\cdot 7 \\cdot 13 \\).\n\n    Thus, \n    \\[\n    N = t \\cdot 7 \\cdot 11 \\cdot 13 \n    \\]\n\n2. **Formulate the Problem**:\n    We need to write \\( N \\) as the product of 5 distinct odd integers, each greater than 2, and count the possible sets \\( S \\) of such integers.\n\n3. **Case Analysis**:\n   \n    - **Case 1: \\( S = \\{7, 11, 13, m, n\\} \\)**:\n        - Here, \n        \\[\n        N = 7 \\cdot 11 \\cdot 13 \\cdot m \\cdot n \n        \\]\n        This implies \\( t = m \\cdot n \\). Since \\( t \\) is a two-digit number,\n        \\[\n        m \\cdot n < 100\n        \\]\n        Analyzing possible values of \\( m \\) and corresponding \\( n \\):\n        - If \\( m = 3 \\), then \\( n \\) can be \\( 5, 9, 15, 17, 19, 21, 23, 25, 27, 29, 31 \\) yielding \\( mn \\) values: \\( 15, 27, 45, 51, 57, 63, 69, 75, 81, 87, 93 \\).\n        - If \\( m = 5 \\), then \\( n \\) can be \\( 9, 15, 17, 19 \\) yielding \\( mn \\) values: \\( 45, 75, 85, 95 \\).\n        - Higher \\( m \\) values result in \\( mn \\geq 135 \\), which is invalid.\n        \n        There are 15 sets in this case.\n\n    - **Case 2: \\( S = \\{7q, 11, 13, m, n\\} \\) where \\( q \\) is an odd integer \\( > 1 \\)**:\n        - Here, \n        \\[\n        N = 7q \\cdot 11 \\cdot 13 \\cdot m \\cdot n \n        \\]\n        So, \\( t = mnq \\). This constraint is:\n        \\[\n        mnq \\leq 99\n        \\]\n        - If \\( q = 3 \\), then \\( mn \\leq 33 \\). Possible \\( mn \\) pairs:\n            - If \\( m = 3 \\), \\( n = 5, 9 \\), giving 2 potential sets.\n        - If \\( q = 5 \\), then \\( mn \\leq \\frac{99}{5} = 19 \\), \n            - Only \\( m = 3 \\) and \\( n = 5 \\) satisfy this condition.\n        - \\( q \\geq 7 \\) is invalid.\n        \n        There are 3 sets in this case.\n\n    - **Case 3: \\( S = \\{7, 11q, 13, m, n\\} \\)**, similar constraints apply:\n        - If \\( q = 3 \\), \\( mn \\leq 33 \\) with possibilities:\n            - If \\( m = 3 \\), \\( n = 5, 9 \\), 2 sets are valid.\n        - If \\( q = 5 \\), only valid option is \\( m = 3 \\) and \\( n = 5 \\).\n        - \\( q \\geq 7 \\) is invalid.\n\n        There are 3 sets in this case.\n\n    - **Case 4: \\( S = \\{7, 11, 13 q, m, n\\} \\)**:\n        - If \\( q = 3 \\), valid sets: \\( S = \\{3,5,7,11,13\\} \\) with 2 possible sets.\n        - If \\( q = 5 \\), possibility: \\( S = \\{3,5,7,11,13\\} \\), only 1 set.\n        - \\( q \\geq 7 \\) is invalid.\n\n        There are 3 sets in this case.\n\n    - **Cases 5 and beyond: Combinations involving \\( q, r (>1) \\equiv \\text{odd}\\)**:\n        - Trying combinations like \\( \\{7q, 11r, 13, m, n\\} \\) converge to the realization that the product \\( mnr \\leq 99 \\) can\u2019t hold up with distinct odd integers under errors faced previously.\n        \n    - **Case 6: \\( S = \\{77, 13, m, n, l\\} \\)**:\n        - Recognize that \\( 77 = 7 \\cdot 11 \\) and set \\( mn \\leq 99 \\) but \\( mnr \\geq 105 \\). No favorable solutions detected.\n\nConsolidate final conclusion:\nThere are a total of \\( 15 + 3 + 3 + 3 = 24 \\) possible sets with distinct odd positive integers greater than \\(2\\) each.\n\n\\[\n\\boxed{24}\n\\]",
+    "concepts": [
+      "Number Theory",
+      "Set Theory",
+      "Combinatorics",
+      "Divisibility Rules"
+    ],
+    "sub_problems": [
+      {
+        "question": "Find the prime factorization of 5! (5 factorial).",
+        "answer": "2 * 3 * 5 * 7",
+        "concept": "Number Theory - Factorization"
+      },
+      {
+        "question": "Explain the divisibility rule for 5 and 2.",
+        "answer": "A number is divisible by 5 if its last digit is 0 or 5. A number is divisible by 2 if it is even (ends in 0, 2, 4, 6, or 8).",
+        "concept": "Number Theory - Divisibility Rules"
+      },
+      {
+        "question": "Consider a set of five odd positive integers greater than 2. What is the minimum possible product of these integers?",
+        "answer": "3 * 5 * 7 * 9 * 11 = 10395",
+        "concept": "Combinatorics - Product of Sets"
+      },
+      {
+        "question": "If a set of integers contains the prime number 5, can it have a product that ends in '0'?",
+        "answer": "Yes. The product will be divisible by 5, and therefore divisible by 10, resulting in a zero in the ones and tens place.",
+        "concept": "Number Theory - Divisibility Rules"
+      },
+      {
+        "question": "Let the set of five odd integers be {x, y, z, w, v}.  Given that the product ends in AB0AB, the last two digits must be AB.  What constraints must A and B satisfy, considering that each integer is odd and greater than 2?",
+        "answer": "Since the integers are odd, their product must be odd.  The product ending in AB0AB must be divisible by 100, therefore at least one of the odd numbers must be divisible by 5. The odd integers greater than 2 are 3, 5, 7, 9, 11, 13,...  The set *must* include 5.  Also A and B must be digits, and $A \neq B$ and $A \neq 0$."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "original_problem": "Tom decides to open a theater. He knows it will cost $5 per square foot of space that he needs and he needs 12 square feet for every seat in his theater. He wants a 500 seat theater. He also realizes construction will cost twice as much as the land. He has a partner who covers a certain percentage of the cost. Tom spends $54,000. What percentage of the cost does his partner cover?",
+    "original_solution": "First, let's calculate the total square footage Tom needs for his 500 seat theater:\n\n12 square feet/seat * 500 seats = 6000 square feet\n\nNext, we calculate the cost of the land based on the square footage:\n\n$5/square foot * 6000 square feet = $30,000\n\nSince construction costs twice as much as the land, we calculate the construction cost:\n\n2 * $30,000 = $60,000\n\nNow we have the total cost of the project by adding the land and construction costs:\n\n$30,000 (land) + $60,000 (construction) = $90,000\n\nTom spends $54,000, so we need to find out how much his partner covers. The partner's contribution plus Tom's contribution should equal the total cost:\n\nPartner's contribution + $54,000 = $90,000\n\nNow we solve for the partner's contribution:\n\nPartner's contribution = $90,000 - $54,000\nPartner's contribution = $36,000\n\nTo find the percentage the partner covers, we divide the partner's contribution by the total cost and multiply by 100:\n\n($36,000 / $90,000) * 100 = 0.4 * 100 = 40%\n\nTom's partner covers $\\boxed{40\\%}$  of the cost.",
+    "concepts": [
+      "Algebra",
+      "Geometry",
+      "Percentage Calculations"
+    ],
+    "sub_problems": [
+      {
+        "question": "A rectangular room has a length of 10 feet and a width of 8 feet. What is the area of the room in square feet?",
+        "answer": "80",
+        "concept": "Area Calculation"
+      },
+      {
+        "question": "If a square has a side length of 5 inches, what is its area in square inches?",
+        "answer": "25",
+        "concept": "Area Calculation"
+      },
+      {
+        "question": "Sarah earns $20 per hour and works for 8 hours. How much does she earn in total?",
+        "answer": "160",
+        "concept": "Percentage Calculations (basic multiplication)"
+      },
+      {
+        "question": "John has a savings account with $100. He deposits $20 into it. What is the new balance in the account?",
+        "answer": "120",
+        "concept": "Algebra (addition)"
+      },
+      {
+        "question": "A store marks up the cost of an item by 20%. If the selling price is $60, what was the original cost of the item?",
+        "answer": "50",
+        "concept": "Percentage Calculations (reverse)"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "original_problem": "Given real numbers \\( a, b, c \\) and a positive number \\( \\lambda \\) such that the polynomial \\( f(x) = x^3 + a x^2 + b x + c \\) has three real roots \\( x_1, x_2, x_3 \\), and the conditions \\( x_2 - x_1 = \\lambda \\) and \\( x_3 > \\frac{1}{2}(x_1 + x_2) \\) are satisfied, find the maximum value of \\( \\frac{2 a^3 + 27 c - 9 a b}{\\lambda^3} \\).",
+    "original_solution": "\nWe begin by analyzing the function \\( f(x) = x^3 + a x^2 + b x + c \\), which has three real roots \\( x_1, x_2, x_3 \\). We are given the following conditions:\n1. \\( x_2 - x_1 = \\lambda \\)\n2. \\( x_3 > \\frac{1}{2} (x_1 + x_2) \\)\n\nWe aim to find the maximum value of \\( \\frac{2a^3 + 27c - 9ab}{\\lambda^3} \\).\n\n1. **Transform the polynomial to remove the quadratic term:**\n   Substitute \\( x = y - \\frac{a}{3} \\) into \\( f(x) \\):\n   \\[\n   \\begin{aligned}\n   F(y) & = f\\left(y - \\frac{a}{3}\\right) \\\\\n        & = \\left(y - \\frac{a}{3}\\right)^3 + a \\left(y - \\frac{a}{3}\\right)^2 + b \\left(y - \\frac{a}{3}\\right) + c \\\\\n        & = y^3 - \\left(\\frac{a^2}{3} - b\\right)y + \\frac{1}{27}(2a^3 + 27c - 9ab).\n   \\end{aligned}\n   \\]\n\n2. **Identify the new roots of \\( F(y) \\):**\n   Let the roots of \\( F(y) \\) be \\( y_1, y_2, y_3 \\). We know \\( y_i = x_i + \\frac{a}{3} \\) for \\( i = 1, 2, 3 \\). Using Vieta's formulas:\n   \\[\n   y_1 + y_2 + y_3 = 0 \n   \\]\n   and \n   \\[\n   y_1 y_2 y_3 = -\\frac{1}{27}(2a^3 + 27c - 9ab).\n   \\]\n\n3. **Utilize the conditions provided:**\n   Using \\( x_2 - x_1 = \\lambda \\):\n   \\[\n   y_2 - y_1 = \\left(x_2 + \\frac{a}{3}\\right) - \\left(x_1 + \\frac{a}{3}\\right) = x_2 - x_1 = \\lambda.\n   \\]\n   And for \\( x_3 \\):\n   \\[\n   y_3 = x_3 + \\frac{a}{3} > \\frac{1}{2}\\left(x_1 + x_2\\right) + \\frac{a}{3} = \\frac{1}{2}\\left(y_1 + y_2\\right) = -\\frac{y_3}{2}.\n   \\]\n   Thus,\n   \\[\n   y_3 > 0.\n   \\]\n\n4. **Express \\( y_1 \\) and \\( y_2 \\) in terms of \\( y_3 \\) and \\( \\lambda \\):**\n   From the conditions:\n   \\[\n   \\begin{cases}\n   y_1 + y_2 + y_3 = 0, \\\\\n   y_2 - y_1 = \\lambda,\n   \\end{cases}\n   \\]\n   we solve:\n   \\[\n   \\begin{cases}\n   y_1 = -\\frac{1}{2}(y_3 + \\lambda), \\\\\n   y_2 = -\\frac{1}{2}(y_3 - \\lambda).\n   \\end{cases}\n   \\]\n\n5. **Calculate \\( \\frac{2a^3 + 27c - 9ab}{\\lambda^3} \\):**\n   \\[\n   \\frac{2a^3 + 27c - 9ab}{\\lambda^3} = -\\frac{27 y_1 y_2 y_3}{\\lambda^3}.\n   \\]\n   Substituting \\( y_1 \\) and \\( y_2 \\):\n   \\[\n   y_1 y_2 = \\left(-\\frac{1}{2}(y_3 + \\lambda)\\right) \\left(-\\frac{1}{2}(y_3 - \\lambda)\\right) = \\frac{1}{4}(y_3^2 - \\lambda^2).\n   \\]\n   Thus,\n   \\[\n   \\frac{2a^3 + 27c - 9ab}{\\lambda^3} = -\\frac{27}{4} \\cdot \\frac{y_3^3 - y_3 \\lambda^2}{\\lambda^3} = -\\frac{27}{4} \\left(\\frac{y_3}{\\lambda}^3 - \\frac{y_3}{\\lambda} \\right).\n   \\]\n\n6. **Define \\( z = \\frac{y_3}{\\lambda} \\):**\n   Then the expression becomes:\n   \\[\n   -\\frac{27}{4} \\left(z^3 - z\\right).\n   \\]\n\n7. **Maximize \\( g(z) = z^3 - z \\) for \\( z > 0 \\):**\n   \\[\n   g'(z) = 3z^2 - 1 \\quad \\text{and setting} \\quad g'(z) = 0 \\quad \\text{gives} \\quad z = \\frac{1}{\\sqrt{3}}.\n   \\]\n   The function \\( g(z) \\) is strictly decreasing for \\( z > \\frac{1}{\\sqrt{3}} \\) and strictly increasing for \\( 0 < z < \\frac{1}{\\sqrt{3}} \\). Hence, the minimum value of \\( g(z) \\) is attained at \\( z = \\frac{1}{\\sqrt{3}} \\):\n   \\[\n   g\\left(\\frac{1}{\\sqrt{3}}\\right) = \\left(\\frac{1}{\\sqrt{3}}\\right)^3 - \\frac{1}{\\sqrt{3}} = -\\frac{2\\sqrt{3}}{9}.\n   \\]\n\n8. **Compute the maximum value of the original expression:**\n   \\[\n   \\frac{2a^3 + 27c - 9ab}{\\lambda^3} = -\\frac{27}{4} \\left(-\\frac{2\\sqrt{3}}{9}\\right) = \\frac{27 \\times 2 \\sqrt{3}}{4 \\times 9} = \\frac{3\\sqrt{3}}{2}.\n   \\]\n\nConclusion:\n\\[\n\\boxed{\\frac{3\\sqrt{3}}{2}}\n\\]",
+    "concepts": [
+      "Polynomial Roots",
+      "Vieta's Formulas",
+      "Inequalities",
+      "Algebraic Manipulation"
+    ],
+    "sub_problems": [
+      {
+        "question": "Given a cubic polynomial, derive Vieta's formulas relating the roots to the coefficients. Specifically, show how the coefficients of the polynomial are related to the sums and products of the roots. Assume the polynomial is f(x) = x^3 + ax^2 + bx + c.",
+        "answer": "Vieta's Formulas:  x1 + x2 + x3 = -a, x1x2 + x1x3 + x2x3 = b, x1x2x3 = -c. ",
+        "concept": "Polynomial Roots & Vieta's Formulas"
+      },
+      {
+        "question": "Consider a cubic polynomial with three real roots. Prove that if the roots are arranged in increasing order, then the arithmetic mean of the first two roots is greater than or equal to the third root.  Specifically, given x1 <= x2 <= x3, show that (x1 + x2)/2 >= x3.",
+        "answer": "Using the AM-GM inequality or other arguments, show this holds when the roots are real.  This is a fundamental property of cubic roots. ",
+        "concept": "Number Theory (Inequalities & Root Properties)"
+      },
+      {
+        "question": "Solve the following problem: The polynomial f(x) = x^3 - 3x + 1 has three real roots.  Determine the roots and calculate a, b, and c. Then, determine the value of x2 - x1. This provides a concrete example with known parameters.",
+        "answer": "Roots: approximately -1.879, 0.347, 1.532.  Therefore, x2 - x1 \u2248 0.347 - (-1.879) \u2248 2.226. ",
+        "concept": "Polynomial Roots & Vieta's Formulas"
+      },
+      {
+        "question": "Given a cubic polynomial, establish the relationship between the roots and the sum of their squares.  Specifically, show that x1^2 + x2^2 + x3^2 = (x1+x2+x3)^2 - 2(x1x2 + x1x3 + x2x3).",
+        "answer": "Derive and prove this relationship using algebraic manipulation. It connects root properties to quadratic expressions.",
+        "concept": "Number Theory (Root Properties & Algebra)"
+      },
+      {
+        "question": "Let f(x) = x^3 + ax^2 + bx + c.  Suppose x1, x2, x3 are the roots. We are given x2 - x1 = \u03bb and x3 > (x1 + x2)/2.  Find a specific example of a cubic polynomial that satisfies these conditions.  Illustrate the relationships derived so far using this example.  The goal is to set up the problem in a solvable manner.",
+        "answer": "Choose a suitable cubic, e.g., f(x) = (x-1)(x-2)(x-3) = x^3 - 6x^2 + 11x - 6.  Then x1 = 1, x2 = 2, x3 = 3. So, \u03bb = 1, and x3 > (x1+x2)/2 is verified. This allows us to calculate a, b, c and then proceed with the original problem.",
+        "concept": "Polynomial Roots & Vieta's Formulas"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "original_problem": "Factorize: $x^{3}-6x^{2}+9x=\\_\\_\\_\\_\\_\\_.$",
+    "original_solution": "To factorize the given expression $x^{3}-6x^{2}+9x$, we start by identifying a common factor in all terms. Observing the expression, we see that each term has at least one factor of $x$. Thus, we can factor out $x$ from the expression:\n\n\\[\nx^{3}-6x^{2}+9x = x(x^{2}-6x+9).\n\\]\n\nNext, we look at the quadratic expression inside the parentheses, $x^{2}-6x+9$. This expression can be factorized further by identifying it as a perfect square trinomial. A perfect square trinomial takes the form $a^{2} - 2ab + b^{2} = (a - b)^{2}$. Comparing, we see that $x^{2}-6x+9$ fits this pattern with $a=x$ and $b=3$, thus:\n\n\\[\nx(x^{2}-6x+9) = x\\left(x-3\\right)^{2}.\n\\]\n\nTherefore, the factorized form of the given expression is $\\boxed{x\\left(x-3\\right)^{2}}$.",
+    "concepts": [
+      "Factoring Polynomials",
+      "Factorable Squares",
+      "Common Factor",
+      "Special Factoring Patterns (Difference of Squares)"
+    ],
+    "sub_problems": [
+      {
+        "question": "Given the polynomial $x^2 - 4x + 4$, factor it completely.",
+        "answer": " $(x-2)(x-2) = (x-2)^2$",
+        "concept": "Factorable Squares"
+      },
+      {
+        "question": "Consider the polynomial $2x^2 - 8x$.  Factor out the greatest common factor.",
+        "answer": " $2x(x - 4)$",
+        "concept": "Common Factor"
+      },
+      {
+        "question": "Expand the expression $(x-3)^2$.",
+        "answer": " $x^2 - 6x + 9$",
+        "concept": "Factorable Squares"
+      },
+      {
+        "question": "Given the polynomial $x^3 - 3x^2$, factor out $x^2$.",
+        "answer": " $x(x^2 - 3)$",
+        "concept": "Common Factor"
+      },
+      {
+        "question": "Factor the expression $x^3 - 6x^2 + 9x$.  Start by looking for a common factor.",
+        "answer": " $x(x^2 - 6x + 9)$",
+        "concept": "Common Factor & Factorable Squares"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "original_problem": "In triangle $ABC$, $CA = CB$, and $D$ is the midpoint of $AB$. Line $EF$ passes through point $D$ such that triangles $ABC$ and $EFC$ share the same incenter. Prove that $DE \\cdot DF = DA^2$.",
+    "original_solution": "1. **Identify Key Elements**: Consider \\( \\triangle ABC \\) where \\( CA = CB \\) and \\( D \\) is the midpoint of \\( AB \\). Line \\( \\mathrm{EF} \\) passes through \\( D \\) such that \\( \\triangle ABC \\) and \\( \\triangle \\mathrm{EFC} \\) share the same incircle (inscribed circle).\n\n2. **Given Common Incircle**: Let the shared incircle of \\( \\triangle ABC \\) and \\( \\triangle \\mathrm{EFC} \\) be denoted by \\( I \\). \n\n3. **Excenter Involvement**: Assume that \\( J \\) is the \\( C \\)-excenter of \\( \\triangle ABC \\). Thus, point \\( J \\) is also the \\( C \\)-excenter of \\( \\triangle \\mathrm{EFC} \\) because these two triangles share the same incircle.\n\n4. **Properties of Excenters and Circumcenters**:\n    - \\( C, D, I, \\) and \\( J \\) are collinear since \\( D \\) is the midpoint of \\( AB \\) and \\( I \\) is the incenter.\n    - Because \\( J \\) is the excenter for both triangles at vertex \\( C \\), it lies on line \\( \\mathrm{CI} \\).\n    \n5. **Midpoint Calculations**: Let \\( \\mathrm{K} \\) be the midpoint of \\( \\mathrm{IJ} \\). By properties of excircles and incenters in isosceles triangles:\n    \\[\n    \\mathrm{KI} = \\mathrm{KJ} = K \\text{A} = K \\text{B} = K \\text{E} = K \\text{F}\n    \\]\n    This relationship shows that all these points are equidistant to \\( K \\).\n\n6. **Cyclic Hexagon Formation**: Hence, the points \\( A, E, I, B, F, J \\) form a cyclic hexagon because they lie on a common circle (i.e., they are concyclic).\n\n7. **Power of a Point (for Point \\( D \\))**:\n    - We apply the Power of a Point theorem at \\( D \\) for this cyclic hexagon:\n    \\[\n    DE \\cdot DF = DA \\cdot DB\n    \\]\n    Since \\( D \\) is the midpoint of \\( AB \\):\n    \\[\n    DA = DB\n    \\]\n\n8. **Simplification**: Thus, we have:\n    \\[\n    DE \\cdot DF = DA \\cdot DA = DA^2\n    \\]\n\n### Conclusion\n\\boxed{DE \\cdot DF = DA^2}",
+    "concepts": [
+      "Triangle Inequality",
+      "Incenter of a Triangle",
+      "Midpoint Theorem",
+      "Coordinate Geometry (optional)",
+      "Area Ratios"
+    ],
+    "sub_problems": [
+      {
+        "question": "Given a triangle $ABC$ with $CA = CB$, show that $CD$ is perpendicular to $AB$. Justify your answer using the properties of a triangle.",
+        "answer": "Using the fact that $CA = CB$, triangle $ABC$ is isosceles. The median to the base of an isosceles triangle is also the altitude. Therefore, $CD \bot AB$.",
+        "concept": "Triangle Inequality, Isosceles Triangles, Geometric Proofs"
+      },
+      {
+        "question": "Prove that the incenter $I$ of $\triangle ABC$ is equidistant from all three sides. (Hint: This is a fundamental property of incenters.)",
+        "answer": "The incenter $I$ is the intersection point of the angle bisectors of the triangle. The distance from a point to a line is the length of the perpendicular segment from that point to the line. Therefore, the incenter is equidistant from all three sides.",
+        "concept": "Incenter of a Triangle, Geometric Proofs"
+      },
+      {
+        "question": "Let $ABC$ be an equilateral triangle. Let $D$ be the midpoint of $AB$. Show that $CD$ is the median and the altitude of the triangle. Also, prove that $CD$ bisects $\triangle ABC$.",
+        "answer": "This relies on symmetry. Given $CA = CB$ and $D$ is the midpoint of $AB$, $CD$ must be perpendicular to $AB$.  This is directly verifiable with a visual diagram and applying the Pythagorean theorem to create a proof.",
+        "concept": "Isosceles Triangles, Geometric Proofs, Midpoint Theorem"
+      },
+      {
+        "question": "Consider a triangle $ABC$ and a point $E$ such that $\triangle EFC$ has the same incenter as $\triangle ABC$.  Prove that $EF$ is a line such that $D$ lies on $EF$.",
+        "answer": "The problem statement implies the existence of a line $EF$ passing through $D$ such that the incenters of $\triangle ABC$ and $\triangle EFC$ coincide.  This allows us to focus on the key elements: the incenter's position and the line passing through $D$.",
+        "concept": "Incenter of a Triangle, Geometric Relationships"
+      },
+      {
+        "question": "If $\triangle ABC$ and $\triangle EFC$ have the same incenter, and $CA = CB$, then $CD \bot AB$.  If $CA=CB$ and $EFC$ is constructed such that its incenter is also the incenter of $ABC$, prove that $DE \times DF = DA^2$.",
+        "answer": "Given the prior established properties, and knowing $D$ is the midpoint of $AB$, and given that $CA=CB$, we can establish that $D$ is the foot of the perpendicular from $C$ to $AB$. Since $EF$ passes through $D$ and $E, F$ are points such that the incenters coincide, we can use the properties of similarity and ratios to relate $DE$ and $DF$ to $DA$ and $DB$. This will lead to the desired result $DE \times DF = DA^2$ because of the definitions of midpoints and the given information about the incenters.",
+        "concept": "Incenter of a Triangle, Midpoint Theorem, Area Ratios, Coordinate Geometry (optional)"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "original_problem": "Consider the product of $x^5$, $x^2 + \\frac{1}{x^2}$, and $1 + \\frac{2}{x} + \\frac{3}{x^2}$. Determine the degree of the resulting polynomial.\n$\\textbf{(A)}\\ 3\\qquad \\textbf{(B)}\\ 5\\qquad \\textbf{(C)}\\ 6\\qquad \\textbf{(D)}\\ 7\\qquad \\textbf{(E)}\\ 8$",
+    "original_solution": "1. **Multiply the first two expressions:** \n   \\[\n   x^5 \\left(x^2 + \\frac{1}{x^2}\\right) = x^5 \\cdot x^2 + x^5 \\cdot \\frac{1}{x^2} = x^7 + x^3\n   \\]\n\n2. **Multiply the result with the third expression:**\n   \\[\n   (x^7 + x^3) \\left(1 + \\frac{2}{x} + \\frac{3}{x^2}\\right)\n   \\]\n   Using the distributive property:\n   \\[\n   x^7 \\cdot 1 + x^7 \\cdot \\frac{2}{x} + x^7 \\cdot \\frac{3}{x^2} + x^3 \\cdot 1 + x^3 \\cdot \\frac{2}{x} + x^3 \\cdot \\frac{3}{x^2}\n   \\]\n   Simplifying each term:\n   \\[\n   x^7 + 2x^6 + 3x^5 + x^3 + 2x^2 + 3x\n   \\]\n\n3. **Determine the degree of the resulting polynomial:** The degree of a polynomial is the highest power of $x$ present in the polynomial. In the expression $x^7 + 2x^6 + 3x^5 + x^3 + 2x^2 + 3x$, the highest power of $x$ is 7.\n\nConclusion:\nThe degree of the polynomial resulting from the product of $x^5$, $x^2 + \\frac{1}{x^2}$, and $1 + \\frac{2}{x} + \\frac{3}{x^2}$ is $7$.\nThe final answer is $\\boxed{\\textbf{(D)}\\ 7}$",
+    "concepts": [
+      "Polynomial Algebra",
+      "Degree of a Polynomial",
+      "Expansion of Polynomials"
+    ],
+    "sub_problems": [
+      {
+        "question": "Expand the term $x^5$.",
+        "answer": "x^5",
+        "concept": "Polynomial Algebra"
+      },
+      {
+        "question": "Multiply two linear terms: $(x^2)(1 + \frac{2}{x})$ and simplify.",
+        "answer": "x^2 + \frac{2x^2}{x} = x^2 + 2x",
+        "concept": "Polynomial Algebra"
+      },
+      {
+        "question": "Expand the expression $(x^2 + 3x^2) = 4x^2",
+        "answer": "4x^2",
+        "concept": "Polynomial Algebra"
+      },
+      {
+        "question": "Given the polynomial $x^5 + x^2 + 1 + \frac{2}{x} + \frac{3}{x^2}$.  What is the highest degree term?",
+        "answer": "x^5",
+        "concept": "Degree of a Polynomial"
+      },
+      {
+        "question": "Consider the product of $x^5$, $x^2 + 2x$, and $x^2 + 3x^2$. Find the degree of the resulting polynomial.",
+        "answer": "7",
+        "concept": "Degree of a Polynomial"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "original_problem": "The sum of three numbers $a$, $b$, and $c$ is 120. If we increase $a$ by 8, decrease $b$ by 3 and multiply $c$ by 3, the three resulting numbers are equal. What is the value of $b$?",
+    "original_solution": "We start with the equations:\n1. \\(a + b + c = 120\\)\n2. \\(a + 8 = b - 3 = 3c\\)\n\nFirst, solve \\(b - 3 = 3c\\) for \\(b\\):\n\\[ b = 3c + 3 \\]\n\nNext, solve \\(3c = a + 8\\) for \\(a\\):\n\\[ a = 3c - 8 \\]\n\nSubstitute both \\(a\\) and \\(b\\) in terms of \\(c\\) into the first equation:\n\\[ (3c - 8) + (3c + 3) + c = 120 \\]\n\\[ 7c - 5 = 120 \\]\n\\[ 7c = 125 \\]\n\\[ c = \\frac{125}{7} \\]\n\nSubstituting \\(c\\) back into the equation for \\(b\\):\n\\[ b = 3\\left(\\frac{125}{7}\\right) + 3 \\]\n\\[ b = \\frac{375}{7} + \\frac{21}{7} \\]\n\\[ b = \\frac{396}{7} \\]\n\\[ b = \\boxed{56\\frac{4}{7}} \\]",
+    "concepts": [
+      "Algebra",
+      "Linear Equations",
+      "Problem Solving"
+    ],
+    "sub_problems": [
+      {
+        "question": "Solve a simple linear equation with one variable.  Given the equation $x + 5 = 10$, find the value of $x$.",
+        "answer": "x = 5",
+        "concept": "Linear Equations"
+      },
+      {
+        "question": "Set up and solve a system of two linear equations with two variables.  Given $x + y = 7$ and $x - y = 1$, find the values of $x$ and $y$.",
+        "answer": "x = 4, y = 3",
+        "concept": "Linear Equations"
+      },
+      {
+        "question": "Work with variables and expressions.  Simplify the expression $2x + 3 - x + 5$.",
+        "answer": "x + 8",
+        "concept": "Algebra"
+      },
+      {
+        "question": "Solve a problem involving a relationship between two variables where one is expressed in terms of the other.  John has some apples and some oranges. He has twice as many apples as oranges. If he has a total of 12 fruits, how many apples does he have?",
+        "answer": "6",
+        "concept": "Problem Solving, Linear Equations"
+      },
+      {
+        "question": "A problem involving changing numbers according to given rules.  A number $x$ is increased by 5 and then decreased by 2. The result is 10. Find the original number.",
+        "answer": "7",
+        "concept": "Algebra, Linear Equations"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "original_problem": "A vessel of capacity 2 liters has a certain percentage of alcohol and another vessel of capacity 6 liters has 40% alcohol. The total liquid of 8 liters was poured out into a vessel of capacity 10 liters, and the rest of the vessel was filled with water. The new concentration of the mixture is 30.000000000000004%. What is the percentage of alcohol in the first vessel?",
+    "original_solution": "Let's denote the percentage of alcohol in the first vessel (2 liters) as x%.\n\nFrom the second vessel (6 liters), we have 40% alcohol. This means that in the 6 liters, there is \\(6 \\text{ liters} \\times 0.40 = 2.4 \\text{ liters}\\) of alcohol.\n\nWhen both vessels are combined, we have a total of 8 liters of liquid. We are told that the new concentration of the mixture is 30.000000000000004%, which is essentially 30% (the extra decimal places are likely due to a rounding error or precision issue in the calculation).\n\nThe total amount of alcohol in the 8 liters at 30% concentration is \\(8 \\text{ liters} \\times 0.30 = 2.4 \\text{ liters}\\).\n\nNow, let's calculate the amount of alcohol that came from the first vessel. Since we already have 2.4 liters of alcohol from the second vessel, the first vessel must contribute the remaining alcohol to reach the 2.4 liters total in the 8-liter mixture.\n\nLet's set up the equation:\n\n\\[\n\\text{Amount of alcohol from the first vessel} + \\text{Amount of alcohol from the second vessel} = \\text{Total amount of alcohol in the mixture}\n\\]\n\n\\[\n(2 \\text{ liters} \\times \\frac{x}{100}) + 2.4 \\text{ liters} = 2.4 \\text{ liters}\n\\]\n\nSince the amount of alcohol from the second vessel is already 2.4 liters, the amount of alcohol from the first vessel must be 0 liters to maintain the total of 2.4 liters of alcohol in the mixture. This means that the first vessel contains 0% alcohol.\n\nTherefore, the percentage of alcohol in the first vessel is $\\boxed{0\\%}$ .",
+    "concepts": [
+      "Algebra",
+      "Ratio and Proportion",
+      "Percentage Calculations",
+      "Linear Equations"
+    ],
+    "sub_problems": [
+      {
+        "question": "A 10-liter vessel is filled with 100% alcohol. What is the total volume of alcohol?",
+        "answer": "10 liters",
+        "concept": "Percentage Calculations"
+      },
+      {
+        "question": "If a vessel has 40% alcohol, what is the amount of pure alcohol in 5 liters of this mixture?",
+        "answer": "2 liters",
+        "concept": "Percentage Calculations"
+      },
+      {
+        "question": "Set up an equation to represent the total volume of liquid after pouring into the 10-liter vessel. Let 'x' be the percentage of alcohol in the first vessel. The 6-liter vessel has 40% alcohol, so the amount of alcohol poured out is 2.4x liters. The total volume poured is 8 liters, so the equation is 2.4x + (6 * 0.4) = 8",
+        "answer": "2.4x + 2.4 = 8",
+        "concept": "Linear Equations"
+      },
+      {
+        "question": "Solve the linear equation 2.4x + 2.4 = 8 to find the value of x.",
+        "answer": "x = 2.5",
+        "concept": "Linear Equations"
+      },
+      {
+        "question": "Calculate the remaining volume of the 10-liter vessel after pouring out 8 liters of the mixture.  Then, calculate the amount of water added to fill the vessel to 10 liters.",
+        "answer": "2 liters of water",
+        "concept": "Ratio and Proportion"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "original_problem": "Given that the sum of the first $n$ terms of a sequence $\\{a\\_n\\}$ is $S\\_n$, and $S\\_n=2^{n}a\\_n-1$, find the sum of the first $n$ terms of the sequence $\\{\\frac{a\\_n}{a_{n+1}}\\}$, denoted as $T\\_n=$ `____`.",
+    "original_solution": "Since $S\\_n=2^{n}a\\_n-1$,\nwe have $S_{n-1}=2^{n-1}a_{n-1}-1 (n \\geqslant 2)$.\nSubtracting the second equation from the first, we get:\n$a\\_n=2^{n}a\\_n-2^{n-1}a_{n-1} (n \\geqslant 2)$.\nSimplifying, we obtain:\n$\\frac{a\\_n}{a_{n+1}}=\\frac{2^{n+1}-1}{2^{n}}=2-\\frac{1}{2^{n}}$.\nThus, $T\\_n=\\sum\\_{i=1}^{n}\\left(2-\\frac{1}{2^{i}}\\right)=2n-\\sum\\_{i=1}^{n}\\frac{1}{2^{i}}=2n+\\frac{1}{2^{n}}-1$.\n\nTherefore, the answer is: $\\boxed{T\\_n=2n+\\frac{1}{2^{n}}-1}$.\n\nTo find the answer, we first use the given equations to find an expression for $\\frac{a\\_n}{a_{n+1}}$ and then use the formula for the sum of a geometric series to compute $T\\_n$. This problem requires understanding of sequences and series, as well as the ability to manipulate algebraic expressions.",
+    "concepts": [
+      "Sequences and Series",
+      "Recursion",
+      "Summation Formulas",
+      "Algebraic Manipulation"
+    ],
+    "sub_problems": [
+      {
+        "question": "Given the sequence $a_1 = 1$ and $S_1 = a_1$, find $a_1$.",
+        "answer": "a_1 = S_1 = 2^1 * a_1 - 1 = 2(1) - 1 = 1",
+        "concept": "Sequences and Series, Summation Formulas"
+      },
+      {
+        "question": "Given $S_2 = a_1 + a_2$, and $S_2 = 2^2 a_2 - 1$, find $a_2$.",
+        "answer": "S_2 = 2^2 a_2 - 1 = 4a_2 - 1. Also, $S_2 = a_1 + a_2 = 1 + a_2$. Thus, $1 + a_2 = 4a_2 - 1$, so $3a_2 = 2$ and $a_2 = \frac{2}{3}$.",
+        "concept": "Sequences and Series, Summation Formulas, Algebraic Manipulation"
+      },
+      {
+        "question": "If $S_n = 2^n a_n - 1$, then $S_{n-1} = 2^{n-1} a_{n-1} - 1$.  Prove that $a_n = S_n - S_{n-1}$ for $n > 1$.",
+        "answer": "We have $a_n = S_n - S_{n-1} = (2^n a_n - 1) - (2^{n-1} a_{n-1} - 1) = 2^n a_n - 2^{n-1} a_{n-1}$. This holds for $n > 1$.",
+        "concept": "Sequences and Series, Recursion, Summation Formulas"
+      },
+      {
+        "question": "Assuming $a_1 = 1$ and $S_n = 2^n a_n - 1$, find a general formula for $a_n$ for $n>1$.",
+        "answer": "We know $a_n = S_n - S_{n-1} = 2^n a_n - 1 - (2^{n-1} a_{n-1} - 1) = 2^n a_n - 2^{n-1} a_{n-1}$.  We also know $S_1 = a_1 = 1$.  Let's examine $S_2 = a_1 + a_2 = 2^2 a_2 - 1$. This gives $1 + a_2 = 4a_2 - 1$, so $3a_2 = 2$, and $a_2 = \frac{2}{3}$.  Then, $a_n = \frac{2}{3} (2^{n-1} - 1)$",
+        "concept": "Sequences and Series, Recursion, Summation Formulas, Algebraic Manipulation"
+      },
+      {
+        "question": "Given $a_n = \frac{2}{3}(2^{n-1} - 1)$, find $S_n$.",
+        "answer": "S_n = \frac{2}{3} \text{sum}(2^k - 1) for k from 1 to n = \frac{2}{3} \text{sum}(2^k - 1) for k from 1 to n = \frac{2}{3} [ (2^1 - 1) + (2^2 - 1) + ... + (2^n - 1)] = \frac{2}{3} [ (2 + 2^2 + ... + 2^n) - (1 + 1 + ... + 1)] = \frac{2}{3} \text{sum}(2^k - 1) for k from 1 to n. The sum of powers of 2 is $\frac{2(2^n-1)}{2-1} = 2(2^n - 1)$. Therefore, $S_n = \frac{2}{3} (2(2^n - 1)) = \frac{2}{3}(2^{n+1} - 2) = \frac{2}{3} \times 2(2^n - 1) = \frac{2(2^n-1)}{1}$"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "original_problem": "Find the value of $k$ such that all roots of the polynomial $x^4 - 4x^3 + 4x^2 + kx - 4$ are real.",
+    "original_solution": "Let $p, q, r, s$ be the real roots of the polynomial. According to Vieta's formulas for a quartic equation:\n\\[ p + q + r + s = 4, \\]\n\\[ pqr + pqs + prs + qrs = k, \\]\n\\[ pqrs = 4. \\]\n\nApplying AM-GM inequality for four numbers, we get:\n\\[ \\frac{p + q + r + s}{4} \\geq \\sqrt[4]{pqrs}. \\]\nSubstituting the values from Vieta's relations:\n\\[ \\frac{4}{4} \\geq \\sqrt[4]{4}. \\]\nThus, we have:\n\\[ 1 \\geq \\sqrt[4]{4} \\Rightarrow 1 \\geq \\sqrt[4]{4}. \\]\n\nHowever, to satisfy the equality $1 = \\sqrt[4]{4}$, all variables $p, q, r, s$ must be equal, which means $p = q = r = s = \\sqrt[4]{4} \\approx 1.189$. To confirm the polynomial has these roots:\n\\[ (x - \\sqrt[4]{4})^4 = x^4 - 4x^3\\sqrt[4]{4} + 6x^2\\sqrt[4]{4}^2 - 4x\\sqrt[4]{4}^3 + \\sqrt[4]{4}^4. \\]\nSubstituting back to find $k$:\n\\[ k = -4 \\times \\sqrt[4]{4}^3. \\]\n\\[ k = -4 \\times (\\sqrt[4]{4})^3 = -4 \\times \\sqrt{4} = -8. \\]\n\nThus, the value of $k$ for which all roots of the polynomial are real is $\\boxed{-8}$.",
+    "concepts": [
+      "Polynomial Roots",
+      "Vieta's Formulas",
+      "Quadratic Inequality",
+      "Sign Analysis",
+      "Intermediate Value Theorem"
+    ],
+    "sub_problems": [
+      {
+        "question": "Given the polynomial $x^2 + bx + c$, find the conditions for all roots to be real.  Specifically, find the conditions on $b^2 - 4c$ that guarantee real roots.",
+        "answer": "The discriminant, $b^2 - 4c$, must be greater than or equal to 0 for the quadratic to have real roots. So, $b^2 - 4c \boxed{\text{must be } \boxed{\text{greater than or equal to 0}}}$",
+        "concept": "Quadratic Inequality"
+      },
+      {
+        "question": "Using Vieta's formulas, derive a relationship between the roots of a quartic polynomial and its coefficients.  Specifically, for a polynomial $x^4 + ax^3 + bx^2 + cx + d$, what are the relationships between the roots $r_1, r_2, r_3, r_4$ and $a, b, c, d$?",
+        "answer": "Vieta's formulas state: $r_1 + r_2 + r_3 + r_4 = -a$, $r_1r_2 + r_1r_3 + r_1r_4 + r_2r_3 + r_2r_4 + r_3r_4 = b$, $r_1r_2r_3 + r_1r_2r_4 + r_1r_2r_3 + r_2r_3r_4 = -c$, and $r_1r_2r_3r_4 = d$.",
+        "concept": "Vieta's Formulas"
+      },
+      {
+        "question": "Consider the quadratic $x^2 + ax + b$.  Show how the discriminant ($a^2 - 4b$) relates to the number of real roots, and how this relates to the sign of the discriminant.",
+        "answer": "If $a^2 - 4b > 0$, the quadratic has two distinct real roots. If $a^2 - 4b = 0$, it has one real root (a repeated root). If $a^2 - 4b < 0$, it has no real roots.",
+        "concept": "Quadratic Inequality"
+      },
+      {
+        "question": "Let $P(x) = x^4 - 4x^3 + 4x^2 + kx - 4$. Find the value of $P(1)$ and $P(-1)$.",
+        "answer": "P(1) = 1 - 4 + 4 + k - 4 = k - 3. P(-1) = 1 + 4 + 4 - k - 4 = k.",
+        "concept": "Polynomial Roots"
+      },
+      {
+        "question": "If all roots of $P(x)$ are real, and $P(1) = 0$, find the value of $k$.",
+        "answer": "If $P(1) = 0$, then $k - 3 = 0$, so $k = 3$.",
+        "concept": "Polynomial Roots"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "original_problem": "At its Grand Opening, the Guthrie Market distributed two different types of souvenirs. One type cost 20 cents each, and the other type cost a certain amount. One thousand souvenirs were distributed in all, and the cost of these souvenirs was 220 dollars. They distributed 400 of the souvenirs with the unknown cost. How much did this type of souvenir cost?",
+    "original_solution": "Let's denote the cost of the unknown souvenir as \\( x \\) dollars each.\n\nWe know that 400 souvenirs of the unknown type were distributed, so the total cost for these would be \\( 400x \\).\n\nWe also know that the other type of souvenir costs 20 cents each, which is \\( 0.20 \\) dollars. Since a total of 1000 souvenirs were distributed, and 400 were of the unknown type, there must have been \\( 1000 - 400 = 600 \\) souvenirs of the 20-cent type.\n\nThe total cost for the 20-cent souvenirs would then be \\( 600 \\times 0.20 = 120 \\) dollars.\n\nThe total cost of all the souvenirs is given as 220 dollars. So, the cost of the unknown souvenirs plus the cost of the 20-cent souvenirs should equal 220 dollars.\n\nTherefore, we have the equation:\n\n\\( 400x + 120 = 220 \\)\n\nSubtract 120 from both sides to isolate the term with \\( x \\):\n\n\\( 400x = 220 - 120 \\)\n\n\\( 400x = 100 \\)\n\nNow, divide both sides by 400 to solve for \\( x \\):\n\n\\( x = \\frac{100}{400} \\)\n\n\\( x = \\frac{1}{4} \\)\n\n\\( x = 0.25 \\)\n\nSo, the unknown type of souvenir cost $\\boxed{25}$  cents each.",
+    "concepts": [
+      "Algebra",
+      "Ratio and Proportion",
+      "System of Linear Equations"
+    ],
+    "sub_problems": [
+      {
+        "question": "A baker makes cookies. He uses 2 cups of flour for every 3 cups of sugar. If he uses 6 cups of sugar, how much flour does he need?",
+        "answer": "4 cups",
+        "concept": "Ratio and Proportion"
+      },
+      {
+        "question": "Sarah earns $15 per hour babysitting. She worked for 3 hours. How much money did she earn?",
+        "answer": "45 dollars",
+        "concept": "Algebra - Basic Equations"
+      },
+      {
+        "question": "A recipe calls for 1/2 cup of milk and 1/4 cup of sugar. If you want to triple the recipe, how much sugar do you need?",
+        "answer": "3/4 cup",
+        "concept": "Ratio and Proportion - Scaling"
+      },
+      {
+        "question": "A train travels at 60 miles per hour. How far will it travel in 2.5 hours?",
+        "answer": "150 miles",
+        "concept": "Algebra - Distance, Rate, and Time"
+      },
+      {
+        "question": "Solve the equation: 2x + 5 = 11",
+        "answer": "x = 3",
+        "concept": "Algebra - Solving Linear Equations"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "original_problem": "Let \\( p = 2^{3009}, q = 3^{2006}, \\) and \\( r = 5^{1003} \\). Which of the following statements is true?\n(A) \\( p < q < r \\)\n(B) \\( p < r < q \\)\n(C) \\( q < p < r \\)\n(D) \\( r < p < q \\)\n(E) \\( q < r < p \\)",
+    "original_solution": "Given the values:\n\\[ p = 2^{3009}, \\quad q = 3^{2006}, \\quad r = 5^{1003} \\]\n\n1. Express \\( p \\) and \\( q \\) in terms of powers of the same base:\n   \\[ p = 2^{3009} = 2^{3 \\times 1003} = (2^3)^{1003} = 8^{1003} \\]\n   \\[ q = 3^{2006} = 3^{2 \\times 1003} = (3^2)^{1003} = 9^{1003} \\]\n   Note: \\( r = 5^{1003} \\) is already expressed as a power.\n\n2. Compare the magnitudes:\n   To compare \\( p, q, \\) and \\( r \\), we now look at the factors 8, 9, and 5 which are:\n   \\[ 8^{1003}, \\quad 9^{1003}, \\quad \\text{and} \\quad 5^{1003} \\]\n\n3. Analyze the base values:\n   - Base 8: \\( 8 = 2^3 \\)\n   - Base 9: \\( 9 = 3^2 \\)\n   - Base 5: \\( 5 \\)\n\n4. Since the common exponent in all terms is \\( 1003 \\), we compare the bases:\n   - Clearly, \\( 5 < 8 < 9 \\)\n\n5. Therefore, since all exponents are equal, the order of the original terms follows the order of their bases:\n   \\[ 5^{1003} < 8^{1003} < 9^{1003} \\]\n   \\[ r < p < q \\]\n\n### Conclusion:\nThus, the true statements is \\( r < p < q \\).\n\n\\[\n\\boxed{D}\n\\]",
+    "concepts": [
+      "Exponents",
+      "Order of Operations",
+      "Logarithms (Implicit)",
+      "Number Comparisons"
+    ],
+    "sub_problems": [
+      {
+        "question": "Simplify 2^10.",
+        "answer": "1024",
+        "concept": "Exponents"
+      },
+      {
+        "question": "Simplify 3^6.",
+        "answer": "729",
+        "concept": "Exponents"
+      },
+      {
+        "question": "Calculate 5^5.",
+        "answer": "3125",
+        "concept": "Exponents"
+      },
+      {
+        "question": "Given a base of 2 and an exponent of 3, express 2^3009 in terms of a power of 2. (Hint: Consider powers of 2 like 2^10, 2^20, 2^30, etc.)",
+        "answer": "2^10 * 2^2009 - 1",
+        "concept": "Exponents & Number Theory"
+      },
+      {
+        "question": "Compare 2^10 and 3^6. Which is larger?",
+        "answer": "2^10 > 3^6",
+        "concept": "Exponents & Number Comparisons"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "original_problem": "When \\( a < -1 \\), the nature of the roots for the equation\n$$\n\\left(a^{3}+1\\right) x^{2}+\\left(a^{2}+1\\right) x-(a+1)=0\n$$\nis:\n(A) Two negative roots.\n(B) One positive root and one negative root, with the absolute value of the negative root being larger.\n(C) One positive root and one negative root, with the absolute value of the negative root being smaller.\n(D) No real roots.",
+    "original_solution": "\nGiven the quadratic equation:\n\n\\[\n(a^3 + 1) x^2 + (a^2 + 1) x - (a + 1) = 0\n\\]\n\nwhere \\( a < -1 \\).\n\n1. **Identify the coefficients and analyze their signs:**\n\n    - \\( a^3 + 1 \\)\n    - \\( a^2 + 1 \\)\n    - \\( -(a+1) \\)\n\n2. **Signs of the coefficients under the condition \\( a < -1 \\):**\n\n    - Since \\( a < -1 \\), we have \\( a^3 < -1 \\), therefore \\( a^3 + 1 < 0 \\).\n    - Given \\( a^2 \\geq 0 \\) and \\( a^2 + 1 \\geq 1 \\), it follows that \\( a^2 + 1 > 0 \\).\n    - Since \\( a < -1 \\), then \\( a + 1 < 0 \\).\n\n3. **Discriminant (\\(\\Delta\\)) of the quadratic equation:**\n\n    The discriminant \\(\\Delta\\) of a quadratic equation \\( Ax^2 + Bx + C = 0 \\) is given by:\n    \\[\n    \\Delta = B^2 - 4AC\n    \\]\n\n    Here \\( A = a^3 + 1 \\), \\( B = a^2 + 1 \\), and \\( C = -(a + 1) \\). Thus, the discriminant is:\n    \\[\n    \\Delta = (a^2 + 1)^2 - 4(a^3 + 1)(-(a + 1))\n    \\]\n\n4. **Simplify the discriminant:**\n\n    Substituting \\( A \\), \\( B \\), and \\( C \\) into the discriminant formula:\n    \\[\n    \\Delta = (a^2 + 1)^2 + 4(a^3 + 1)(a + 1)\n    \\]\n\n    Since \\( a^3 + 1 < 0 \\) and \\( a + 1 < 0 \\), their product is positive. Consequently, the discriminant \\(\\Delta > 0\\), indicating:\n\n    \\[\n    \\Delta > 0\n    \\]\n    \n    Therefore, the quadratic equation has two distinct real roots.\n\n5. **Determine the nature of the roots using Vieta's formulas:**\n\n    According to Vieta's formulas:\n    - The sum of the roots \\( x_1 \\) and \\( x_2 \\) of the equation \\( Ax^2 + Bx + C = 0 \\) is given by: \n      \\[\n      x_1 + x_2 = -\\frac{B}{A}\n      \\]\n    - The product of the roots is given by:\n      \\[\n      x_1 x_2 = \\frac{C}{A}\n      \\]\n\n    For our equation:\n    \\[\n    x_1 + x_2 = -\\frac{a^2 + 1}{a^3 + 1}\n    \\]\n    \\[\n    x_1 x_2 = \\frac{-(a + 1)}{a^3 + 1}\n    \\]\n\n6. **Sign of the roots' product:**\n\n    Given \\( x_1 x_2 = \\frac{-(a + 1)}{a^3 + 1} \\) and because \\( a + 1 < 0 \\) and \\( a^3 + 1 < 0 \\):\n    \\[\n    x_1 x_2 = \\frac{-(a + 1)}{a^3 + 1} < 0\n    \\]\n\n    This implies that the roots \\( x_1 \\) and \\( x_2 \\) have opposite signs.\n\n7. **Sum of the roots:**\n\n    Given \\( x_1 + x_2 = -\\frac{a^2 + 1}{a^3 + 1} \\) with \\(a^2 + 1 > 0 \\) and \\( a^3 + 1 < 0 \\):\n    \\[\n    x_1 + x_2 = -\\frac{a^2 + 1}{a^3 + 1} > 0\n    \\]\n\n    This implies that the negative root in absolute value is smaller than the positive root.\n\n### Conclusion:\n\nThus, the correct answer is:\n\\[\n\\boxed{C}\n\\]",
+    "concepts": [
+      "Quadratic Equations",
+      "Discriminant",
+      "Roots of Quadratic Equations",
+      "Sign Analysis"
+    ],
+    "sub_problems": [
+      {
+        "question": "Solve the quadratic equation  x\u00b2 + x - 1 = 0.  Determine the discriminant and the nature of its roots.",
+        "answer": "The discriminant is 1 - 4(-1) = 5, so the roots are real and distinct (since the discriminant is positive).",
+        "concept": "Quadratic Equations"
+      },
+      {
+        "question": "What is the discriminant of a quadratic equation in the form ax\u00b2 + bx + c = 0?",
+        "answer": "The discriminant (\u0394) is b\u00b2 - 4ac.",
+        "concept": "Quadratic Equations"
+      },
+      {
+        "question": "If the discriminant of a quadratic equation is positive, what does this indicate about the roots?",
+        "answer": "The roots are real and distinct.",
+        "concept": "Quadratic Equations"
+      },
+      {
+        "question": "If the discriminant of a quadratic equation is zero, what does this indicate about the roots?",
+        "answer": "The quadratic equation has exactly one real root (a repeated root).",
+        "concept": "Quadratic Equations"
+      },
+      {
+        "question": "If the discriminant of a quadratic equation is negative, what does this indicate about the roots?",
+        "answer": "The roots are complex (non-real).",
+        "concept": "Quadratic Equations"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "original_problem": "Three vertices of a cube are $A = (5, 9, 6)$, $B = (5, 14, 6)$, and $C = (5, 14, 11)$. What is the surface area of the cube?",
+    "original_solution": "Calculate the distances between the points $A, B$, and $C$ which represent adjacent edges of one face of the cube.\n- $AB = \\sqrt{(5-5)^2 + (14-9)^2 + (6-6)^2} = \\sqrt{0 + 25 + 0} = 5$\n- $BC = \\sqrt{(5-5)^2 + (14-14)^2 + (11-6)^2} = \\sqrt{0 + 0 + 25} = 5$\n- $AC = \\sqrt{(5-5)^2 + (14-9)^2 + (11-6)^2} = \\sqrt{25+25} = 5\\sqrt{2}$\n\nCheck that the diagonal is correct for $a = 5$: $AC = a\\sqrt{2} = 5\\sqrt{2}$, which matches with the calculated distance $AC$.\n\nTherefore, $a = 5$, and the surface area of the cube is $6a^2 = 6 \\cdot 5^2 = 150$. The surface area of the cube is $\\boxed{150}$.",
+    "concepts": [
+      "3D Geometry",
+      "Vector Algebra",
+      "Distance Formula",
+      "Surface Area of Cubes"
+    ],
+    "sub_problems": [
+      {
+        "question": "Find the distance between two points in 3D space given their coordinates. Specifically, calculate the distance between points $A = (5, 9, 6)$ and $B = (5, 14, 6)$.",
+        "answer": "The distance is $\\sqrt{(5-5)^2 + (14-9)^2 + (6-6)^2} = \\sqrt{0 + 5^2 + 0} = 5.",
+        "concept": "Distance Formula"
+      },
+      {
+        "question": "Calculate the distance between points $A = (5, 9, 6)$ and $C = (5, 14, 11)$.",
+        "answer": "The distance is $\\sqrt{(5-5)^2 + (14-9)^2 + (11-6)^2} = \\sqrt{0 + 5^2 + 5^2} = \\sqrt{50} = 5\\sqrt{2}.",
+        "concept": "Distance Formula"
+      },
+      {
+        "question": "Calculate the distance between points $B = (5, 14, 6)$ and $C = (5, 14, 11)$.",
+        "answer": "The distance is $\\sqrt{(5-5)^2 + (14-14)^2 + (11-6)^2} = \\sqrt{0 + 0 + 5^2} = 5.",
+        "concept": "Distance Formula"
+      },
+      {
+        "question": "Explain the relationship between the edges of a cube and the distance between vertices.",
+        "answer": "The distance between non-adjacent vertices of a cube is the space diagonal, which is $\\sqrt{3}s$, where $s$ is the side length of the cube.",
+        "concept": "3D Geometry"
+      },
+      {
+        "question": "Determine the length of a space diagonal of a cube with side length 's'.",
+        "answer": "The space diagonal of a cube with side length $s$ is $\\sqrt{s^2 + s^2 + s^2} = s\\sqrt{3}$",
+        "concept": "3D Geometry"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "original_problem": "Suppose that $A, B, C, D$ are four points in the plane, and let $Q, R, S, T, U, V$ be the respective midpoints of $AB, AC, AD, BC, BD, CD$. If $QR = 2001$, $SU = 2002$, and $TV = 2003$, find the distance between the midpoints of $QU$ and $RV$.",
+    "original_solution": "To find the distance between the midpoints of $Q U$ and $R V$, let's break down the given information and analyze each step.\n\n1. **Identify the midpoints**:\n    - $Q$, $R$, $S$, $T$, $U$, $V$ are midpoints of segments $AB$, $AC$, $AD$, $BC$, $BD$, $CD$ respectively.\n\n2. **Recall Midpoint theorem**:\n    - The Midpoint Theorem states that the segment connecting the midpoints of any two sides of a triangle is parallel to the third side and half as long.\n    - Applying this theorem simplifies understanding the relationship and distances between these midpoints.\n\n3. **Given distances**:\n    - $Q R = 2001$\n    - $S U = 2002$\n    - $T V = 2003$\n\n4. **Analyze quadrilateral $QUVR$**:\n    - $Q R$ is parallel to $BC$ (because it's a segment joining midpoints of \\(AB\\) and \\(AC\\)).\n    - $U V$ is also parallel to $BC$ (by a similar argument as $U$ and $V$ are midpoints of segments $BD$ and $CD$ respectively).\n    - $Q U$ is parallel to $AD$, which is the segment joining midpoints of \\(AB\\) and \\(BD\\).\n    - $R V$ is also parallel to $AD$ (as \\(R\\) and \\(V\\) are midpoints of \\(AC\\) and \\(CD\\)).\n\n5. **Form of $QUVR$**:\n    - The quadrilateral $QUVR$ is a parallelogram since opposite sides are both parallel and equal in length.\n\n6. **Distance between midpoints $QU$ and $RV$**:\n    - In a parallelogram, the midpoints of opposite sides form another parallelogram.\n    - Since $QUVR$ is a parallelogram, the distance between the midpoints of $QU$ and $RV$ is the same as any side length of $QUVR$.\n    - Hence, the distance between the midpoints of $QU$ and $RV$ is equal to $Q R$.\n\nConclusion: The side length $Q R$ is given as 2001. Therefore, the distance between the midpoints of $QU$ and $RV$ is\n\\[\n\\boxed{2001}\n\\]",
+    "concepts": [
+      "Geometric Midpoint Theorem",
+      "Vector Algebra",
+      "Coordinate Geometry",
+      "Distance Formula"
+    ],
+    "sub_problems": [
+      {
+        "question": "Given two points $A(x_1, y_1)$ and $B(x_2, y_2)$, find the coordinates of the midpoint $M$ of $AB$.",
+        "answer": "The midpoint $M$ has coordinates $\bigg(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\bigg).",
+        "concept": "Coordinate Geometry"
+      },
+      {
+        "question": "Using the midpoint theorem, prove that $PQ = \frac{1}{2}BC$, where $Q$ is the midpoint of $AB$ and $R$ is the midpoint of $AC$.",
+        "answer": "This utilizes the fact that $Q$ and $R$ are midpoints of $AB$ and $AC$ respectively. Thus, $QR$ is parallel to $BC$ and $QR = \frac{1}{2}BC$.",
+        "concept": "Geometric Midpoint Theorem"
+      },
+      {
+        "question": "Let $A = (0,0), B = (2,0), C = (1,1)$. Find the coordinates of the midpoints $Q$, $R$, and $S$.",
+        "answer": "Q = (1,0), R = (0.5, 0.5), S = (0.5, 0)",
+        "concept": "Coordinate Geometry"
+      },
+      {
+        "question": "Given points $A, B, C$ and their respective midpoints $Q, R, S$ of sides $AB, AC, AD$ respectively, show that $QR$ is parallel to $BC$ and $QR = \frac{1}{2}BC$.",
+        "answer": "This is a direct application of the midpoint theorem.",
+        "concept": "Geometric Midpoint Theorem"
+      },
+      {
+        "question": "Consider the vertices of a quadrilateral $ABCD$. Let $Q, R, S, T, U, V$ be the midpoints of $AB, AC, AD, BC, BD, CD$ respectively. Derive the relationship between the distances $QR, ST, TU, UV$ and $BC, BD, CD$.",
+        "answer": "The solution requires understanding vector addition and the midpoint theorem repeatedly to derive the relationships involving the lengths of line segments connecting the midpoints."
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "original_problem": "Given the function $f(x)=x\\ln x$, if $0 \\lt x_{1} \\lt x_{2}$, then which of the following options is correct?\n\nA: $x_{1}+f(x_{1}) \\lt x_{2}+f(x_{2})$\n\nB: $x_{2}f(x_{1}) \\lt x_{1}f(x_{2})$\n\nC: When ${x_2}\uff1e{x_1}\uff1e\\frac{1}{e}$, $x_{1}f(x_{1})+x_{2}f(x_{2}) \\gt x_{2}f(x_{1})+x_{1}f(x_{2})$\n\nD: If the equation $f\\left(x\\right)=a$ has a root, then $a=-\\frac{1}{e}$",
+    "original_solution": "To analyze each option step by step, we start with the given function $f(x)=x\\ln x$ and the condition $0 < x_{1} < x_{2}$.\n\n**Option A:**\n\n1. Define $g(x)=f(x)+x=x\\ln x+x$.\n2. Calculate the derivative: $g'(x)=\\ln x + 2$.\n3. Analyze $g'(x)$:\n   - When $0 < x < \\frac{1}{e^2}$, we have $\\ln x + 2 < 0$, so $g(x)$ is decreasing.\n   - When $x > \\frac{1}{e^2}$, we have $\\ln x + 2 > 0$, so $g(x)$ is increasing.\n4. Conclusion for option A:\n   - If $0 < x_{1} < x_{2} < \\frac{1}{e^2}$, then $g(x_{1}) > g(x_{2})$, which means $x_{1}+f(x_{1}) > x_{2}+f(x_{2})$. Thus, option A is $\\boxed{\\text{incorrect}}$.\n\n**Option B:**\n\n1. Consider the ratio $\\frac{f(x)}{x}=\\ln x$.\n2. Since $\\ln x$ is monotonically increasing for $x > 0$, if $0 < x_{1} < x_{2}$, then $\\ln x_{1} < \\ln x_{2}$.\n3. Therefore, $\\frac{f(x_{1})}{x_{1}} < \\frac{f(x_{2})}{x_{2}}$, which implies $x_{2}f(x_{1}) < x_{1}f(x_{2})$. Thus, option B is $\\boxed{\\text{correct}}$.\n\n**Option C:**\n\n1. The derivative of $f(x)$ is $f'(x)=\\ln x + 1$.\n2. Analyze $f'(x)$:\n   - When $0 < x < \\frac{1}{e}$, $f'(x) < 0$, so $f(x)$ is decreasing.\n   - When $x > \\frac{1}{e}$, $f'(x) > 0$, so $f(x)$ is increasing.\n3. For ${x_2} > {x_1} > \\frac{1}{e}$, $f(x_{1}) < f(x_{2})$.\n4. This leads to $(x_{1}-x_{2})f(x_{1}) > (x_{1}-x_{2})f(x_{2})$, which simplifies to $x_{1}f(x_{1})+x_{2}f(x_{2}) > x_{2}f(x_{1})+x_{1}f(x_{2})$. Thus, option C is $\\boxed{\\text{correct}}$.\n\n**Option D:**\n\n1. Consider the case when $a=0$, the equation $f(x)=0$ has a solution at $x=1$.\n2. This contradicts the claim that $a=-\\frac{1}{e}$ is necessary for a root to exist. Thus, option D is $\\boxed{\\text{incorrect}}$.\n\nTherefore, the correct options are $\\boxed{BC}$.",
+    "concepts": [
+      "Calculus - Derivatives and Logarithmic Functions",
+      "Inequality Analysis"
+    ],
+    "sub_problems": [
+      {
+        "question": "Given $f(x) = x\text{ln}(x)$, find $f'(x)$.",
+        "answer": "f'(x) = ln(x) + x * (1/x) = ln(x) + 1",
+        "concept": "Calculus - Derivatives and Logarithmic Functions"
+      },
+      {
+        "question": "Evaluate $f(1)$.",
+        "answer": "f(1) = 1 * ln(1) = 0",
+        "concept": "Calculus - Derivatives and Logarithmic Functions"
+      },
+      {
+        "question": "Consider $f(x) = x\text{ln}(x)$.  Show that $f(x)$ is strictly increasing for $x > 0$.",
+        "answer": "Since $f'(x) = ln(x) + 1$, and $ln(x) > 0$ for $x > 1$ and $ln(x) + 1 > 0$ for $x > 0$, $f'(x) > 0$, so $f(x)$ is strictly increasing.",
+        "concept": "Calculus - Derivatives and Logarithmic Functions"
+      },
+      {
+        "question": "Let $x_1 = 1$ and $x_2 = 2$.  Calculate $x_1 + f(x_1)$ and $x_2 + f(x_2)$. Compare the values.",
+        "answer": "x1 + f(x1) = 1 + 1ln(1) = 1 + 0 = 1; x2 + f(x2) = 2 + 2ln(2) \u2248 2 + 2(0.693) = 3.386. Therefore, $x_1 + f(x_1) < x_2 + f(x_2)$",
+        "concept": "Inequality Analysis"
+      },
+      {
+        "question": "Analyze the options given, focusing on the relationship between $x_1, x_2$ and $f(x_1), f(x_2)$.  Specifically, consider the behavior of $x\text{ln}(x)$ for small values of $x$ (approaching 0).",
+        "answer": "Option A is correct because for $0 < x_1 < x_2$,  $x_2 \text{ln}(x_2) > x_1 \text{ln}(x_1)$, since $x_2 > x_1$, and $\text{ln}(x)$ is an increasing function. As $x \to 0$, $x \text{ln}(x) \to 0$, so the inequality holds when $x_1$ and $x_2$ are sufficiently small.",
+        "concept": "Inequality Analysis"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "original_problem": "Given \\\\(f(x)=2a-\\sin x\\\\), then \\\\(f''(x)=\\\\)  \nA: \\\\(\\cos x\\\\)  \nB: \\\\(-\\cos x\\\\)  \nC: \\\\(2+\\cos x\\\\)  \nD: \\\\(2-\\cos x\\\\)",
+    "original_solution": "**Analysis**\n\nThis question mainly tests the operation of derivatives. Mastering the rules for derivative operations is key.\n\n**Solution**\n\nSolution: \\\\(f'(x)=-\\cos x\\\\),\n\nTherefore, the correct option is $\\boxed{\\text{B}}$.",
+    "concepts": [
+      "Calculus - Differentiation - Power Rule, Chain Rule, Trigonometric Derivatives"
+    ],
+    "sub_problems": [
+      {
+        "question": "Given f(x) = x^2, find f'(x).",
+        "answer": "f'(x) = 2x",
+        "concept": "Differentiation - Power Rule"
+      },
+      {
+        "question": "Given f(x) = sin(x), find f'(x).",
+        "answer": "f'(x) = cos(x)",
+        "concept": "Differentiation - Trigonometric Derivatives"
+      },
+      {
+        "question": "Given f(x) = 3x + 2, find f'(x) and f''(x).",
+        "answer": "f'(x) = 3, f''(x) = 0",
+        "concept": "Differentiation - Power Rule, Constant Multiples"
+      },
+      {
+        "question": "Consider the function g(x) = 5 - 2sin(x).  Find g'(x) and g''(x).",
+        "answer": "g'(x) = -2cos(x), g''(x) = 2sin(x)",
+        "concept": "Differentiation - Trigonometric Derivatives, Chain Rule"
+      },
+      {
+        "question": "Given f(x) = 2a - sin(x), find f'(x) and then f''(x).",
+        "answer": "f'(x) = -cos(x), f''(x) = sin(x)",
+        "concept": "Differentiation - Chain Rule, Trigonometric Derivatives"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "original_problem": "Jimmy decides to make sandwiches for a picnic.  He makes 8 sandwiches in total, using two slices of bread each.  How many packs of bread does he need to buy to make these sandwiches, assuming he starts with no bread and each pack has 4 slices of bread in it?",
+    "original_solution": "To make 8 sandwiches, Jimmy needs 2 slices of bread for each sandwich. So, he needs a total of 8 sandwiches * 2 slices of bread/sandwich = 16 slices of bread.\n\nEach pack of bread has 4 slices, so to get 16 slices, Jimmy needs to buy 16 slices / 4 slices/pack = $\\boxed{4}$  packs of bread.",
+    "concepts": [
+      "Multiplication",
+      "Division",
+      "Word Problems",
+      "Unit Analysis"
+    ],
+    "sub_problems": [
+      {
+        "question": "A baker makes 5 cookies. Each cookie needs 1/2 cup of flour. How many cups of flour does the baker need?",
+        "answer": "1.25 cups",
+        "concept": "Multiplication & Unit Analysis"
+      },
+      {
+        "question": "Sarah has 12 apples and wants to share them equally with 3 friends. How many apples does each person get?",
+        "answer": "4",
+        "concept": "Division"
+      },
+      {
+        "question": "A rectangular garden is 6 meters long and 4 meters wide. What is the perimeter of the garden?",
+        "answer": "20 meters",
+        "concept": "Multiplication (perimeter formula: 2 * (length + width))"
+      },
+      {
+        "question": "John walks 3 miles in 1 hour. How many miles does he walk in 2 hours?",
+        "answer": "6 miles",
+        "concept": "Multiplication & Rate/Distance"
+      },
+      {
+        "question": "If a pack of bread contains 4 slices, and Jimmy needs 16 slices, how many packs does he need to buy?",
+        "answer": "4",
+        "concept": "Division & Unit Analysis (This is the closest approximation to the original problem)"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "original_problem": "How many two-digit positive integers are congruent to 1 (mod 5)?",
+    "original_solution": "If an integer is congruent to 1 mod 5, then it can be expressed as $5k+1$. We need it to fulfill the conditions of a two-digit integer, so:\n- $5k + 1 \\ge 10$\n- $5k + 1 \\le 99$\n\nFrom $5k + 1 \\ge 10$, we solve for $k$:\n\\[ 5k + 1 \\ge 10 \\implies 5k \\ge 9 \\implies k \\ge \\frac{9}{5} = 1.8 \\]\nSince $k$ must be integer, we round $1.8$ up to the next integer, $k \\ge 2$.\n\nFrom $5k + 1 \\le 99$, we solve for $k$:\n\\[ 5k + 1 \\le 99 \\implies 5k \\le 98 \\implies k \\le \\frac{98}{5} = 19.6 \\]\nSince $k$ must be integer, we round $19.6$ down to the nearest integer, $k \\le 19$.\n\nThus, $k$ can be any integer from $2$ to $19$ inclusive. The number of integers in this range is:\n\\[ 19 - 2 + 1 = 18 \\]\nTherefore, there are $\\boxed{18}$ two-digit positive integers that are congruent to 1 mod 5.",
+    "concepts": [
+      "Number Theory",
+      "Modular Arithmetic",
+      "Congruence"
+    ],
+    "sub_problems": [
+      {
+        "question": "What is modular arithmetic? Explain the concept of a congruence relation (a \u2261 b (mod n)) and provide an example.",
+        "answer": "Modular arithmetic deals with remainders after division.  A congruence relation a \u2261 b (mod n) means that a and b have the same remainder when divided by n. For example, 17 \u2261 2 (mod 5) because both 17 and 2 leave a remainder of 2 when divided by 5.",
+        "concept": "Modular Arithmetic"
+      },
+      {
+        "question": "Find all integers between 1 and 10 (inclusive) that are congruent to 1 (mod 5).",
+        "answer": "The integers are 1, 6.",
+        "concept": "Modular Arithmetic"
+      },
+      {
+        "question": "Consider the set of two-digit positive integers (10-99).  What is the range of possible remainders when dividing a number by 5?",
+        "answer": "The possible remainders when dividing a two-digit number by 5 are 0, 1, 2, 3, and 4.",
+        "concept": "Modular Arithmetic"
+      },
+      {
+        "question": "A number is congruent to 2 (mod 5). List all the two-digit positive integers that satisfy this congruence.",
+        "answer": "The integers are 12, 17, 22, 27, 32, 37, 42, 47, 52, 57, 62, 67, 72, 77, 82, 87, 92, 97.",
+        "concept": "Modular Arithmetic"
+      },
+      {
+        "question": "Solve for x:  x \u2261 1 (mod 5), where x is a two-digit integer. Find all possible values of x.",
+        "answer": "The two-digit integers congruent to 1 (mod 5) are 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95. (10 is the smallest two-digit integer, and 95 is the largest.)",
+        "concept": "Modular Arithmetic"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "original_problem": "Given the following four propositions:  \n\u2460 The negation of the proposition \"For all $x \\in \\mathbb{R}, \\cos(x) > 0$\" is \"There exists an $x \\in \\mathbb{R}$ such that $\\cos(x) \\leq 0$\".  \n\u2461 If $0 < a < 1$, then the equation $x^2 + a^x - 3 = 0$ has only one real root.  \n\u2462 For any real number $x$, if $f(-x) = f(x)$ and $f'(x) > 0$ when $x > 0$, then $f'(x) < 0$ when $x < 0$.  \n\u2463 For a rectangle with area $S$ and perimeter $l$, the ordered pair of real numbers $(6, 8)$ can be a pair of $(S, l)$ that can be obtained. The correct proposition numbers are ____. (Fill in all correct numbers)",
+    "original_solution": "\u2460 The negation of the proposition \"For all $x \\in \\mathbb{R}, \\cos(x) > 0$\" is \"There exists an $x \\in \\mathbb{R}$ such that $\\cos(x) \\leq 0$\", which is correct.  \n\u2461 When $0 < a < 1$, $y = a^x$ is a decreasing function, and it intersects with $y = 3 - x^2$ at two points, meaning that when $0 < a < 1$, the equation $x^2 + a^x - 3 = 0$ has two real roots. Therefore, proposition \u2461 is incorrect.  \n\u2462 Given the conditions, $f(x)$ is an even function and is monotonically increasing on $(0, +\\infty)$. Therefore, it is monotonically decreasing on $(-\\infty, 0)$, which means \"when $x < 0$, $f'(x) < 0$\" is correct.  \n\u2463 Let the sides of the rectangle be $a$ and $b$, then $ab = 6$ and $2a + 2b = 8$,  \n\u2234 $a^2 - 4a + 6 = 0$,  \n\u2235 $\\Delta = 16 - 24 < 0$,  \n\u2234 The equation $a^2 - 4a + 6 = 0$ has no solution, hence proposition \u2463 is incorrect.  \nTherefore, the answer is: $\\boxed{\u2460\u2462}$.",
+    "concepts": [
+      "Logic",
+      "Algebra",
+      "Calculus",
+      "Geometry"
+    ],
+    "sub_problems": [
+      {
+        "question": "Determine the truth value of the statement: 'All squares are rectangles.'",
+        "answer": "True",
+        "concept": "Geometry - Basic Geometric Definitions"
+      },
+      {
+        "question": "Solve the equation $x^2 + 1 = 0$ for $x$.",
+        "answer": "x = i, -i",
+        "concept": "Algebra - Complex Numbers"
+      },
+      {
+        "question": "Given the function $f(x) = x^3$, find $f'(x)$ and $f''(x)$.",
+        "answer": "f'(x) = 3x^2, f''(x) = 6x",
+        "concept": "Calculus - Differentiation"
+      },
+      {
+        "question": "Consider the proposition: 'If $x > 0$, then $x^2 > 0$'. Is this proposition true or false? Explain your reasoning.",
+        "answer": "True.  For any positive real number, when squared, the result is always positive.",
+        "concept": "Logic - Truth Table/Contrapositive"
+      },
+      {
+        "question": "Explain the concept of a contrapositive statement and how it relates to logical arguments. Give an example.",
+        "answer": "The contrapositive of a statement 'If P, then Q' is 'If not Q, then not P'. It has the same truth value as the original statement. For example: If $x = 2$, then $x^2 = 4$ is equivalent to 'If $x^2 \neq 4$, then $x \neq 2$'",
+        "concept": "Logic - Logical Reasoning"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "original_problem": "The molecular weight of a certain substance is 74. What is the molecular weight of Bleach?",
+    "original_solution": "Bleach is a common name for a solution of sodium hypochlorite (NaOCl) in water. The molecular weight of sodium hypochlorite is calculated by adding the atomic weights of sodium (Na), oxygen (O), and chlorine (Cl). The atomic weights are approximately:\n\n- Sodium (Na): 22.99 g/mol\n- Oxygen (O): 16.00 g/mol\n- Chlorine (Cl): 35.45 g/mol\n\nThe molecular weight of sodium hypochlorite (NaOCl) is:\n\nNaOCl = Na + O + Cl\n       = 22.99 g/mol + 16.00 g/mol + 35.45 g/mol\n       = 74.44 g/mol\n\nSo, the molecular weight of sodium hypochlorite, which is the active ingredient in bleach, is approximately $\\boxed{74.44}$  g/mol. However, commercial bleach solutions contain a certain percentage of sodium hypochlorite dissolved in water, so the overall molecular weight of the solution would be different and depends on the concentration of the sodium hypochlorite in the solution.",
+    "concepts": [
+      "Stoichiometry",
+      "Mole Concept",
+      "Molecular Weight"
+    ],
+    "sub_problems": [
+      {
+        "question": "A chemist has 1 mole of a gas at standard temperature and pressure (STP). What is the volume of 1 mole of gas at STP?",
+        "answer": "22.4 liters",
+        "concept": "Mole Concept, Gas Laws"
+      },
+      {
+        "question": "What is the definition of molecular weight (molar mass)? Provide the units.",
+        "answer": "grams per mole (g/mol)",
+        "concept": "Molecular Weight"
+      },
+      {
+        "question": "If a substance has a molecular weight of 120 g/mol, how many moles are present in a sample with a mass of 60 grams?",
+        "answer": "0.5 moles",
+        "concept": "Mole Concept, Stoichiometry"
+      },
+      {
+        "question": "Bleach (sodium hypochlorite, NaClO) is a compound.  What are the atomic weights of sodium (Na) and chlorine (Cl)?",
+        "answer": "Na: 22.99 g/mol, Cl: 35.45 g/mol",
+        "concept": "Atomic Weights, Chemical Formula"
+      },
+      {
+        "question": "Calculate the molecular weight of NaClO (sodium hypochlorite) using the atomic weights you determined in the previous question. Show your calculation.",
+        "answer": "Na: 22.99 + Cl: 35.45 = 74 g/mol",
+        "concept": "Molecular Weight, Stoichiometry"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "original_problem": "We flip a fair coin 12 times. What is the probability that we get heads in exactly 9 of the 12 flips?",
+    "original_solution": "- The total number of possible outcomes when flipping a coin 12 times is $2^{12} = 4096$.\n- The number of ways to achieve exactly 9 heads out of 12 flips can be determined using the combination formula $\\binom{n}{k}$, where $n$ is the total number of trials and $k$ is the number of successful trials. Here, $\\binom{12}{9} = \\binom{12}{3} = \\frac{12 \\times 11 \\times 10}{3 \\times 2 \\times 1} = 220$. \n- Therefore, the probability of flipping exactly 9 heads in 12 trials is $\\dfrac{220}{4096}$.\n\nThe final answer is $\\boxed{\\dfrac{220}{4096}}$.",
+    "concepts": [
+      "Probability",
+      "Binomial Distribution",
+      "Combinatorics"
+    ],
+    "sub_problems": [
+      {
+        "question": "A fair coin is flipped once. What is the probability of getting heads?",
+        "answer": "1/2",
+        "concept": "Basic Probability"
+      },
+      {
+        "question": "We flip a fair coin 3 times. What is the probability of getting exactly 2 heads?",
+        "answer": "3/8",
+        "concept": "Binomial Distribution (Introduction - n=3, k=2)"
+      },
+      {
+        "question": "Calculate the number of ways to choose 2 heads from 3 coin flips.",
+        "answer": "3",
+        "concept": "Combinatorics - Combinations (nCr)"
+      },
+      {
+        "question": "A bag contains 5 red balls and 3 blue balls. If you draw 2 balls at random (without replacement), what is the probability of drawing exactly 2 red balls?",
+        "answer": "1/10",
+        "concept": "Conditional Probability & Combinations (nCr)"
+      },
+      {
+        "question": "A binomial distribution describes the number of successes in a fixed number of independent trials, where each trial has only two possible outcomes (success or failure). The probability of success on a single trial is constant.  Explain the key components of a binomial distribution.",
+        "answer": "n (number of trials), p (probability of success), k (number of successes), and the distribution follows a specific probability mass function. ",
+        "concept": "Binomial Distribution (Formal Definition)"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "original_problem": "How many distinct, positive factors does $1320$ have?",
+    "original_solution": "First, perform the prime factorization of $1320$. \n\\[ 1320 = 2^3 \\times 3 \\times 5 \\times 11 \\]\nEach factor of $1320$ can be written as $2^a \\times 3^b \\times 5^c \\times 11^d$, where:\n- $a$ can be $0, 1, 2,$ or $3$ (4 possible values),\n- $b$ can be $0$ or $1$ (2 possible values),\n- $c$ can be $0$ or $1$ (2 possible values),\n- $d$ can be $0$ or $1$ (2 possible values).\n\nMultiply these possibilities to find the total number of distinct positive factors:\n\\[ 4 \\times 2 \\times 2 \\times 2 = \\boxed{32} \\]",
+    "concepts": [
+      "Prime Factorization",
+      "Factorial",
+      "Divisibility Rules",
+      "Number Theory"
+    ],
+    "sub_problems": [
+      {
+        "question": "Find the prime factorization of the number 12. Explain your reasoning.",
+        "answer": "12 = 2 * 2 * 3. We repeatedly divide by the smallest prime factor until we get a prime number.",
+        "concept": "Prime Factorization"
+      },
+      {
+        "question": "What is the prime factorization of 24?  List all the prime factors in ascending order.",
+        "answer": "2^3 * 3.  Prime factors: 2, 2, 2, 3",
+        "concept": "Prime Factorization"
+      },
+      {
+        "question": "What is the greatest common divisor (GCD) of 16 and 24?  Show your work.",
+        "answer": "GCD(16, 24) = 8.  We can list the factors of both numbers and identify the largest common factor.",
+        "concept": "Divisibility Rules"
+      },
+      {
+        "question": "Explain the relationship between the prime factorization of a number and the number of its factors.",
+        "answer": "If the prime factorization of a number n is p1^a1 * p2^a2 * ... * pn^an, where p1, p2, ..., pn are distinct prime numbers and a1, a2, ..., an are positive integers, then the number of factors of n is (a1+1)(a2+1)...(an+1).",
+        "concept": "Factorial"
+      },
+      {
+        "question": "Calculate the number of factors of 36. Show your steps, including prime factorization.",
+        "answer": "36 = 2^2 * 3^2.  The number of factors is (2+1)(2+1) = 3 * 3 = 9. The factors are 1, 2, 3, 4, 6, 9, 12, 18, 36.",
+        "concept": "Factorial"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "original_problem": "Observe the pattern of the following equations and answer the following questions:  \nThe first equation: $1^{2}+2^{2}-3^{2}=1\\times a-b$,  \nThe second equation: $2^{2}+3^{2}-4^{2}=2\\times 0-b$,  \nThe third equation: $3^{2}+4^{2}-5^{2}=3\\times 1-b$,  \nThe fourth equation: $4^{2}+5^{2}-6^{2}=4\\times 2-b$.  \n$\\ldots$  \n$(1)$ According to the pattern of the above equations: $a=$______, $b=$______;  \n$(2)$ Write down your conjecture for the $n$th equation (expressed in terms of $n$), and prove it.",
+    "original_solution": "### Step-by-Step Solution\n\n#### Part 1: Finding $a$ and $b$\n\n**Given Equations:**\n\n1. $1^{2}+2^{2}-3^{2}=1\\times a-b$\n2. $2^{2}+3^{2}-4^{2}=2\\times 0-b$\n3. $3^{2}+4^{2}-5^{2}=3\\times 1-b$\n4. $4^{2}+5^{2}-6^{2}=4\\times 2-b$\n\n**For $a$:**\n\nFrom the pattern, we observe that the coefficient of $a$ in the first equation is $1$. The left side of the equation simplifies to $1+4-9=-4$. Therefore, we have:\n\n$-4 = 1 \\times a - b$\n\nGiven that $b$ is a constant across all equations, we can deduce the value of $a$ by comparing the structure of the equations. The first part of the right side of the equation is the product of the index and the number $2$ less than the index. Thus, for the first equation, it should be $1 \\times (-1) = -1$. Hence,\n\n$a = -1$\n\n**For $b$:**\n\nFrom the second equation $2^{2}+3^{2}-4^{2}=2\\times 0-b$, we calculate the left side:\n\n$4 + 9 - 16 = -3$\n\nThis gives us:\n\n$-3 = 2 \\times 0 - b$\n\nSolving for $b$, we find:\n\n$b = 3$\n\nTherefore, the values are:\n\n$a = \\boxed{-1}$, $b = \\boxed{3}$\n\n#### Part 2: Conjecture for the $n$th Equation and Proof\n\n**Conjecture:**\n\nThe $n$th equation can be represented as:\n\n$n^{2}+\\left(n+1\\right)^{2}-\\left(n+2\\right)^{2}=n\\left(n-2\\right)-3$\n\n**Proof:**\n\n**Left Side:**\n\nStarting with the left side of the conjectured equation:\n\n\\begin{align*}\nn^{2}+(n+1)^{2}-(n+2)^{2} &= n^{2}+(n^{2}+2n+1)-(n^{2}+4n+4) \\\\\n&= n^{2}+n^{2}+2n+1-n^{2}-4n-4 \\\\\n&= n^{2}-2n-3\n\\end{align*}\n\n**Right Side:**\n\nFor the right side of the conjectured equation:\n\n$n\\left(n-2\\right)-3 = n^{2}-2n-3$\n\nSince the left side equals the right side, we have proven that:\n\n$n^{2}+\\left(n+1\\right)^{2}-\\left(n+2\\right)^{2}=n\\left(n-2\\right)-3$\n\nTherefore, the conjecture for the $n$th equation is proven and can be encapsulated as:\n\n$\\boxed{n^{2}+\\left(n+1\\right)^{2}-\\left(n+2\\right)^{2}=n\\left(n-2\\right)-3}$",
+    "concepts": [
+      "Algebra",
+      "Number Theory",
+      "Pattern Recognition"
+    ],
+    "sub_problems": [
+      {
+        "question": "Calculate $1^2 + 2^2 - 3^2$.",
+        "answer": "1 + 4 - 9 = -4",
+        "concept": "Basic Arithmetic, Square Numbers"
+      },
+      {
+        "question": "Evaluate $2^2 + 3^2 - 4^2$.",
+        "answer": "4 + 9 - 16 = -3",
+        "concept": "Square Numbers, Addition/Subtraction"
+      },
+      {
+        "question": "Determine a general formula for the expression $x^2 + (x+1)^2 - (x+2)^2$, where x is a positive integer.",
+        "answer": "x^2 + (x+1)^2 - (x+2)^2 = x^2 + x^2 + 2x + 1 - (x^2 + 4x + 4) = x^2 + x^2 + 2x + 1 - x^2 - 4x - 4 = x^2 - 2x - 3",
+        "concept": "Algebraic Manipulation, Simplifying Expressions"
+      },
+      {
+        "question": "Solve the equation $x^2 + (x+1)^2 - (x+2)^2 = y$ for $y$.",
+        "answer": "The equation can be simplified to $x^2 - 2x - 3 = y$.  Solving for y gives $y = x^2 - 2x - 3$",
+        "concept": "Equation Solving, Function Representation"
+      },
+      {
+        "question": "Consider the equation $n^2 + (n+1)^2 - (n+2)^2 = ?$. Find a general formula for the left-hand side in terms of *n*.",
+        "answer": "This follows the pattern established earlier: $n^2 + (n+1)^2 - (n+2)^2 = n^2 + (n^2 + 2n + 1) - (n^2 + 4n + 4) = n^2 + n^2 + 2n + 1 - n^2 - 4n - 4 = n^2 - 2n - 3$",
+        "concept": "Pattern Recognition, Algebraic Manipulation, General Formula"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "original_problem": "Find the product of the solutions of the equation: $|z| = 3(|z| - 2)$.",
+    "original_solution": "First, express the equation in the basic form: \n$$ |z| = 3(|z| - 2). $$\n\nExpanding and rearranging terms:\n$$ |z| = 3|z| - 6, $$\n$$ 3|z| - |z| = 6, $$\n$$ 2|z| = 6, $$\n$$ |z| = 3. $$\n\nThis leads to the solutions for $z$:\n$$ z = 3 \\quad \\text{or} \\quad z = -3. $$\n\nCompute the product:\n$$ 3 \\times (-3) = -9. $$\n\nThus, the product of the solutions is $\\boxed{-9}$.",
+    "concepts": [
+      "Complex Numbers",
+      "Algebra",
+      "Geometric Interpretation of Equations"
+    ],
+    "sub_problems": [
+      {
+        "question": "Solve the equation $|z| = 3$ for $z$. What are the solutions?",
+        "answer": "The solutions are $z = 3$ and $z = -3$.",
+        "concept": "Complex Numbers - Absolute Value"
+      },
+      {
+        "question": "Understand the absolute value of a complex number. Specifically, $|z| = \text{distance from origin to z on the complex plane}$.",
+        "answer": "The absolute value of a complex number $z = x + iy$ is the distance from the point $(x, y)$ to the origin in the complex plane.",
+        "concept": "Complex Numbers - Definition of Absolute Value"
+      },
+      {
+        "question": "Simplify the equation $|z| = 3(|z| - 2)$. Let $w = |z|$. Then the equation becomes $w = 3(w - 2)$.",
+        "answer": "The equation is simplified to $w = 3w - 6$, which leads to $2w = 6$ and therefore $w = 3$.",
+        "concept": "Algebra - Substitution & Equation Solving"
+      },
+      {
+        "question": "Solve $w = 3$ for $w$.",
+        "answer": "Since $w = |z|$, we have $|z| = 3$.",
+        "concept": "Algebra - Solving Equations"
+      },
+      {
+        "question": "Interpret the equation $|z| = 3(|z| - 2))$ geometrically.  It represents a circle in the complex plane.",
+        "answer": "The absolute value of a complex number $z$ is equal to 3 times the difference between $z$ and 2. This can be visualized as a line with a specific slope and constant distance to a point, or it can be seen as an equation where the distance from z to the origin is related to the distance between z and a point 2 units away on the real axis.",
+        "concept": "Geometric Interpretation of Equations - Circle Equation"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "original_problem": "Given that \\(1 \\leq x, y, z \\leq 6\\), how many cases are there in which the product of natural numbers \\(x, y, z\\) is divisible by 10?",
+    "original_solution": "Given the constraints \\(1 \\leq x, y, z \\leq 6\\), we are to find the number of natural number combinations \\((x, y, z)\\) such that their product can be divided exactly by 10. \n\nTo begin, we observe:\n1. The total number of combinations of \\(x, y, z\\) is \\(6^3\\):\n   \\[\n   6^3 = 216\n   \\]\n\n2. To be divisible by 10, the product \\(xyz\\) must include both a factor of 2 and a factor of 5. Therefore, we need to evaluate the ways we can count combinations of \\(x, y, z\\) that miss these factors.\n\n3. Consider the cases where \\(x, y, z\\) do not include factors of 2. The numbers within the range that are not multiples of 2 are \\{1, 3, 5\\}. The number of combinations in this case is:\n   \\[\n   3^3 = 27\n   \\]\n\n4. Next, consider the cases where \\(x, y, z\\) do not include factors of 5. The numbers within the range that are not multiples of 5 are \\{1, 2, 3, 4, 6\\}. The number of combinations in this case is:\n   \\[\n   5^3 = 125\n   \\]\n\n5. Now consider the cases where \\(x, y, z\\) include neither factors of 2 nor factors of 5. The only valid numbers in the range are then \\{1, 3\\}. The number of combinations in this case is:\n   \\[\n   2^3 = 8\n   \\]\n\n6. Using the principle of inclusion-exclusion, we can calculate the number of combinations where \\(xyz\\) is not divisible by 10:\n   \\[\n   |A \\cup B| = |A| + |B| - |A \\cap B|\n   \\]\n   where \\(A\\) is the set of combinations not including any multiples of 2 (27 in total) and \\(B\\) is the set not including any multiples of 5 (125 in total), and \\(|A \\cap B| = 8\\):\n\n   \\[\n   |A \\cup B| = 27 + 125 - 8 = 144\n   \\]\n\n7. Therefore, the number of combinations where \\(xyz\\) is divisible by 10 is:\n   \\[\n   6^3 - |A \\cup B| = 216 - 144 = 72\n   \\]\n\nConclusively, the number of natural number combinations \\(x, y, z\\) such that their product is divisible by 10 is:\n\\[\n\\boxed{72}\n\\]",
+    "concepts": [
+      "Number Theory",
+      "Divisibility Rules",
+      "Combinatorics",
+      "Factorials"
+    ],
+    "sub_problems": [
+      {
+        "question": "A number is divisible by 2 if its last digit is even. How many integers between 1 and 6 have an even last digit?",
+        "answer": "3 (2, 4, 6)",
+        "concept": "Divisibility Rules"
+      },
+      {
+        "question": "A number is divisible by 5 if its last digit is 0 or 5. How many integers between 1 and 6 have a last digit of 0 or 5?",
+        "answer": "1 (5)",
+        "concept": "Divisibility Rules"
+      },
+      {
+        "question": "What is the prime factorization of the number 10? (Hint: 10 = 2 * 5)",
+        "answer": "2 * 5",
+        "concept": "Prime Factorization"
+      },
+      {
+        "question": "Consider the integers 1, 2, 3, 4, 5, 6. How many of these integers are divisible by 2?",
+        "answer": "3",
+        "concept": "Divisibility Rules"
+      },
+      {
+        "question": "If we choose three numbers from the set {1, 2, 3, 4, 5, 6} without replacement, what is the total number of possible outcomes?",
+        "answer": "20",
+        "concept": "Combinatorics (combinations)"
+      }
+    ]
+  }
+]
