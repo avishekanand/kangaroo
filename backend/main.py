@@ -55,6 +55,33 @@ def seed_users():
 def get_users(db: Session = Depends(get_db)):
     return db.query(models.User).all()
 
+from fastapi import UploadFile, File
+import shutil
+
+@app.post("/users/{user_id}/avatar")
+async def upload_avatar(user_id: int, file: UploadFile = File(...), db: Session = Depends(get_db)):
+    user = db.query(models.User).filter(models.User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    # Create avatars directory
+    os.makedirs("static/avatars", exist_ok=True)
+    
+    # Save file
+    file_extension = os.path.splitext(file.filename)[1]
+    filename = f"avatar_{user_id}{file_extension}"
+    file_path = f"static/avatars/{filename}"
+    
+    with open(file_path, "wb") as buffer:
+        shutil.copyfileobj(file.file, buffer)
+        
+    # Update user
+    user.avatar_url = f"/static/avatars/{filename}"
+    db.commit()
+    db.refresh(user)
+    
+    return {"avatar_url": user.avatar_url}
+
 @app.post("/attempts", response_model=schemas.Attempt)
 def create_attempt(attempt: schemas.AttemptCreate, db: Session = Depends(get_db)):
     db_attempt = models.Attempt(**attempt.dict())
@@ -70,3 +97,11 @@ def get_user_history(user_id: int, db: Session = Depends(get_db)):
 @app.get("/")
 def read_root():
     return {"message": "Math Practice API is running"}
+
+# --- AI Hints ---
+import llm_service
+
+@app.post("/hint")
+def get_hint(request: schemas.HintRequest):
+    hint = llm_service.get_hint_from_ollama(request.question_text, request.model)
+    return {"hint": hint}

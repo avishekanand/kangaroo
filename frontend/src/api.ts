@@ -49,3 +49,17 @@ export const fetchOlympiadQuestions = async (limit: number = 20, source?: string
     const response = await api.get<Question[]>('/questions/olympiad', { params });
     return response.data;
 };
+
+export const getHint = async (questionText: string) => {
+    const response = await api.post<{ hint: string }>('/hint', { question_text: questionText });
+    return response.data.hint;
+};
+
+export const uploadAvatar = async (userId: number, file: File) => {
+    const formData = new FormData();
+    formData.append('file', file);
+    const response = await api.post<{ avatar_url: string }>(`/users/${userId}/avatar`, formData, {
+        headers: { 'Content-Type': 'multipart/form-data' }
+    });
+    return response.data.avatar_url;
+};

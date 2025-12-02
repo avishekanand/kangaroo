@@ -34,6 +34,7 @@ class User(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     username = Column(String, unique=True, index=True)
+    avatar_url = Column(String, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow)
 
     attempts = relationship("Attempt", back_populates="user")
@@ -46,6 +47,7 @@ class Attempt(Base):
     question_id = Column(Integer, ForeignKey("questions.id"))
     selected_option = Column(String)
     is_correct = Column(Boolean)
+    time_taken = Column(Integer, nullable=True) # Time in seconds
     timestamp = Column(DateTime, default=datetime.utcnow)
 
     user = relationship("User", back_populates="attempts")

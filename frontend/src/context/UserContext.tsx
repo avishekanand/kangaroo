@@ -3,6 +3,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 interface User {
     id: number;
     username: string;
+    avatar_url?: string;
     created_at: string;
 }
 

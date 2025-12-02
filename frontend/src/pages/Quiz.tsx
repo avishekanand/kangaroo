@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Question } from '../api';
-import { CheckCircle, XCircle, ArrowRight, RefreshCw, Home, HelpCircle, Trophy, Clock } from 'lucide-react';
+import { Question, getHint } from '../api';
+import { CheckCircle, XCircle, ArrowRight, RefreshCw, Home, HelpCircle, Trophy, Clock, Lightbulb, SkipForward, Loader } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import remarkGfm from 'remark-gfm';
@@ -21,6 +21,13 @@ export const Quiz: React.FC = () => {
 
     // Timer State
     const [timeLeft, setTimeLeft] = useState<number | null>(null);
+
+    // Hint State
+    const [hint, setHint] = useState<string | null>(null);
+    const [loadingHint, setLoadingHint] = useState(false);
+
+    // Time Tracking
+    const [questionStartTime, setQuestionStartTime] = useState<number>(Date.now());
 
     useEffect(() => {
         const storedSession = localStorage.getItem('currentSession');
@@ -91,7 +98,8 @@ export const Quiz: React.FC = () => {
                         user_id: user.id,
                         question_id: currentQuestion.id,
                         selected_option: selectedOption,
-                        is_correct: isCorrect
+                        is_correct: isCorrect,
+                        time_taken: Math.round((Date.now() - questionStartTime) / 1000) // Seconds
                     })
                 });
             } catch (error) {
@@ -105,8 +113,30 @@ export const Quiz: React.FC = () => {
             setCurrentIndex(i => i + 1);
             setSelectedOption(null);
             setIsSubmitted(false);
+            setHint(null); // Clear hint
+            setQuestionStartTime(Date.now()); // Reset timer for next question
         } else {
             setShowSummary(true);
+        }
+    };
+
+    const handleSkip = () => {
+        handleNext();
+    };
+
+    const handleHint = async () => {
+        if (hint) return;
+        setLoadingHint(true);
+        try {
+            // Use problem text, or fallback if image-only (though backend might struggle with image-only)
+            const text = currentQuestion.problem || "Please help me with this math problem.";
+            const hintText = await getHint(text);
+            setHint(hintText);
+        } catch (error) {
+            console.error("Failed to get hint", error);
+            setHint("Sorry, could not generate a hint. Is Ollama running?");
+        } finally {
+            setLoadingHint(false);
         }
     };
 
@@ -177,6 +207,12 @@ export const Quiz: React.FC = () => {
                 </div>
 
                 <div className="flex items-center gap-2">
+                    <button
+                        onClick={handleSkip}
+                        className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white transition text-sm font-medium border border-white/10"
+                    >
+                        Skip <SkipForward size={16} />
+                    </button>
                     <HelpCircle size={20} className="hover:text-white cursor-pointer transition" />
                 </div>
             </div>
@@ -187,6 +223,9 @@ export const Quiz: React.FC = () => {
                 {/* Question Area (Left/Top) */}
                 <div className={`flex-1 bg-gray-50 p-8 md:p-12 flex flex-col justify-center border-b ${currentQuestion.source.includes('Kangaroo') ? 'border-gray-200' : 'md:border-b-0 md:border-r border-gray-200'} relative`}>
                     <div className="absolute top-6 left-8 flex gap-3">
+                        <span className="text-xs font-bold tracking-wider text-gray-400 uppercase bg-gray-100 px-2 py-1 rounded">
+                            ID: {currentQuestion.id} ({currentQuestion.external_id})
+                        </span>
                         <span className="text-xs font-bold tracking-wider text-indigo-500 uppercase bg-indigo-50 px-2 py-1 rounded">
                             {currentQuestion.source}
                         </span>
@@ -199,6 +238,27 @@ export const Quiz: React.FC = () => {
                             </span>
                         )}
                     </div>
+
+                    {/* Hint Button */}
+                    <button
+                        onClick={handleHint}
+                        disabled={loadingHint || !!hint}
+                        className={`absolute top-6 right-8 p-2 rounded-full transition shadow-sm ${hint ? 'bg-yellow-100 text-yellow-600' : 'bg-white hover:bg-yellow-50 text-gray-400 hover:text-yellow-500 border border-gray-200'
+                            }`}
+                        title="Get a Hint"
+                    >
+                        {loadingHint ? <Loader size={20} className="animate-spin" /> : <Lightbulb size={20} />}
+                    </button>
+
+                    {/* Hint Panel */}
+                    {hint && (
+                        <div className="mx-8 mt-6 mb-2 p-4 bg-yellow-50 border border-yellow-200 rounded-xl text-yellow-800 text-sm animate-in fade-in slide-in-from-top-2">
+                            <div className="flex items-center gap-2 font-bold mb-1">
+                                <Lightbulb size={16} /> Hint
+                            </div>
+                            <ReactMarkdown>{hint}</ReactMarkdown>
+                        </div>
+                    )}
 
                     <div className="prose prose-lg max-w-none text-gray-800 mt-8">
                         {currentQuestion.problem && (

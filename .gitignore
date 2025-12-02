@@ -30,4 +30,5 @@ build/
 
 # Project Specific
 backend/static/questions/
+backend/static/avatars/
 .env

@@ -40,8 +40,13 @@ class SessionCreate(BaseModel):
     mode: Optional[str] = "practice" # "practice" or "challenge"
     source: Optional[str] = None
 
+class HintRequest(BaseModel):
+    question_text: str
+    model: Optional[str] = "gemma3:latest"
+
 class UserBase(BaseModel):
     username: str
+    avatar_url: Optional[str] = None
 
 class UserCreate(UserBase):
     pass
@@ -57,6 +62,7 @@ class AttemptBase(BaseModel):
     question_id: int
     selected_option: str
     is_correct: bool
+    time_taken: Optional[int] = None
 
 class AttemptCreate(AttemptBase):
     user_id: int
@@ -64,6 +70,7 @@ class AttemptCreate(AttemptBase):
 class Attempt(AttemptBase):
     id: int
     user_id: int
+    time_taken: Optional[int] = None
     timestamp: datetime
     question: Optional[Question] = None
 

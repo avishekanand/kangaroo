@@ -14,3 +14,4 @@ aiofiles
 # qwen-vl-utils
 # accelerate
 datasets
+requests

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useUser } from '../context/UserContext';
-import { CheckCircle, XCircle, Calendar, Filter, ArrowLeft } from 'lucide-react';
+import { uploadAvatar } from '../api';
+import { CheckCircle, XCircle, Calendar, Filter, ArrowLeft, Camera, User as UserIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
@@ -23,7 +24,7 @@ interface Attempt {
 }
 
 export const ProfilePage: React.FC = () => {
-    const { user } = useUser();
+    const { user, setUser } = useUser();
     const [attempts, setAttempts] = useState<Attempt[]>([]);
     const [loading, setLoading] = useState(true);
     const [filterStatus, setFilterStatus] = useState<'all' | 'correct' | 'incorrect'>('all');
@@ -89,6 +90,19 @@ export const ProfilePage: React.FC = () => {
             .replace(/\\\)/g, '$');
     };
 
+    const handleAvatarUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        if (!e.target.files || !e.target.files[0] || !user) return;
+
+        try {
+            const file = e.target.files[0];
+            const avatarUrl = await uploadAvatar(user.id, file);
+            setUser({ ...user, avatar_url: avatarUrl });
+        } catch (error) {
+            console.error("Failed to upload avatar", error);
+            alert("Failed to upload avatar");
+        }
+    };
+
     return (
         <div className="min-h-screen bg-gray-50 font-sans text-gray-900 p-4 md:p-8">
             <div className="max-w-5xl mx-auto">
@@ -105,6 +119,33 @@ export const ProfilePage: React.FC = () => {
                         <p className="text-xl font-bold text-indigo-600">{user.username}</p>
                         <p className="text-xs text-gray-400">Joined {new Date(user.created_at).toLocaleDateString()}</p>
                     </div>
+                </div>
+
+                {/* Avatar Section */}
+                <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 mb-8 flex flex-col items-center">
+                    <div className="relative group">
+                        <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-indigo-100 bg-gray-100 flex items-center justify-center">
+                            {user.avatar_url ? (
+                                <img
+                                    src={`http://localhost:8000${user.avatar_url}`}
+                                    alt="Profile"
+                                    className="w-full h-full object-cover"
+                                />
+                            ) : (
+                                <UserIcon size={64} className="text-gray-300" />
+                            )}
+                        </div>
+                        <label className="absolute bottom-0 right-0 bg-indigo-600 text-white p-2 rounded-full cursor-pointer hover:bg-indigo-700 transition shadow-lg">
+                            <Camera size={16} />
+                            <input
+                                type="file"
+                                accept="image/*"
+                                className="hidden"
+                                onChange={handleAvatarUpload}
+                            />
+                        </label>
+                    </div>
+                    <p className="mt-4 text-gray-500 text-sm">Click the camera icon to update your profile picture</p>
                 </div>
 
                 {/* Stats */}
