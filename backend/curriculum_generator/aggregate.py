@@ -33,7 +33,8 @@ def aggregate_data():
                     "question": sp.get("question"),
                     "answer": sp.get("answer"),
                     "parent_id": item["id"],
-                    "parent_concept": concept # The concept that led us here
+                    "parent_concept": concept, # The concept that led us here
+                    "key_insight": item.get("key_insight", "")
                 }
                 concept_bank[concept].append(entry)
                 
@@ -98,6 +99,8 @@ def aggregate_data():
             for i, p in enumerate(problems, 1):
                 f.write(f"  {i}. {p['question']}\n")
                 f.write(f"     Answer: {p['answer']}\n")
+                if p.get('key_insight'):
+                    f.write(f"     Insight: {p['key_insight']}\n")
             f.write("\n")
             
     print(f"Saved text summary to {SUMMARY_FILE}")
