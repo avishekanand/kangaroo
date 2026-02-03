@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { PracticeConfig } from './pages/PracticeConfig';
@@ -8,9 +8,11 @@ import { OlympiadLanding } from './pages/OlympiadLanding';
 
 import { CategoryPage } from './pages/CategoryPage';
 import { ProfilePage } from './pages/ProfilePage';
+import PracticeMode from './pages/PracticeMode';
 
 import { UserProvider } from './context/UserContext';
 import { Header } from './components/Header';
+import { ClientPDFProcessor } from './components/ClientPDFProcessor';
 
 function App() {
     return (
@@ -25,6 +27,8 @@ function App() {
                     <Route path="/quiz" element={<Quiz />} />
                     <Route path="/summary" element={<SessionSummary />} />
                     <Route path="/olympiad" element={<OlympiadLanding />} />
+                    <Route path="/client-test" element={<ClientPDFProcessor />} />
+                    <Route path="/practice-static" element={<PracticeMode />} />
                 </Routes>
             </BrowserRouter>
         </UserProvider>

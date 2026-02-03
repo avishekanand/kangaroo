@@ -1,13 +1,52 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Question, getHint } from '../api';
+import { Question, streamHint } from '../api';
 import { CheckCircle, XCircle, ArrowRight, RefreshCw, Home, HelpCircle, Trophy, Clock, Lightbulb, SkipForward, Loader } from 'lucide-react';
-import ReactMarkdown from 'react-markdown';
-import remarkMath from 'remark-math';
-import remarkGfm from 'remark-gfm';
-import rehypeKatex from 'rehype-katex';
-
 import { useUser } from '../context/UserContext';
+import { MathView } from '../components/MathView';
+
+const QuizTimer = React.memo(({
+    initialTime,
+    showSummary,
+    onTimeUp
+}: {
+    initialTime: number,
+    showSummary: boolean,
+    onTimeUp: () => void
+}) => {
+    const [timeLeft, setTimeLeft] = useState(initialTime);
+
+    useEffect(() => {
+        if (showSummary || timeLeft <= 0) return;
+
+        const timer = setInterval(() => {
+            setTimeLeft(prev => {
+                if (prev <= 1) {
+                    clearInterval(timer);
+                    onTimeUp();
+                    return 0;
+                }
+                return prev - 1;
+            });
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, [showSummary, onTimeUp]);
+
+    const displayTime = (seconds: number) => {
+        const mins = Math.floor(seconds / 60);
+        const secs = seconds % 60;
+        return `${mins}:${secs.toString().padStart(2, '0')}`;
+    };
+
+    return (
+        <div className={`bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm font-bold border border-white/10 flex items-center gap-2 ${timeLeft < 60 ? 'text-red-400 animate-pulse' : 'text-white'}`}>
+            <Clock size={16} /> {displayTime(timeLeft)}
+        </div>
+    );
+});
+
+QuizTimer.displayName = 'QuizTimer';
 
 export const Quiz: React.FC = () => {
     const navigate = useNavigate();
@@ -18,9 +57,7 @@ export const Quiz: React.FC = () => {
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [score, setScore] = useState(0);
     const [showSummary, setShowSummary] = useState(false);
-
-    // Timer State
-    const [timeLeft, setTimeLeft] = useState<number | null>(null);
+    const [initialTimeLimit, setInitialTimeLimit] = useState<number | null>(null);
 
     // Hint State
     const [hint, setHint] = useState<string | null>(null);
@@ -42,32 +79,22 @@ export const Quiz: React.FC = () => {
         if (storedConfig) {
             const config = JSON.parse(storedConfig);
             if (config.timeLimit) {
-                setTimeLeft(config.timeLimit);
+                setInitialTimeLimit(config.timeLimit);
             }
         }
     }, [navigate]);
 
-    // Timer Logic
     useEffect(() => {
-        if (timeLeft === null || showSummary) return;
-
-        if (timeLeft <= 0) {
-            setShowSummary(true);
-            return;
+        if (currentIndex < questions.length - 1) {
+            // Preload next 2 images
+            questions.slice(currentIndex + 1, currentIndex + 3).forEach(q => {
+                if (q.image_path) {
+                    const img = new Image();
+                    img.src = `http://localhost:8000${q.image_path}`;
+                }
+            });
         }
-
-        const timer = setInterval(() => {
-            setTimeLeft(prev => (prev !== null ? prev - 1 : null));
-        }, 1000);
-
-        return () => clearInterval(timer);
-    }, [timeLeft, showSummary]);
-
-    const formatTime = (seconds: number) => {
-        const mins = Math.floor(seconds / 60);
-        const secs = seconds % 60;
-        return `${mins}:${secs.toString().padStart(2, '0')}`;
-    };
+    }, [currentIndex, questions]);
 
     if (questions.length === 0) return (
         <div className="min-h-screen bg-indigo-900 flex items-center justify-center text-white">
@@ -127,11 +154,12 @@ export const Quiz: React.FC = () => {
     const handleHint = async () => {
         if (hint) return;
         setLoadingHint(true);
+        setHint(""); // Initialize with empty string to show the panel
         try {
-            // Use problem text, or fallback if image-only (though backend might struggle with image-only)
             const text = currentQuestion.problem || "Please help me with this math problem.";
-            const hintText = await getHint(text);
-            setHint(hintText);
+            await streamHint(text, (chunk) => {
+                setHint(prev => (prev || "") + chunk);
+            });
         } catch (error) {
             console.error("Failed to get hint", error);
             setHint("Sorry, could not generate a hint. Is Ollama running?");
@@ -148,7 +176,7 @@ export const Quiz: React.FC = () => {
                         <Trophy size={64} className="text-yellow-400" />
                     </div>
                     <h2 className="text-4xl font-bold text-white mb-2">
-                        {timeLeft === 0 ? "Time's Up!" : "Challenge Complete!"}
+                        Challenge Complete!
                     </h2>
                     <p className="text-indigo-200 text-lg mb-8">Here is how you performed</p>
 
@@ -178,15 +206,6 @@ export const Quiz: React.FC = () => {
         );
     }
 
-    const formatMath = (text: string) => {
-        if (!text) return "";
-        return text
-            .replace(/\\\[/g, '$$$')
-            .replace(/\\\]/g, '$$$')
-            .replace(/\\\(/g, '$')
-            .replace(/\\\)/g, '$');
-    };
-
     return (
         <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-900 flex flex-col items-center p-4 md:p-8 font-sans">
             {/* Header */}
@@ -199,10 +218,12 @@ export const Quiz: React.FC = () => {
                     <div className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/10">
                         Question {currentIndex + 1} of {questions.length}
                     </div>
-                    {timeLeft !== null && (
-                        <div className={`bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm font-bold border border-white/10 flex items-center gap-2 ${timeLeft < 60 ? 'text-red-400 animate-pulse' : 'text-white'}`}>
-                            <Clock size={16} /> {formatTime(timeLeft)}
-                        </div>
+                    {initialTimeLimit !== null && (
+                        <QuizTimer
+                            initialTime={initialTimeLimit}
+                            showSummary={showSummary}
+                            onTimeUp={() => setShowSummary(true)}
+                        />
                     )}
                 </div>
 
@@ -251,26 +272,27 @@ export const Quiz: React.FC = () => {
                     </button>
 
                     {/* Hint Panel */}
-                    {hint && (
+                    {hint !== null && (
                         <div className="mx-8 mt-6 mb-2 p-4 bg-yellow-50 border border-yellow-200 rounded-xl text-yellow-800 text-sm animate-in fade-in slide-in-from-top-2">
                             <div className="flex items-center gap-2 font-bold mb-1">
-                                <Lightbulb size={16} /> Hint
+                                <Lightbulb size={16} /> Hint {loadingHint && <span className="animate-pulse">...</span>}
                             </div>
-                            <ReactMarkdown>{hint}</ReactMarkdown>
+                            {hint === "" && loadingHint ? (
+                                <div className="flex items-center gap-2 text-yellow-600 italic">
+                                    <Loader size={14} className="animate-spin" /> Tutor is thinking...
+                                </div>
+                            ) : (
+                                <MathView content={hint} />
+                            )}
                         </div>
                     )}
 
                     <div className="prose prose-lg max-w-none text-gray-800 mt-8">
                         {currentQuestion.problem && (
-                            <ReactMarkdown
-                                remarkPlugins={[remarkMath]}
-                                rehypePlugins={[rehypeKatex]}
-                                components={{
-                                    p: ({ node, ...props }) => <p className="text-2xl leading-relaxed font-medium text-gray-800" {...props} />
-                                }}
-                            >
-                                {formatMath(currentQuestion.problem)}
-                            </ReactMarkdown>
+                            <MathView
+                                content={currentQuestion.problem}
+                                className="text-2xl leading-relaxed font-medium text-gray-800"
+                            />
                         )}
 
                         {currentQuestion.image_path && (
@@ -326,15 +348,7 @@ export const Quiz: React.FC = () => {
                                         {label}
                                     </span>
                                     <div className={`font-medium text-lg flex-1 ${currentQuestion.source.includes('Kangaroo') ? 'w-full' : ''}`}>
-                                        <ReactMarkdown
-                                            remarkPlugins={[remarkMath]}
-                                            rehypePlugins={[rehypeKatex]}
-                                            components={{
-                                                p: ({ node, ...props }) => <span {...props} /> // Render as span to avoid block margins inside button
-                                            }}
-                                        >
-                                            {formatMath(opt)}
-                                        </ReactMarkdown>
+                                        <MathView content={opt} inline />
                                     </div>
 
                                     {isSubmitted && isSelected && (
@@ -405,20 +419,10 @@ export const Quiz: React.FC = () => {
                     </div>
 
                     <div className="p-8 max-h-[500px] overflow-y-auto custom-scrollbar bg-white">
-                        <div className="prose prose-lg prose-indigo max-w-none text-gray-700">
-                            <ReactMarkdown
-                                remarkPlugins={[remarkMath, remarkGfm]}
-                                rehypePlugins={[rehypeKatex]}
-                                components={{
-                                    p: ({ node, ...props }) => <p className="mb-4 leading-relaxed" {...props} />,
-                                    strong: ({ node, ...props }) => <strong className="font-bold text-indigo-900 bg-indigo-50 px-1 rounded" {...props} />,
-                                    code: ({ node, ...props }) => <code className="bg-gray-100 text-pink-600 px-1.5 py-0.5 rounded font-mono text-sm" {...props} />,
-                                    blockquote: ({ node, ...props }) => <blockquote className="border-l-4 border-indigo-300 pl-4 italic text-gray-600 my-4" {...props} />
-                                }}
-                            >
-                                {formatMath(currentQuestion.solution)}
-                            </ReactMarkdown>
-                        </div>
+                        <MathView
+                            content={currentQuestion.solution}
+                            className="prose prose-lg prose-indigo max-w-none text-gray-700"
+                        />
                     </div>
                 </div>
             )}

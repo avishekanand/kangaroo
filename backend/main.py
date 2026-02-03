@@ -105,3 +105,12 @@ import llm_service
 def get_hint(request: schemas.HintRequest):
     hint = llm_service.get_hint_from_ollama(request.question_text, request.model)
     return {"hint": hint}
+
+from fastapi.responses import StreamingResponse
+
+@app.post("/hint/stream")
+def get_hint_stream(request: schemas.HintRequest):
+    return StreamingResponse(
+        llm_service.get_hint_stream(request.question_text, request.model), 
+        media_type="text/plain"
+    )

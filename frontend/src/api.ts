@@ -55,6 +55,24 @@ export const getHint = async (questionText: string) => {
     return response.data.hint;
 };
 
+export const streamHint = async (questionText: string, onChunk: (chunk: string) => void) => {
+    const response = await fetch(`${API_URL}/hint/stream`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question_text: questionText })
+    });
+
+    if (!response.body) return;
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+
+    while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        onChunk(decoder.decode(value));
+    }
+};
+
 export const uploadAvatar = async (userId: number, file: File) => {
     const formData = new FormData();
     formData.append('file', file);
